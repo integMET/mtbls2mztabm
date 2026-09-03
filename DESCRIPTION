@@ -1,0 +1,40 @@
+Package: mtbls2mztabm
+Title: MetaboLights Studies as SummarizedExperiment Objects and mzTab-M Files
+Version: 0.99.0
+Authors@R: person("Kozo", "Nishida", email = "knishida@riken.jp",
+    role = c("aut", "cre"))
+Description: Turns the ISA-TAB files deposited with a MetaboLights study into
+    Bioconductor objects and standard exchange files. Study factors, sample
+    annotations and the metabolite assignment file of an assay are retrieved
+    through the MsBackendMetaboLights package and assembled into a
+    SummarizedExperiment whose layout matches the one produced by the xcms
+    preprocessing workflow for MetaboLights data, so that both can be handled
+    by the same downstream code. The main function takes a MetaboLights
+    study identifier and writes an mzTab-M 2.1 file with the RmzTabM
+    package, filling the metadata section from the ISA-TAB investigation and
+    assay tables.
+License: Artistic-2.0
+Encoding: UTF-8
+Depends:
+    R (>= 4.6.0)
+Imports:
+    methods,
+    stats,
+    tools,
+    utils,
+    S4Vectors,
+    SummarizedExperiment,
+    MsBackendMetaboLights,
+    MsCoreUtils,
+    RmzTabM
+Suggests:
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown,
+    BiocStyle
+VignetteBuilder: knitr
+biocViews: Software, Metabolomics, MassSpectrometry, DataImport, Preprocessing,
+    Infrastructure
+Config/testthat/edition: 3
+Roxygen: list(markdown = TRUE)
+Config/roxygen2/version: 8.1.0

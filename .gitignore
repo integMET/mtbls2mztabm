@@ -1,0 +1,38 @@
+# R session and configuration files
+.Rhistory
+.RApp.history
+.Rproj.user/
+*.Rproj
+.Renviron
+.Rprofile
+.seed
+.exrc
+.gdb.history
+
+# build and check artifacts
+*.tar.gz
+*.Rcheck/
+*.BiocCheck/
+inst/doc/
+*.o
+*.so
+*.sl
+*.dylib
+*.a
+*.dll
+*.def
+*.log
+*.aux
+*.backups
+
+# mzTab-M output written by examples run in the package directory
+*.mztab
+
+# system and IDE files
+.DS_Store
+.project
+.cproject
+.settings/
+.tm_properties
+.directory
+.dropbox
