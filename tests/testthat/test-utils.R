@@ -18,18 +18,15 @@ test_that(".cv_param builds mzTab-M CV parameters", {
     expect_length(.cv_param(c(NA, NA), c("a", "b")), 2L)
 })
 
-test_that(".feature_ids follows the xcms convention", {
-    expect_identical(.feature_ids(13), sprintf("FT%02d", 1:13))
-    expect_identical(.feature_ids(9068)[c(1, 9068)], c("FT0001", "FT9068"))
-    expect_identical(.feature_ids(1), "FT1")
-    expect_identical(.feature_ids(0), character())
-})
-
 test_that("polarity and file format CV parameters", {
     expect_identical(.polarity_plain(c("positive", " Negative", "POS")),
                      c("positive", "negative", "positive"))
     expect_identical(.polarity_plain(c(NA, NA)), c(NA_character_, NA))
+    ## missing values next to valid ones stay missing
+    expect_identical(.polarity_plain(c("positive", NA)),
+                     c("positive", NA_character_))
     expect_error(.polarity_plain(c("positive", "other")), "Unsupported")
+    expect_error(.polarity_plain(c(NA, "other", "x")), "other, x")
     expect_identical(.file_format_cv(c("FILES/a.mzXML", "b.mzML", "c.txt")),
                      c("[MS, MS:1000566, ISB mzXML format, ]",
                        "[MS, MS:1000584, mzML format, ]", NA))

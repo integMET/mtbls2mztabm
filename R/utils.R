@@ -50,11 +50,12 @@
     as.character(x[[idx[1L]]])
 }
 
-## xcms-style feature identifiers: "FT" + zero-padded index.
-.feature_ids <- function(n, prefix = "FT") {
-    if (!n) return(character())
-    digits <- max(ceiling(log10(n + 1L)), 1L)
-    sprintf(paste0(prefix, "%0", digits, "d"), seq_len(n))
+## Create the directory of an output file if it does not exist.
+.ensure_dir <- function(file) {
+    d <- dirname(file)
+    if (!dir.exists(d))
+        dir.create(d, recursive = TRUE, showWarnings = FALSE)
+    invisible(file)
 }
 
 ## mzTab-M controlled-vocabulary parameter "[LABEL, LABEL:ACC, name, ]" from
@@ -104,9 +105,10 @@
     res <- rep(NA_character_, length(x))
     res[!is.na(l) & grepl("^pos", l)] <- "positive"
     res[!is.na(l) & grepl("^neg", l)] <- "negative"
-    if (anyNA(res) && any(!is.na(x)))
+    bad <- is.na(res) & !is.na(x)
+    if (any(bad))
         stop("Unsupported scan polarity value(s): ",
-             paste(unique(x[is.na(res) & !is.na(x)]), collapse = ", "),
+             paste(unique(x[bad]), collapse = ", "),
              ". mzTab-M export needs \"positive\" or \"negative\".")
     res
 }

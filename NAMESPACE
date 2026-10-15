@@ -2,11 +2,14 @@
 
 export(mtbls_factor_values)
 export(mtbls_factors)
+export(mtbls_factors_to_toml)
 export(mtbls_investigation)
 export(mtbls_maf)
-export(mtbls_summarized_experiment)
+export(mtbls_maf_to_parquet)
+export(mtbls_parquet_to_sml)
 export(mtbls_to_mztabm)
-export(se_to_mztabm)
+export(mtbls_toml_to_mtd)
+export(mtd_sml_to_mztabm)
 importFrom(MsBackendMetaboLights,
   mtbls_ftp_path,
   mtbls_list_files,
@@ -14,35 +17,32 @@ importFrom(MsBackendMetaboLights,
   mtbls_sample_data
 )
 importFrom(MsCoreUtils,retry)
+importFrom(RcppTOML,parseTOML)
 importFrom(RmzTabM,
   MzTabM,
-  assayCols,
-  msRunCols,
-  sampleCols,
+  mtdFromSampleData,
+  mtdSample,
+  mtdSkeleton,
+  mtdSort,
   setMtdContact,
   setMtdDatabase,
   setMtdField,
   setMtdInstrument,
-  smfCols,
+  smlAddStudyVariableColumns,
+  smlCreate,
   writeMzTabM
 )
-importFrom(S4Vectors,DataFrame)
-importFrom(SummarizedExperiment,
-  "colData<-",
-  "rowData<-",
-  SummarizedExperiment,
-  assay,
-  assayNames,
-  colData,
-  rowData
+importFrom(nanoparquet,
+  read_parquet,
+  write_parquet
 )
-importFrom(methods,is)
 importFrom(stats,setNames)
 importFrom(tools,
   file_ext,
   file_path_sans_ext
 )
 importFrom(utils,
+  URLencode,
   packageVersion,
   read.table
 )

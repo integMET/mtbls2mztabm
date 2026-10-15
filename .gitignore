@@ -25,8 +25,11 @@ inst/doc/
 *.aux
 *.backups
 
-# mzTab-M output written by examples run in the package directory
+# mzTab-M output and its intermediate files written by examples run in the
+# package directory
 *.mztab
+/MTBLS*.toml
+/MTBLS*.parquet
 
 # system and IDE files
 .DS_Store

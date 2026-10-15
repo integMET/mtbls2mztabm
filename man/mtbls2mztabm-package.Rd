@@ -4,9 +4,9 @@
 \name{mtbls2mztabm-package}
 \alias{mtbls2mztabm}
 \alias{mtbls2mztabm-package}
-\title{mtbls2mztabm: MetaboLights Studies as SummarizedExperiment Objects and mzTab-M Files}
+\title{mtbls2mztabm: MetaboLights Studies as mzTab-M Files}
 \description{
-Turns the ISA-TAB files deposited with a MetaboLights study into Bioconductor objects and standard exchange files. Study factors, sample annotations and the metabolite assignment file of an assay are retrieved through the MsBackendMetaboLights package and assembled into a SummarizedExperiment whose layout matches the one produced by the xcms preprocessing workflow for MetaboLights data, so that both can be handled by the same downstream code. The main function takes a MetaboLights study identifier and writes an mzTab-M 2.1 file with the RmzTabM package, filling the metadata section from the ISA-TAB investigation and assay tables.
+Turns the ISA-TAB files deposited with a MetaboLights study into mzTab-M 2.1 files. The study factors (sample groups), samples, runs and study metadata of a mass spectrometry assay are saved to a TOML file and its metabolite assignment file to a Parquet file. The metadata (MTD) and small molecule (SML) sections of the mzTab-M file are then built from these two files with the RmzTabM package and combined into the final file. The ISA-TAB files are retrieved through the MsBackendMetaboLights package. The main function takes a MetaboLights study identifier and performs all steps.
 }
 \author{
 \strong{Maintainer}: Kozo Nishida \email{knishida@riken.jp}
