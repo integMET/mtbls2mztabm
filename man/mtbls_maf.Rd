@@ -36,6 +36,9 @@ maf[, c("database_identifier", "metabolite_identification")]
 ## abundance columns are named by sample
 head(colnames(maf), 25)
 }
+\seealso{
+\code{\link[=mtbls_maf_to_parquet]{mtbls_maf_to_parquet()}} to save the MAF as a Parquet file.
+}
 \author{
 Kozo Nishida
 }

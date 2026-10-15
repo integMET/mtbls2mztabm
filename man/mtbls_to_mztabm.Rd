@@ -9,7 +9,12 @@ mtbls_to_mztabm(
   file = paste0(mtblsId, ".mztab"),
   assayName = character(),
   factor = character(),
+  polarity = character(),
   path = NULL,
+  toml = NULL,
+  parquet = NULL,
+  reliability = "4",
+  validate = TRUE,
   verbose = TRUE
 )
 }
@@ -19,39 +24,76 @@ e.g. \code{"MTBLS103"}.}
 
 \item{file}{\code{character(1)} with the path of the mzTab-M file to write.
 Default: \code{"<mtblsId>.mztab"} in the working directory. An extension
-other than \code{.mztab}/\code{.mzTab} gets \code{.mztab} appended by \emph{RmzTabM}.}
+other than \code{.mztab}/\code{.mzTab} gets \code{.mztab} appended.}
 
-\item{assayName}{optional \code{character(1)} with the assay file to use. With
-a single assay it is used as is; with several and no \code{assayName} the
-first mass spectrometry assay is chosen and a message names it.}
+\item{assayName}{optional \code{character(1)} with the assay file (\code{"a_*.txt"})
+to describe. With a single assay it is used as is; with several and no
+\code{assayName} the first mass spectrometry assay is chosen and a message
+names it.}
 
-\item{factor}{optional \code{character(1)} with the name of the study factor
-that becomes the \code{phenotype} column (the ISA-TAB column
-\code{"Factor Value[<factor>]"}). By default the first factor that is not
-\emph{Age} is used.}
+\item{factor}{optional \code{character()} with the names of the study factors
+that become study variable groups. By default the first factor that is
+not \emph{Age} is used (an experiment with a continuous factor such as the
+age would get one study variable per value); without any factor a
+single study variable \code{"undefined"} is defined. Use
+\code{factor = c("Genotype", "Treatment")} to use several factors.}
+
+\item{polarity}{optional \code{character(1)}, \code{"positive"} or \code{"negative"}, used
+for the runs whose assay table lists no scan polarity.}
 
 \item{path}{optional \code{character(1)} with a local directory holding the
 study's ISA-TAB files. If \code{NULL} (the default) the files are read from
 the MetaboLights FTP server through the \emph{MsBackendMetaboLights}
 package.}
 
-\item{verbose}{\code{logical(1)} whether to report the written sections.}
+\item{toml, parquet}{\code{character(1)} with the paths of the TOML and Parquet
+files to write. By default they are written next to \code{file} with the
+extensions \code{.toml} and \code{.parquet}.}
+
+\item{reliability}{\code{character(1)}, a level from \code{"0"} to \code{"4"}, reported
+for the molecules for which the MAF gives no identification level. The
+default, \code{"4"}, is the lowest level (\emph{unknown compound}) and thus
+makes no claim about the confidence of the identification.}
+
+\item{validate}{\code{logical(1)} whether to validate the written file with the
+official mzTab-M validator, see \code{\link[RmzTabM:writeMzTabM]{RmzTabM::writeMzTabM()}}. The
+validator is downloaded by \emph{RmzTabM} on first use, which needs
+internet access; the file is removed again if it is not valid.}
+
+\item{verbose}{\code{logical(1)} whether to report what is done: the written
+sections and the substitutions made for information the study does not
+provide (messages). With \code{FALSE} no message is shown.}
 }
 \value{
-Invisibly, the path of the written file. The \code{SummarizedExperiment}
-and the \code{MzTabM} object are attached as attributes \code{"se"} and
-\code{"mztabm"}.
+Invisibly, the path of the mzTab-M file, with the attributes
+\code{"toml"} and \code{"parquet"} (the paths of the intermediate files) and
+\code{"mztabm"} (the \code{MzTabM} object).
 }
 \description{
 The main function of the package: given a MetaboLights study identifier
-it retrieves the study's ISA-TAB files (through the
-\emph{MsBackendMetaboLights} package), builds the \code{SummarizedExperiment} of
-one of its mass spectrometry assays with
-\code{\link[=mtbls_summarized_experiment]{mtbls_summarized_experiment()}}, maps it to mzTab-M with
-\code{\link[=se_to_mztabm]{se_to_mztabm()}} and writes the file with \code{\link[RmzTabM:writeMzTabM]{RmzTabM::writeMzTabM()}}.
+it creates the mzTab-M 2.1 file of one of the study's mass spectrometry
+assays in the following steps, each of which is also available as a
+function of its own:
+\enumerate{
+\item the study factors (sample groups), the samples, runs and study metadata
+are saved to a TOML file with \code{\link[=mtbls_factors_to_toml]{mtbls_factors_to_toml()}};
+\item the metabolite assignment file (MAF) of the assay is saved to a Parquet
+file with \code{\link[=mtbls_maf_to_parquet]{mtbls_maf_to_parquet()}};
+\item the metadata (\code{MTD}) section is built from the TOML file with
+\code{\link[=mtbls_toml_to_mtd]{mtbls_toml_to_mtd()}};
+\item the small molecule (\code{SML}) section is built from the Parquet file with
+\code{\link[=mtbls_parquet_to_sml]{mtbls_parquet_to_sml()}};
+\item both are combined with \code{\link[=mtd_sml_to_mztabm]{mtd_sml_to_mztabm()}} and written with
+\code{\link[RmzTabM:writeMzTabM]{RmzTabM::writeMzTabM()}}.
+}
 }
 \details{
-After writing, the file is read back to count its \code{MTD} and \code{SMF} rows,
+The ISA-TAB files are retrieved through the \emph{MsBackendMetaboLights}
+package, or read from \code{path}. The two intermediate files are kept, next to
+the mzTab-M file by default, so that they can be inspected or edited and
+the file regenerated from them.
+
+After writing, the file is read back to count its \code{MTD} and \code{SML} rows,
 and a message reports these together with any metadata still at a
 placeholder value (no instrument, no compound database, no contact).
 }
@@ -59,27 +101,27 @@ placeholder value (no instrument, no compound database, no contact).
 ## From the ISA-TAB files of MTBLS103 shipped with the package
 ext <- system.file("extdata", "MTBLS103", package = "mtbls2mztabm")
 out <- mtbls_to_mztabm("MTBLS103", file = tempfile(fileext = ".mztab"),
-                       path = ext)
+                       path = ext, validate = FALSE)
 readLines(out, n = 8)
-RmzTabM::readMzTabM(out)
+RmzTabM::readMzTabM(out, validate = FALSE)
+
+## the intermediate files the file was built from
+readLines(attr(out, "toml"), n = 12)
+nanoparquet::read_parquet(attr(out, "parquet"))[1:3, 1:6]
 
 ## MTBLS40, a GC-TOF-MS study of Arabidopsis thaliana genotypes whose
 ## assay table lists raw netCDF files only: these become the ms_runs, the
 ## factor Genotype the study variables
 ext40 <- system.file("extdata", "MTBLS40", package = "mtbls2mztabm")
 out40 <- mtbls_to_mztabm("MTBLS40", file = tempfile(fileext = ".mztab"),
-                         path = ext40)
+                         path = ext40, validate = FALSE)
 lns <- readLines(out40)
 lns[grepl("^MTD\\\\s(ms_run\\\\[1\\\\]|instrument|study_variable\\\\[[1-4]\\\\]\\\\s)",
           lns)]
-se40 <- attr(out40, "se")
-se40
-head(SummarizedExperiment::rowData(se40)[, c("feature_id", "rtmed",
-    "database_identifier", "metabolite_identification")])
 
 ## The complete study from the MetaboLights FTP server (needs internet
 ## access); with several assays the first MS assay is used unless
-## 'assayName' is given:
+## 'assayName' is given. The file is checked with the mzTab-M validator:
 ## mtbls_to_mztabm("MTBLS103")
 ## mtbls_to_mztabm("MTBLS103", file = "MTBLS103_hilic.mztab",
 ##     assayName = "a_MTBLS103_ibanez_02_HILIC_mass_spectrometry.txt")

@@ -1,7 +1,8 @@
 ## Retrieval of ISA-TAB files. By default files are read from the study's
 ## MetaboLights FTP folder through MsBackendMetaboLights; with `path` set to
 ## a local directory holding the ISA-TAB files the same files are read from
-## disk (used for the bundled MTBLS103 example data and for offline work).
+## disk (used for the bundled MTBLS103 and MTBLS40 example data and for
+## offline work).
 
 .check_path <- function(path) {
     if (!is.null(path)) {
@@ -105,7 +106,9 @@
     sel
 }
 
-## Everything needed to build the SummarizedExperiment of one assay.
+## Everything needed to describe one assay: its name, the joined assay and
+## sample table, and the metabolite assignment file the assay refers to
+## (name and content).
 .mtbls_fetch <- function(mtblsId, assayName = character(), path = NULL) {
     .check_path(path)
     assayName <- .mtbls_select_assay(mtblsId, assayName, path)
@@ -115,8 +118,23 @@
     mafName <- unique(isa[["Metabolite Assignment File"]])
     mafName <- mafName[!is.na(mafName)]
     if (length(mafName) != 1L)
-        stop("The assay must reference exactly one metabolite assignment ",
-             "file; found ", length(mafName))
+        stop("Assay \"", assayName, "\" must reference exactly one ",
+             "metabolite assignment file (MAF), but references ",
+             length(mafName), ". The MAF provides the small molecules of ",
+             "the mzTab-M file.")
     maf <- mtbls_maf(mtblsId, mafName, path)
-    list(assayName = assayName, isa = isa, maf = maf)
+    list(assayName = assayName, isa = isa, mafName = mafName, maf = maf)
+}
+
+## The spectral data file of each row of an assay table: the derived file, or
+## the raw file where no derived file is deposited (GC-MS studies often list
+## only their raw netCDF files).
+.data_file <- function(isa) {
+    derived <- .col_or_na(isa, "Derived Spectral Data File")
+    raw <- .col_or_na(isa, "Raw Spectral Data File")
+    use_raw <- is.na(derived) & !is.na(raw)
+    if (any(use_raw))
+        message("No derived spectral data file for ", sum(use_raw),
+                " sample(s); using the raw spectral data file instead.")
+    ifelse(use_raw, raw, derived)
 }

@@ -1,5 +1,5 @@
 ---
-title: "MetaboLights studies as SummarizedExperiment and mzTab-M"
+title: "MetaboLights studies as mzTab-M files"
 author:
 - name: Kozo Nishida
   affiliation: RIKEN
@@ -9,7 +9,7 @@ output:
   BiocStyle::html_document:
     toc_float: true
 vignette: >
-  %\VignetteIndexEntry{MetaboLights studies as SummarizedExperiment and mzTab-M}
+  %\VignetteIndexEntry{MetaboLights studies as mzTab-M files}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 bibliography: references.bib
@@ -21,6 +21,7 @@ BiocStyle::markdown()
 
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+options(width = 100)
 ```
 
 # Introduction
@@ -33,26 +34,39 @@ reported metabolites and their abundances per sample. The
 `r Biocpkg("MsBackendMetaboLights")` package [@Rainer2024] gives access to
 these files and to the raw MS data.
 
-`r Biocpkg("mtbls2mztabm")` builds on it and turns the ISA-TAB files
-of a study into two things Bioconductor and the wider metabolomics community
-can work with directly:
+`r Biocpkg("mtbls2mztabm")` turns the ISA-TAB files of a study into an
+[mzTab-M 2.1](https://github.com/HUPO-PSI/mzTab-M) file [@Hoffmann2019], the
+exchange format of the community for quantitative metabolomics results. It
+does so in two steps that each leave a file behind, which can be inspected,
+edited and reused:
 
-- a `SummarizedExperiment` [@Morgan] holding the MAF abundances with the
-  sample and feature annotations, laid out like the object produced by the
-  `r Biocpkg("xcms")` preprocessing workflow for MetaboLights data so that
-  both can be handled by the same downstream code;
-- an [mzTab-M 2.1](https://github.com/HUPO-PSI/mzTab-M) file
-  [@Hoffmann2019], written with the *RmzTabM* package, whose metadata section
-  is filled from the investigation and assay tables.
+```
+                   ┌─ factors, samples, runs, metadata ─▶ <study>.toml    ─▶ MTD ─┐
+MetaboLights ID ───┤                                                              ├─▶ mzTab-M
+                   └─ metabolite assignment file (MAF) ─▶ <study>.parquet ─▶ SML ─┘
+```
+
+1. The study factors (the *sample groups*), the samples, the MS runs and the
+   study metadata of one assay are saved to a [TOML](https://toml.io) file
+   (`mtbls_factors_to_toml()`), the MAF of the assay to an
+   [Apache Parquet](https://parquet.apache.org) file
+   (`mtbls_maf_to_parquet()`).
+2. The *metadata* section (`MTD`) of the mzTab-M file is built from the TOML
+   file (`mtbls_toml_to_mtd()`) and the *small molecule* section (`SML`) from
+   the Parquet file (`mtbls_parquet_to_sml()`), both with the *RmzTabM*
+   package. `mtd_sml_to_mztabm()` combines them and `RmzTabM::writeMzTabM()`
+   writes the file.
+
+`mtbls_to_mztabm()` runs all of this from a study identifier.
 
 The study used throughout is
 [MTBLS103](https://www.ebi.ac.uk/metabolights/MTBLS103), an NMR and LC-MS
 metabolomics study of serum from adolescents with hyperinsulinaemic androgen
-excess [@Samino2015]. Its ISA-TAB files are also shipped with the package, so
-every step below can be reproduced without network access by adding
-`path = system.file("extdata", "MTBLS103", package = "mtbls2mztabm")`
-to the calls. A second study of a different kind, the GC-MS study MTBLS40,
-is exported in the same way towards the end.
+excess [@Samino2015]. Its ISA-TAB files are shipped with the package and are
+read from there with the argument `path`, so that everything below runs
+without network access. Without `path`, every function reads the files of
+the study from the MetaboLights FTP server. A second study of a different
+kind, the GC-MS study MTBLS40, is exported in the same way towards the end.
 
 # Installation
 
@@ -64,7 +78,21 @@ BiocManager::install("mtbls2mztabm")
 
 ```{r load}
 library(mtbls2mztabm)
-library(SummarizedExperiment)
+ext <- system.file("extdata", "MTBLS103", package = "mtbls2mztabm")
+assay <- "a_MTBLS103_ibanez_02_HILIC_mass_spectrometry.txt"
+```
+
+The `MTD` sections below are shown with a small helper that lists the fields
+matching a pattern.
+
+```{r helper}
+show_mtd <- function(mtd, pattern, n = 64) {
+    x <- mtd[grepl(pattern, mtd[, 1L]), , drop = FALSE]
+    v <- ifelse(nchar(x[, 2L]) > n, paste0(substr(x[, 2L], 1L, n - 3L), "..."),
+                x[, 2L])
+    print(data.frame(field = x[, 1L], value = v), right = FALSE,
+          row.names = FALSE)
+}
 ```
 
 # The study and its factors
@@ -72,67 +100,202 @@ library(SummarizedExperiment)
 The investigation file is returned as a named list of records.
 
 ```{r investigation}
-inv <- mtbls_investigation("MTBLS103")
+inv <- mtbls_investigation("MTBLS103", path = ext)
 inv[["Study Title"]]
 inv[["Study Assay File Name"]]
 ```
 
 MTBLS103 has one experimental factor, *HIAE*, with the levels `CTR`
 (healthy controls), `HIAE` (patients at diagnosis) and `TREAT` (the same
-patients after 18 months of treatment).
+patients after 18 months of treatment). These are the sample groups that
+become the *study variables* of the mzTab-M file.
 
 ```{r factors}
-mtbls_factors("MTBLS103")
-fv <- mtbls_factor_values("MTBLS103")
+mtbls_factors("MTBLS103", path = ext)
+fv <- mtbls_factor_values("MTBLS103", path = ext)
 table(fv$hiae)
 ```
 
-# A SummarizedExperiment of one assay
+# Step 1: the study description as TOML
 
-Of the four assays, the HILIC LC-MS assay is used here. The abundance matrix
-of its MAF becomes the assay data, the ISA-TAB sample and assay tables the
-`colData()` and the MAF annotations the `rowData()`.
+`mtbls_factors_to_toml()` saves what the metadata section of the mzTab-M
+file needs to the TOML file of one assay. Of the four assays of MTBLS103 the
+HILIC LC-MS assay is used here; without `assayName` the first mass
+spectrometry assay is chosen and named in a message.
 
-```{r se}
-se <- mtbls_summarized_experiment(
-    "MTBLS103",
-    assayName = "a_MTBLS103_ibanez_02_HILIC_mass_spectrometry.txt")
-se
+```{r toml}
+toml <- mtbls_factors_to_toml(
+    "MTBLS103", file = file.path(tempdir(), "MTBLS103.toml"),
+    assayName = assay, path = ext)
 ```
 
-The `colData()` follows the layout of the xcms MetaboLights workflow. The
-`species` and `tissue` columns are mzTab-M controlled-vocabulary parameters
-built from the ontology terms of the sample file; fields the study does not
-deposit, such as the age of the participants, are `NA`.
+The file starts with the study metadata, the assay and MAF it belongs to,
+and the instrument taken from the assay table.
 
-```{r coldata}
-colData(se)[1:4, c("sample_name", "phenotype", "species", "tissue",
-                   "polarity")]
+```{r toml-study, echo = FALSE}
+lns <- readLines(toml)
+short <- function(x, n = 88)
+    ifelse(nchar(x) > n, paste0(substr(x, 1, n - 3), "..."), x)
+at <- function(pattern, n, i = 1L) lns[grep(pattern, lns)[i] + seq_len(n) - 1L]
+cat(short(lns[seq_len(grep("^\\[\\[publication\\]\\]", lns)[1L] - 1L)]),
+    sep = "\n")
+```
+
+The study factors follow with their definition from the investigation file
+and the groups found in the assay. Every sample then lists the group it
+belongs to in each factor, along with the organism and organism part, whose
+ontology terms become the species and tissue of the sample in mzTab-M.
+
+```{r toml-factor, echo = FALSE}
+cat(short(c(at("^\\[\\[factor\\]\\]", 6L), "...",
+            at("^\\[\\[sample\\]\\]", 11L), "...")), sep = "\n")
+```
+
+Finally, each row of the assay table is one *run*, which becomes an MS run
+and an assay of the mzTab-M file. A run names its sample, its data file, its
+scan polarity and the column of the MAF with its abundances.
+
+```{r toml-run, echo = FALSE}
+cat(short(c(at("^\\[\\[run\\]\\]", 7L), "...")), sep = "\n")
+```
+
+Because the file is plain text, a missing scan polarity or a wrong ontology
+term of a study can be corrected before the next step. Here the title is
+changed:
+
+```{r toml-edit}
+lns <- readLines(toml)
+lns <- sub("^title = .*", "title = \"HDL maturation in adolescents with HIAE\"",
+           lns)
+edited <- file.path(tempdir(), "MTBLS103-edited.toml")
+writeLines(lns, edited)
+```
+
+# Step 2: the metabolite assignment file as Parquet
+
+`mtbls_maf_to_parquet()` saves the MAF of the assay, which lists the
+reported metabolites and their abundance in every sample. The columns keep
+their names and are given the same types for every study: the annotation
+columns of the MAF are text and `mass_to_charge`, `retention_time` and the
+abundances are numbers, also where a study leaves a column empty.
+
+```{r parquet}
+parquet <- mtbls_maf_to_parquet(
+    "MTBLS103", file = file.path(tempdir(), "MTBLS103.parquet"),
+    assayName = assay, path = ext)
+maf <- nanoparquet::read_parquet(parquet)
+dim(maf)
+maf[, c("database_identifier", "chemical_formula",
+        "metabolite_identification")]
 ```
 
 The MAF of MTBLS103 reports 13 identified metabolites but no m/z or
-retention time, so `mzmed` and `rtmed` are `NA` here; the count columns give
-the number of samples with a reported abundance per phenotype level.
+retention time, so these columns are empty (`NA`).
 
-```{r rowdata}
-rowData(se)[, c("feature_id", "npeaks", "CTR", "HIAE", "TREAT",
-                "database_identifier", "metabolite_identification")]
+# Step 3: the metadata section from the TOML file
+
+`mtbls_toml_to_mtd()` reads the TOML file and builds the `MTD` section with
+`RmzTabM::mtdFromSampleData()`. The result is a two-column matrix.
+
+```{r mtd}
+mtd <- mtbls_toml_to_mtd(toml)
+dim(mtd)
+show_mtd(mtd, "^(mzTab-ID|title|publication\\[1\\]|uri\\[1\\]|instrument)")
 ```
 
-```{r assay}
-assay(se, "raw")[1:5, 1:3]
+Every sample, MS run and assay of the study is listed, with the samples
+referring to the species and tissue of the TOML file and the assays to their
+samples and MS runs.
+
+```{r mtd-sample}
+show_mtd(mtd, "^(sample|ms_run|assay)\\[1\\]")
 ```
 
-# Export to mzTab-M
+The groups of the study factor are the study variables. Each refers to the
+assays of the samples of the group.
 
-`mtbls_to_mztabm()` does all of the above and writes the mzTab-M file in one
-call. With several assays and no `assayName` the first mass spectrometry
-assay is chosen and named in the message.
+```{r mtd-sv}
+show_mtd(mtd, "^study_variable(_group)?\\[[1-3]\\](-assay_refs)?$")
+```
+
+By default the first study factor that is not *Age* (which has one value per
+participant) is used; the argument `factor` selects other or several
+factors. The edited TOML file gives a different title:
+
+```{r mtd-edited}
+show_mtd(mtbls_toml_to_mtd(edited), "^title$")
+```
+
+# Step 4: the small molecule section from the Parquet file
+
+`mtbls_parquet_to_sml()` builds the `SML` section with `RmzTabM::smlCreate()`:
+one row per row of the MAF, with the abundances of the runs in the order of
+the assays of the metadata section and, from the study variables of the
+`MTD`, the average and variation of the abundances of each group. The TOML
+file tells which MAF column belongs to which run. The `MTD` section is passed
+on so that both sections agree.
+
+```{r sml}
+sml <- mtbls_parquet_to_sml(parquet, toml, mtd)
+dim(sml)
+head(sml[, c("SML_ID", "database_identifier", "chemical_name", "reliability",
+             "abundance_assay[1]", "abundance_study_variable[1]")])
+```
+
+The annotation of the MAF (identifiers, formula, SMILES, InChI, name) is
+taken over; placeholders such as `unknown` become `null`. What the MAF does
+not provide is `null` as well, except for the `reliability` of the
+identification, which mzTab-M requires for every small molecule. The MAF of
+MTBLS103 gives none, so the lowest identification level of the Metabolomics
+Standards Initiative, `4` (*unknown compound*), is reported, which claims
+nothing about the confidence of the identification. The argument
+`reliability` sets another level for molecules without one.
+
+Two kinds of MAF content have no column in the `SML` section and are kept in
+optional columns (`opt_global_*`): the retention time and m/z of a MAF that
+reports them, and the annotations of molecules that have no identifier (the
+mzTab-M validator requires the annotation lists to be as long as the
+identifier list). The MAF of the GC-MS study MTBLS40 below has both.
+
+# Step 5: the mzTab-M file
+
+`mtd_sml_to_mztabm()` combines the two sections into an `MzTabM` object of the
+*RmzTabM* package. It checks that they belong together and completes the
+metadata with the compound databases found in the identifiers of the `SML`
+(here ChEBI).
+
+```{r merge}
+m <- mtd_sml_to_mztabm(mtd, sml)
+m
+show_mtd(RmzTabM::mtd(m), "^(mzTab-profile|database)")
+```
+
+With `file`, the same function also writes the mzTab-M file with
+`RmzTabM::writeMzTabM()`, which can equally be called on the returned object.
+By default the written file is checked with the official mzTab-M validator,
+which *RmzTabM* downloads when it is first used; `validate = FALSE` skips the
+check.
+
+```{r write}
+f <- file.path(tempdir(), "MTBLS103-steps.mztab")
+mtd_sml_to_mztabm(mtd, sml, file = f, validate = FALSE)
+lns <- readLines(f)
+c(MTD = sum(startsWith(lns, "MTD\t")), SML = sum(startsWith(lns, "SML\t")))
+RmzTabM::readMzTabM(f, validate = FALSE)
+```
+
+# All steps at once
+
+`mtbls_to_mztabm()` does all of the above in one call: it writes the TOML
+and Parquet files next to the mzTab-M file (the arguments `toml` and
+`parquet` put them elsewhere), builds both sections from them and writes the
+mzTab-M file. With several assays and no `assayName` the first mass
+spectrometry assay is chosen and named in the message.
 
 ```{r export}
 out <- mtbls_to_mztabm(
     "MTBLS103", file = file.path(tempdir(), "MTBLS103.mztab"),
-    assayName = "a_MTBLS103_ibanez_02_HILIC_mass_spectrometry.txt")
+    assayName = assay, path = ext, validate = FALSE)
 ```
 
 The file starts with the metadata section. Instrument, ion source and mass
@@ -146,20 +309,21 @@ lns[grepl("^MTD\t(mzTab-ID|title|publication|instrument|database\\[1\\])",
           lns)]
 ```
 
-Every sample, MS run and assay of the study is listed, followed by the
-small molecule feature table with one row per metabolite.
-
-```{r mztab-counts}
-c(MTD = sum(startsWith(lns, "MTD\t")),
-  SMF = sum(startsWith(lns, "SMF\t")))
-RmzTabM::readMzTabM(out)
-```
-
-The `SummarizedExperiment` and the `MzTabM` object are attached to the
-returned path for further work in R.
+The intermediate files and the `MzTabM` object are attached to the returned
+path.
 
 ```{r attrs}
+attr(out, "toml")
+attr(out, "parquet")
 attr(out, "mztabm")
+```
+
+Without `path` the files of the study are read from the MetaboLights FTP
+server and, with the default `validate = TRUE`, the written file is checked
+with the validator.
+
+```{r remote, eval = FALSE}
+mtbls_to_mztabm("MTBLS103", assayName = assay)
 ```
 
 # A GC-MS study: MTBLS40
@@ -169,35 +333,42 @@ The same call serves any MetaboLights study with a mass spectrometry assay.
 of *Arabidopsis thaliana* wild type and two mutants (`Col-0`, `mto1` and
 `tt4`) [@Kusano2007]. Its assay table lists the raw netCDF data files only,
 so these become the `ms_run`s of the mzTab-M file, the factor *Genotype*
-becomes the study variables and the MAF contributes 171 features with
+becomes the study variables and the MAF contributes 171 small molecules with
 retention times and, where identified, ChEBI identifiers.
 
 ```{r mtbls40}
-out40 <- mtbls_to_mztabm("MTBLS40",
-                         file = file.path(tempdir(), "MTBLS40.mztab"))
+ext40 <- system.file("extdata", "MTBLS40", package = "mtbls2mztabm")
+out40 <- mtbls_to_mztabm(
+    "MTBLS40", file = file.path(tempdir(), "MTBLS40.mztab"), path = ext40,
+    validate = FALSE)
 lns40 <- readLines(out40)
 lns40[grepl("^MTD\t(ms_run\\[1\\]|instrument|study_variable\\[[1-4]\\]\t)",
             lns40)]
 ```
 
-```{r mtbls40-se}
-se40 <- attr(out40, "se")
-table(se40$phenotype)
-head(rowData(se40)[, c("feature_id", "rtmed", "database_identifier",
-                       "metabolite_identification")])
-```
+Many peaks of this MAF are not identified. Their label (here `PR-MST`) and the
+retention time of all peaks are in optional columns of the `SML` section.
 
-The ISA-TAB files of MTBLS40 are shipped with the package as well, under
-`system.file("extdata", "MTBLS40", package = "mtbls2mztabm")`.
+```{r mtbls40-sml}
+sml40 <- RmzTabM::sml(attr(out40, "mztabm"))
+head(sml40[, c("SML_ID", "database_identifier", "chemical_name",
+               "opt_global_metabolite_identification",
+               "opt_global_retention_time")])
+```
 
 # What the ISA-TAB files cannot provide
 
-A MAF is a table of reported abundances, not a processing result: it has no
-gap-filled counterpart, so `raw_filled` equals `raw`; peak ranges (`mzmin`,
-`mzmax`, `rtmin`, `rtmax`) are always `NA`; and `injection_index` is the row
-order of the assay table, not a verified acquisition order. mzTab-M contacts
-require an ORCID, which ISA-TAB investigation files rarely carry, so the
-contact section is left out unless one is present.
+A MAF is a table of reported abundances, not a processing result. It has no
+m/z and retention time of its features beyond the optional columns above, so
+the file has an `SML` section but no *small molecule feature* section.
+mzTab-M contacts require an ORCID, which ISA-TAB investigation files rarely
+carry, so the contact section is left out unless one is present. Runs
+without a data file get the location of the study as their `ms_run`
+location, because mzTab-M needs one for every run. Runs without a value for
+the study factor, such as quality control samples, form the study variable
+`NA`, as *RmzTabM* defines it; giving them a value in the TOML file, for
+example `QC`, changes this. The average of a study variable is `null` if the
+abundance of any of its assays is missing.
 
 # Session information
 
