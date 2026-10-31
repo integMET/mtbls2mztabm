@@ -364,7 +364,10 @@ the file has an `SML` section but no *small molecule feature* section.
 mzTab-M contacts require an ORCID, which ISA-TAB investigation files rarely
 carry, so the contact section is left out unless one is present. Runs
 without a data file get the location of the study as their `ms_run`
-location, because mzTab-M needs one for every run. Runs without a value for
+location, because mzTab-M needs one for every run. Runs without a scan
+polarity are reported as positive if their ion source is electron ionization,
+which measures positive ions; any other run needs the argument `polarity` or
+an entry in the TOML file. Runs without a value for
 the study factor, such as quality control samples, form the study variable
 `NA`, as *RmzTabM* defines it; giving them a value in the TOML file, for
 example `QC`, changes this. The mean of a study variable is calculated from

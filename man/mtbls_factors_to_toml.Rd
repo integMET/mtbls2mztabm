@@ -25,7 +25,9 @@ to describe. With a single assay it is used as is; with several and no
 names it.}
 
 \item{polarity}{optional \code{character(1)}, \code{"positive"} or \code{"negative"}, used
-for the runs whose assay table lists no scan polarity.}
+for the runs whose assay table lists no scan polarity. Without it, such
+runs are reported as positive, with a message, if their ion source is
+electron ionization.}
 
 \item{path}{optional \code{character(1)} with a local directory holding the
 study's ISA-TAB files. If \code{NULL} (the default) the files are read from
