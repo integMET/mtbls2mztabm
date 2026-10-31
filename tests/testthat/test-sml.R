@@ -196,7 +196,46 @@ test_that("runs without a MAF column have missing abundances", {
     sml <- suppressMessages(mtbls_parquet_to_sml(files$parquet, toml))
     expect_true(all(is.na(sml[["abundance_assay[3]"]])))
     expect_false(anyNA(sml[["abundance_assay[4]"]]))
-    ## the study variable of the group of the run is missing as well
-    expect_true(all(is.na(sml[["abundance_study_variable[1]"]])))
+    ## the mean and variation of the group of the run come from its other
+    ## assays
+    grp <- vapply(.toml_read(toml)$sample, function(s) s$factors$HIAE, "")
+    ab <- as.matrix(sml[, paste0("abundance_assay[", 1:32, "]")])
+    expect_false(anyNA(sml[["abundance_study_variable[1]"]]))
+    expect_equal(sml[["abundance_study_variable[1]"]],
+                 unname(rowMeans(ab[, grp == "CTR"], na.rm = TRUE)))
+    cv <- apply(ab[, grp == "CTR"], 1L, function(v)
+        sd(v, na.rm = TRUE) / mean(v, na.rm = TRUE))
+    expect_equal(sml[["abundance_variation_study_variable[1]"]], unname(cv))
     expect_false(anyNA(sml[["abundance_study_variable[2]"]]))
+})
+
+test_that("a study variable without any abundance is missing", {
+    files <- study_files("MTBLS103")
+    toml <- modified_toml(files$toml, function(x) {
+        for (i in seq_along(x$run)) {
+            s <- x$sample[[match(x$run[[i]]$sample,
+                                 vapply(x$sample, `[[`, "", "name"))]]
+            if (s$factors$HIAE == "CTR")
+                x$run[[i]]$maf_column <- NULL
+        }
+        x
+    })
+    sml <- suppressMessages(mtbls_parquet_to_sml(files$parquet, toml))
+    expect_type(sml[["abundance_study_variable[1]"]], "double")
+    expect_true(all(is.na(sml[["abundance_study_variable[1]"]])))
+    expect_false(any(is.nan(sml[["abundance_study_variable[1]"]])))
+    expect_false(anyNA(sml[["abundance_study_variable[2]"]]))
+})
+
+test_that("only the average function mean ignores missing abundances", {
+    files <- study_files("MTBLS103")
+    toml <- modified_toml(files$toml, function(x) {
+        x$run[[3L]]$maf_column <- NULL
+        x
+    })
+    mtd <- mtbls_toml_to_mtd(toml)
+    i <- mtd[, 1L] == "study_variable[1]-average_function"
+    mtd[i, 2L] <- "[MS, MS:1002883, median, ]"
+    sml <- suppressMessages(mtbls_parquet_to_sml(files$parquet, toml, mtd = mtd))
+    expect_true(all(is.na(sml[["abundance_study_variable[1]"]])))
 })

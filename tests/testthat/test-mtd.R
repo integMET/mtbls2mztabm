@@ -44,8 +44,22 @@ test_that("mtbls_toml_to_mtd builds the metadata section of MTBLS103", {
         "[MS, MS:1000443, mass analyzer type, quadrupole time-of-flight]")
     expect_identical(mtd_value(mtd, "instrument[1]-detector"),
                      "[MS, MS:1000026, detector type, ]")
+    ## every MS run refers to the instrument
+    refs <- mtd[grepl("^ms_run\\[[0-9]+\\]-instrument_ref$", mtd[, 1L]), 2L]
+    expect_length(refs, 32L)
+    expect_identical(unique(unname(refs)), "instrument[1]")
     ## no ORCID, no contact; databases are added when the SML is known
     expect_false(any(grepl("^contact", mtd[, 1L])))
+})
+
+test_that("MS runs refer to no instrument if the study has none", {
+    f <- modified_toml(study_files("MTBLS103")$toml, function(x) {
+        x$instrument <- NULL
+        x
+    })
+    mtd <- mtbls_toml_to_mtd(f)
+    expect_false(any(grepl("^instrument\\[", mtd[, 1L])))
+    expect_false(any(grepl("-instrument_ref$", mtd[, 1L])))
 })
 
 test_that("the factors become study variable groups with their sample groups", {

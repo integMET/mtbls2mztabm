@@ -367,8 +367,9 @@ without a data file get the location of the study as their `ms_run`
 location, because mzTab-M needs one for every run. Runs without a value for
 the study factor, such as quality control samples, form the study variable
 `NA`, as *RmzTabM* defines it; giving them a value in the TOML file, for
-example `QC`, changes this. The average of a study variable is `null` if the
-abundance of any of its assays is missing.
+example `QC`, changes this. The mean of a study variable is calculated from
+the available abundances of its assays and is `null` only if all of them are
+missing; its variation needs at least two available abundances.
 
 # Session information
 

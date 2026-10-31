@@ -15,7 +15,8 @@
 #'   of the samples in the group;
 #' - title, description, publications and the MetaboLights URI of the study
 #'   as well as the instrument, ion source, mass analyzer and detector and
-#'   contacts (with ORCID) are added where the description provides them.
+#'   contacts (with ORCID) are added where the description provides them. All
+#'   MS runs refer to the instrument.
 #'
 #' @param toml `character(1)` with the path of a TOML file written by
 #'     [mtbls_factors_to_toml()].
@@ -64,6 +65,9 @@ mtbls_toml_to_mtd <- function(toml, factor = character(), id = NULL) {
     mtd <- setMtdField(mtd, "software",
                        sprintf("[,, RmzTabM, %s]", ver("RmzTabM")))
     msrun <- c(location = ".mtbls_location", scan_polarity = ".mtbls_polarity")
+    ## the validator rejects an instrument no MS run refers to
+    if (!is.null(x$instrument))
+        msrun <- c(msrun, instrument_ref = ".mtbls_instrument_ref")
     ## mzTab-M wants format and id_format together, or neither
     if (!anyNA(sd$.mtbls_format) && !anyNA(sd$.mtbls_id_format))
         msrun <- c(msrun, format = ".mtbls_format",
@@ -202,6 +206,7 @@ mtbls_toml_to_mtd <- function(toml, factor = character(), id = NULL) {
         .mtbls_format = .file_format_cv(runs$data_file),
         .mtbls_id_format = .id_format_cv(runs$data_file),
         .mtbls_polarity = pol,
+        .mtbls_instrument_ref = 1L,
         .mtbls_species = .cv_param(smp$organism_accession[idx],
                                    smp$organism[idx],
                                    smp$organism_source[idx]),
@@ -314,9 +319,10 @@ mtbls_toml_to_mtd <- function(toml, factor = character(), id = NULL) {
 #'   and `opt_global_mass_to_charge` if the MAF reports any.
 #'
 #' Abundances are numbers; non-numeric entries and missing values are
-#' reported as `null`. The abundance of a study variable is the average over
-#' its assays as calculated by `RmzTabM` and is `null` if any of them is
-#' missing.
+#' reported as `null`. The abundance of a study variable is the mean over its
+#' assays without the missing values and is `null` only if all of them are
+#' missing. Its variation is calculated by `RmzTabM`, also without the missing
+#' values, and is `null` if fewer than two abundances are available.
 #'
 #' @param parquet `character(1)` with the path of a Parquet file written by
 #'     [mtbls_maf_to_parquet()].
@@ -378,11 +384,30 @@ mtbls_parquet_to_sml <- function(parquet, toml, mtd = NULL,
     amat <- .maf_abundance(maf, x$runs$maf_column)
     ann <- .sml_annotations(maf, reliability)
     sml <- do.call(smlCreate, c(list(x = amat), ann))
-    sml <- smlAddStudyVariableColumns(sml, mtd)
+    sml <- .sml_study_variable_means(smlAddStudyVariableColumns(sml, mtd), mtd)
     ## a list of numbers cannot be "null|null" (RmzTabM repeats a missing
     ## value for each identifier of a molecule)
     sml$theoretical_neutral_mass[
         grepl("^null(\\|null)+$", sml$theoretical_neutral_mass)] <- "null"
+    sml
+}
+
+## `RmzTabM::smlAddStudyVariableColumns()` reports the mean of a study variable
+## as missing if the abundance of any of its assays is: calculate the study
+## variables with the average function "mean" from the available abundances.
+.sml_study_variable_means <- function(sml, mtd) {
+    key <- mtd[, 1L]
+    avg <- grep("^study_variable\\[[0-9]+\\]-average_function$", key)
+    for (i in avg[grepl("MS:1002962", mtd[avg, 2L], fixed = TRUE)]) {
+        sv <- sub("-average_function$", "", key[i])
+        refs <- strsplit(mtd[key == paste0(sv, "-assay_refs"), 2L], "|",
+                         fixed = TRUE)[[1L]]
+        ab <- as.matrix(sml[, paste0("abundance_", refs), drop = FALSE])
+        m <- rowMeans(ab, na.rm = TRUE)
+        ## no abundance at all: the mean is NaN, reported as null
+        m[is.nan(m)] <- NA_real_
+        sml[[paste0("abundance_", sv)]] <- unname(m)
+    }
     sml
 }
 
