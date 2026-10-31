@@ -603,9 +603,9 @@ mtd_sml_to_mztabm <- function(mtd, sml, file = NULL, validate = TRUE) {
 #'
 #' @description
 #' The main function of the package: given a MetaboLights study identifier
-#' it creates the mzTab-M 2.1 file of one of the study's mass spectrometry
-#' assays in the following steps, each of which is also available as a
-#' function of its own:
+#' it creates one mzTab-M 2.1 file for each metabolite assignment file (MAF)
+#' of the study's mass spectrometry assays in the following steps, each of
+#' which is also available as a function of its own:
 #'
 #' 1. the study factors (sample groups), the samples, runs and study metadata
 #'    are saved to a TOML file with [mtbls_factors_to_toml()];
@@ -628,13 +628,32 @@ mtd_sml_to_mztabm <- function(mtd, sml, file = NULL, validate = TRUE) {
 #' and a message reports these together with any metadata still at a
 #' placeholder value (no instrument, no compound database, no contact).
 #'
+#' A study with several MAFs gets one set of files per MAF, with the part of
+#' the MAF name that tells them apart added to the paths: the MAF
+#' `m_MTBLS1066_NEG_RP_LCMS_v2_maf.tsv` is written to
+#' `MTBLS1066_NEG_RP_LCMS.mztab`. A MAF that fails gives a warning and the
+#' others are still written; it is an error only if all of them fail. Some
+#' MAFs need attention:
+#'
+#' - a MAF shared by several assays gets a single file, which describes the
+#'   runs of the first of these assays (a message names them);
+#' - a MAF that no assay refers to has no runs to describe and gets no file (a
+#'   warning names it);
+#' - the MAFs of assays of another technology, such as NMR, get no file unless
+#'   the study has no mass spectrometry assay, which is then an error.
+#'
 #' @inheritParams mtbls_factors_to_toml
 #' @inheritParams mtbls_toml_to_mtd
 #' @inheritParams mtbls_parquet_to_sml
 #'
+#' @param assayName optional `character(1)` with an assay file (`"a_*.txt"`) to
+#'     write a single mzTab-M file for its MAF, at the path `file`. By default
+#'     a file is written for each MAF of the study.
+#'
 #' @param file `character(1)` with the path of the mzTab-M file to write.
 #'     Default: `"<mtblsId>.mztab"` in the working directory. An extension
-#'     other than `.mztab`/`.mzTab` gets `.mztab` appended.
+#'     other than `.mztab`/`.mzTab` gets `.mztab` appended. See the details for
+#'     a study with several MAFs.
 #'
 #' @param toml,parquet `character(1)` with the paths of the TOML and Parquet
 #'     files to write. By default they are written next to `file` with the
@@ -651,7 +670,9 @@ mtd_sml_to_mztabm <- function(mtd, sml, file = NULL, validate = TRUE) {
 #'
 #' @return Invisibly, the path of the mzTab-M file, with the attributes
 #'     `"toml"` and `"parquet"` (the paths of the intermediate files) and
-#'     `"mztabm"` (the `MzTabM` object).
+#'     `"mztabm"` (the `MzTabM` object). With several MAFs, the paths of the
+#'     files written, named by their MAF, with the same attributes in the same
+#'     order: `"mztabm"` is then a `list` of `MzTabM` objects.
 #'
 #' @author Kozo Nishida
 #'
@@ -680,8 +701,8 @@ mtd_sml_to_mztabm <- function(mtd, sml, file = NULL, validate = TRUE) {
 #'           lns)]
 #'
 #' ## The complete study from the MetaboLights FTP server (needs internet
-#' ## access); with several assays the first MS assay is used unless
-#' ## 'assayName' is given. The file is checked with the mzTab-M validator:
+#' ## access), with one file per MAF of its MS assays unless 'assayName' is
+#' ## given. The files are checked with the mzTab-M validator:
 #' ## mtbls_to_mztabm("MTBLS103")
 #' ## mtbls_to_mztabm("MTBLS103", file = "MTBLS103_hilic.mztab",
 #' ##     assayName = "a_MTBLS103_ibanez_02_HILIC_mass_spectrometry.txt")
@@ -700,10 +721,50 @@ mtbls_to_mztabm <- function(mtblsId, file = paste0(mtblsId, ".mztab"),
         toml <- paste0(base, ".toml")
     if (is.null(parquet))
         parquet <- paste0(base, ".parquet")
-    export <- function()
-        .export_mztabm(mtblsId, file, toml, parquet, assayName, factor,
-                       polarity, path, reliability, validate)
+    one <- function(assay, file, toml, parquet)
+        .export_mztabm(mtblsId, file, toml, parquet, assay, factor, polarity,
+                       path, reliability, validate)
+    export <- function() {
+        assays <- if (length(assayName)) assayName
+                  else .mtbls_maf_assays(mtblsId, path)
+        if (length(assays) < 2L)
+            return(one(assays, file, toml, parquet))
+        .export_mafs(mtblsId, assays, one, file, toml, parquet)
+    }
     invisible(if (verbose) export() else suppressMessages(export()))
+}
+
+## One mzTab-M file for each metabolite assignment file (the names of
+## `assays`), with the part of the MAF name that tells them apart added to the
+## file names. A MAF that fails does not stop the others.
+.export_mafs <- function(mtblsId, assays, one, file, toml, parquet) {
+    message("Study ", mtblsId, " has ", length(assays), " metabolite ",
+            "assignment files to export: writing an mzTab-M file for each.")
+    named <- function(p, stem) {
+        ext <- file_ext(p)
+        paste0(file_path_sans_ext(p), "_", stem,
+               if (nzchar(ext)) paste0(".", ext))
+    }
+    res <- Map(function(assay, stem)
+        tryCatch(one(assay, named(file, stem), named(toml, stem),
+                     named(parquet, stem)),
+                 error = function(e) e),
+        assays, .maf_stems(names(assays), mtblsId))
+    failed <- vapply(res, inherits, logical(1), "error")
+    why <- vapply(names(res)[failed], function(m)
+        paste0("\"", m, "\": ", conditionMessage(res[[m]])), character(1))
+    if (all(failed))
+        stop("No mzTab-M file could be written for ", mtblsId, ":\n",
+             paste(why, collapse = "\n"), call. = FALSE)
+    for (w in why)
+        warning("No mzTab-M file for the metabolite assignment file ", w,
+                call. = FALSE)
+    res <- res[!failed]
+    out <- vapply(res, as.character, character(1))
+    attr(out, "toml") <- unname(vapply(res, attr, character(1), "toml"))
+    attr(out, "parquet") <- unname(vapply(res, attr, character(1), "parquet"))
+    attr(out, "mztabm") <- lapply(res, attr, "mztabm")
+    out
 }
 
 ## The steps of `mtbls_to_mztabm()`; returns the path of the mzTab-M file

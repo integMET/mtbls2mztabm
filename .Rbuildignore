@@ -5,4 +5,4 @@
 ^.*\.mztab$
 ^\.gitignore$
 ^\.git$
-^MTBLS[0-9]+\.(toml|parquet)$
+^MTBLS[0-9]+.*\.(toml|parquet)$
