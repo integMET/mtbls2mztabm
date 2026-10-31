@@ -196,6 +196,77 @@ test_that("mtbls_toml_to_mtd uses the location of remote data files", {
                      "FILES/HILIC_CON_BASA_567795.mzXML")
 })
 
+## A copy of the ISA-TAB files of MTBLS40 whose assay table names the first data
+## file `name`.
+study40_data_file <- function(name) {
+    d <- tempfile()
+    dir.create(d)
+    file.copy(list.files(ext40, full.names = TRUE), d)
+    a <- list.files(d, "^a_", full.names = TRUE)
+    writeLines(sub("FILES/L_01_1.cdf", name, readLines(a), fixed = TRUE), a)
+    d
+}
+
+test_that("the location of a data file with a space in its name is encoded", {
+    d <- study40_data_file("FILES/L 01_1.cdf")
+    toml <- tempfile(fileext = ".toml")
+    suppressMessages(mtbls_factors_to_toml("MTBLS40", toml, path = d))
+    ## the study description keeps the deposited name
+    expect_identical(.toml_read(toml)$run[[1L]]$data_file, "FILES/L 01_1.cdf")
+    ## a local study: the location is relative
+    mtd <- mtbls_toml_to_mtd(toml)
+    expect_identical(mtd_value(mtd, "ms_run[1]-location"),
+                     "FILES/L%2001_1.cdf")
+    expect_identical(mtd_value(mtd, "ms_run[2]-location"), "FILES/L_02_1.cdf")
+    expect_identical(mtd_value(mtd, "assay[1]"), "FILES/L 01_1.cdf")
+    ## only the file name is encoded, not the location of the files
+    f <- modified_toml(toml, function(x) {
+        x$study$files_uri <- "ftp://ftp.example.org/MTBLS40/"
+        x
+    })
+    expect_identical(.toml_read(f)$run[[1L]]$data_file, "FILES/L 01_1.cdf")
+    mtd <- mtbls_toml_to_mtd(f)
+    expect_identical(mtd_value(mtd, "ms_run[1]-location"),
+                     "ftp://ftp.example.org/MTBLS40/FILES/L%2001_1.cdf")
+    expect_identical(mtd_value(mtd, "ms_run[2]-location"),
+                     "ftp://ftp.example.org/MTBLS40/FILES/L_02_1.cdf")
+})
+
+test_that("the location of a data file is not encoded twice", {
+    f <- modified_toml(study_files("MTBLS40")$toml, function(x) {
+        x$run[[1L]]$data_file <- "FILES/L%2001_1.cdf"
+        x
+    })
+    expect_identical(mtd_value(mtbls_toml_to_mtd(f), "ms_run[1]-location"),
+                     "FILES/L%2001_1.cdf")
+})
+
+test_that("a run without data file keeps the study location next to an encoded one", {
+    f <- modified_toml(study_files("MTBLS103")$toml, function(x) {
+        x$study$files_uri <- "ftp://ftp.example.org/MTBLS103/"
+        x$run[[1L]]$data_file <- NULL
+        x$run[[1L]]$assay <- x$run[[1L]]$ms_assay_name
+        x$run[[2L]]$data_file <- "FILES/a b.mzXML"
+        x
+    })
+    expect_message(mtd <- mtbls_toml_to_mtd(f), "No data file for 1 run")
+    expect_identical(mtd_value(mtd, "ms_run[1]-location"),
+                     "ftp://ftp.example.org/MTBLS103/")
+    expect_identical(mtd_value(mtd, "ms_run[2]-location"),
+                     "ftp://ftp.example.org/MTBLS103/FILES/a%20b.mzXML")
+})
+
+test_that("a data file with a space in its name passes the official validator", {
+    skip_if_no_validator()
+    d <- study40_data_file("FILES/L 01_1.cdf")
+    f <- tempfile(fileext = ".mztab")
+    out <- suppressMessages(
+        mtbls_to_mztabm("MTBLS40", file = f, path = d, validate = TRUE))
+    expect_true(file.exists(out))
+    expect_true(any(grepl("ms_run[1]-location\tFILES/L%2001_1.cdf",
+                          readLines(f), fixed = TRUE)))
+})
+
 test_that("runs without data file get the study location", {
     f <- modified_toml(study_files("MTBLS103")$toml, function(x) {
         for (i in 1:2) {
