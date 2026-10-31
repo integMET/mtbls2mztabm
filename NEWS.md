@@ -45,6 +45,14 @@
 
 - A scan polarity that is missing for only some of the runs no longer raises
   an "Unsupported scan polarity" error.
+- The MS runs of the `MTD` section refer to the instrument
+  (`ms_run[n]-instrument_ref`). The current mzTab-M validator rejects an
+  instrument without such a reference, so the files of all studies with an
+  instrument failed the validation.
+- The abundance of a study variable with the average function `mean` is
+  calculated from the available abundances of its assays
+  (`mean(x, na.rm = TRUE)`). It was `null` if any of them was missing and is
+  now `null` only if all of them are.
 
 # mtbls2mztabm 0.99.0
 

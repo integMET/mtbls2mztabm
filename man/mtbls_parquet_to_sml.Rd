@@ -70,9 +70,10 @@ and \code{opt_global_mass_to_charge} if the MAF reports any.
 }
 
 Abundances are numbers; non-numeric entries and missing values are
-reported as \code{null}. The abundance of a study variable is the average over
-its assays as calculated by \code{RmzTabM} and is \code{null} if any of them is
-missing.
+reported as \code{null}. The abundance of a study variable is the mean over its
+assays without the missing values and is \code{null} only if all of them are
+missing. Its variation is calculated by \code{RmzTabM}, also without the missing
+values, and is \code{null} if fewer than two abundances are available.
 }
 \examples{
 ext <- system.file("extdata", "MTBLS103", package = "mtbls2mztabm")

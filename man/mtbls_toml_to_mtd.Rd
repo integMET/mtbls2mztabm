@@ -42,7 +42,8 @@ mzData and netCDF files);
 of the samples in the group;
 \item title, description, publications and the MetaboLights URI of the study
 as well as the instrument, ion source, mass analyzer and detector and
-contacts (with ORCID) are added where the description provides them.
+contacts (with ORCID) are added where the description provides them. All
+MS runs refer to the instrument.
 }
 }
 \examples{
