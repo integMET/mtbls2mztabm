@@ -169,9 +169,16 @@ mtbls_maf_to_parquet <- function(mtblsId, file = paste0(mtblsId, ".parquet"),
 ## Name of the MAF column holding the abundances of each row of the assay
 ## table `isa` (NA if the MAF has none). The columns are matched on the
 ## sample name, the MS assay name or the data file name (with or without
-## extension), whichever matches most rows.
-.maf_columns <- function(isa, maf_names) {
-    maf_names <- setdiff(maf_names, .maf_annotation_columns)
+## extension), whichever matches most rows. If none of the columns found holds
+## a number (`filled`, the columns with numbers, see `.maf_filled()`), the
+## columns of `.maf_fallback()` are used if there is a one-to-one alternative.
+.maf_columns <- function(isa, maf_names, filled = maf_names) {
+    maf_names <- maf_names[!maf_names %in% .maf_annotation_columns]
+    repeated <- unique(maf_names[duplicated(maf_names)])
+    if (length(repeated))
+        message("The MAF repeats ", length(repeated), " abundance column ",
+                "names (", .some(repeated), "); only the first column of ",
+                "each name can be used")
     derived <- .col_or_na(isa, "Derived Spectral Data File")
     raw <- .col_or_na(isa, "Raw Spectral Data File")
     cands <- list(
@@ -185,30 +192,130 @@ mtbls_maf_to_parquet <- function(mtblsId, file = paste0(mtblsId, ".parquet"),
             file_path_sans_ext(basename(raw)))
     hits <- vapply(cands, function(v)
         sum(!is.na(v) & v %in% maf_names), integer(1))
-    if (!any(hits > 0L)) {
-        warning("None of the sample names, MS assay names or data file ",
-                "names of the assay matches an abundance column of the MAF",
-                call. = FALSE)
-        return(rep(NA_character_, nrow(isa)))
-    }
     best <- names(cands)[which.max(hits)]
     key <- cands[[best]]
     res <- ifelse(!is.na(key) & key %in% maf_names, key, NA_character_)
+    if (!any(res %in% filled)) {
+        alt <- .maf_fallback(cands, setdiff(intersect(filled, maf_names),
+                                            repeated))
+        if (!is.null(alt)) {
+            message("No abundance column matched on the names of the assay ",
+                    "holds a number; using the ", length(alt), " columns ",
+                    "with numbers that correspond one-to-one to the runs ",
+                    "(e.g. '", alt[1L], "' for the run '", key[1L], "')")
+            res <- alt
+        } else if (any(hits > 0L)) {
+            warning("None of the ", sum(!is.na(res)), " abundance columns ",
+                    "of the MAF matched on '", best, "' holds a number and ",
+                    "no other columns correspond one-to-one to the runs",
+                    call. = FALSE)
+        }
+    }
+    if (all(is.na(res))) {
+        warning("None of the sample names, MS assay names or data file ",
+                "names of the assay matches an abundance column of the MAF",
+                call. = FALSE)
+        return(res)
+    }
     if (anyNA(res))
         message(sum(is.na(res)), " of ", length(res), " assay rows have no ",
                 "abundance column in the MAF (matched on '", best,
                 "'); their abundances are NA")
+    used <- res[!is.na(res)]
+    shared <- unique(used[duplicated(used)])
+    if (length(shared))
+        warning(sum(used %in% shared), " assay rows share ", length(shared),
+                " abundance columns of the MAF (", .some(shared), "): the ",
+                "values are repeated for each run, which gives these columns ",
+                "more weight in the abundance of their study variables and ",
+                "understates the variation", call. = FALSE)
     res
+}
+
+## The first values of `x` for a message.
+.some <- function(x, n = 3L) {
+    paste0(paste(x[seq_len(min(n, length(x)))], collapse = ", "),
+           if (length(x) > n) ", ...")
+}
+
+## Columns of the MAF that correspond one-to-one to the runs, for an assay
+## whose matched columns hold no number. `cands` are the names of the runs and
+## `pool` the columns with numbers whose name is not repeated in the MAF. A
+## column corresponds to a run if the names are equal or else if one name is
+## the other one plus a suffix after a separator ("DFCI-01583-GC-01" and
+## "DFCI-01583"). All runs need a column of their own and all names of the runs
+## must lead to the same columns; otherwise `NULL`, nothing is guessed.
+.maf_fallback <- function(cands, pool) {
+    if (!length(pool))
+        return(NULL)
+    unique_map <- function(maps) {
+        maps <- unique(Filter(Negate(is.null), maps))
+        if (length(maps) == 1L) maps[[1L]]
+    }
+    one_to_one <- function(key, related) {
+        cols <- lapply(key, function(k)
+            if (is.na(k)) character() else pool[related(k, pool)])
+        if (all(lengths(cols) == 1L) && !anyDuplicated(unlist(cols)))
+            unlist(cols)
+    }
+    equal <- unique_map(lapply(cands, one_to_one, `==`))
+    if (!is.null(equal))
+        return(equal)
+    unique_map(lapply(cands, one_to_one, function(k, pool)
+        .has_suffix(k, pool) | .has_suffix(pool, k)))
+}
+
+## Is `x` the name `prefix` followed by a separator and a suffix?
+.has_suffix <- function(x, prefix) {
+    startsWith(x, prefix) & nchar(x) > nchar(prefix) &
+        substring(x, nchar(prefix) + 1L, nchar(prefix) + 1L) %in%
+        c("-", "_", ".", " ")
+}
+
+## A number with thousands separators.
+.maf_grouped_number <- "^[-+]?[1-9][0-9]{0,2}(,[0-9]{3})+(\\.[0-9]*)?$"
+
+## The abundance columns of the MAF `maf` as a list of numeric vectors named
+## after the columns. Thousands separators ("1,157,497") are removed if all
+## cells with a comma of the MAF are written that way and at least one of them
+## cannot be a number with a decimal comma (two commas, or a comma and a point).
+## Otherwise the cells with a comma are NA and their number is the attribute
+## "ambiguous" of the result.
+.maf_numbers <- function(maf) {
+    cols <- as.list(maf)[!names(maf) %in% .maf_annotation_columns]
+    cells <- trimws(unlist(lapply(cols, as.character), use.names = FALSE))
+    commas <- cells[!is.na(cells) & grepl(",", cells, fixed = TRUE)]
+    grouped <- length(commas) && all(grepl(.maf_grouped_number, commas)) &&
+        any(grepl(",.*,|\\.", commas))
+    if (grouped)
+        cols <- lapply(cols, function(v) gsub(",", "", v, fixed = TRUE))
+    res <- lapply(cols, .as_numeric)
+    attr(res, "ambiguous") <- if (grouped) 0L else length(commas)
+    res
+}
+
+## Names of the abundance columns of the MAF `maf` holding at least one number.
+## With a repeated name, this is the first column, which is the one used.
+.maf_filled <- function(maf) {
+    nums <- .maf_numbers(maf)
+    nums <- nums[!duplicated(names(nums))]
+    names(nums)[vapply(nums, function(v) any(!is.na(v)), logical(1))]
 }
 
 ## Abundance matrix (MAF rows x runs) from the MAF columns of the runs
 ## (`columns`, NA for runs without one, whose abundances are NA).
 .maf_abundance <- function(maf, columns) {
-    ok <- !is.na(columns) & columns %in% names(maf)
+    nums <- .maf_numbers(maf)
+    ok <- !is.na(columns) & columns %in% names(nums)
     if (!any(ok))
         stop("None of the runs of the study description has an abundance ",
              "column in the metabolite assignment file")
+    if (attr(nums, "ambiguous") > 0L)
+        warning(attr(nums, "ambiguous"), " abundances of the metabolite ",
+                "assignment file have a comma that is not clearly a ",
+                "thousands separator; they are reported as missing",
+                call. = FALSE)
     m <- matrix(NA_real_, nrow = nrow(maf), ncol = length(columns))
-    m[, ok] <- do.call(cbind, lapply(maf[columns[ok]], .as_numeric))
+    m[, ok] <- do.call(cbind, nums[columns[ok]])
     m
 }

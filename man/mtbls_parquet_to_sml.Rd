@@ -69,8 +69,9 @@ no column for, are kept as optional columns \code{opt_global_retention_time}
 and \code{opt_global_mass_to_charge} if the MAF reports any.
 }
 
-Abundances are numbers; non-numeric entries and missing values are
-reported as \code{null}. The abundance of a study variable is the mean over its
+Abundances are numbers, also if the MAF writes them with thousands
+separators (\verb{1,157,497}); non-numeric entries, missing values and numbers
+with a comma that may be a decimal comma are reported as \code{null}. The abundance of a study variable is the mean over its
 assays without the missing values and is \code{null} only if all of them are
 missing. Its variation is calculated by \code{RmzTabM}, also without the missing
 values, and is \code{null} if fewer than two abundances are available.

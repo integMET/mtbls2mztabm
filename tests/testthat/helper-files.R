@@ -17,6 +17,28 @@ study_files <- function(study = c("MTBLS103", "MTBLS40")) {
     .study_files_cache[[study]]
 }
 
+## Copy of the ISA-TAB files of a bundled study in which the assay and sample
+## tables name the runs `rename(sample)` and the MAF is changed by `maf_fun`.
+modified_study <- function(study, rename = identity, maf_fun = identity) {
+    d <- tempfile(paste0(study, "-"))
+    dir.create(d)
+    path <- system.file("extdata", study, package = "mtbls2mztabm")
+    file.copy(list.files(path, full.names = TRUE), d)
+    write_tab <- function(x, f)
+        write.table(x, file.path(d, f), sep = "\t", quote = FALSE, na = "",
+                    row.names = FALSE)
+    for (f in list.files(d, "^[as]_.*\\.txt$")) {
+        x <- .mtbls_read_table(study, f, d)
+        x[["Sample Name"]] <- rename(x[["Sample Name"]])
+        if ("MS Assay Name" %in% names(x))
+            x[["MS Assay Name"]] <- x[["Sample Name"]]
+        write_tab(x, f)
+    }
+    for (f in list.files(d, "^m_.*\\.tsv$"))
+        write_tab(maf_fun(.mtbls_read_table(study, f, d)), f)
+    d
+}
+
 ## Value(s) of a metadata field of an MTD matrix.
 mtd_value <- function(mtd, key) unname(mtd[mtd[, 1L] == key, 2L])
 

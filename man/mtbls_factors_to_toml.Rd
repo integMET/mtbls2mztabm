@@ -79,6 +79,15 @@ metabolite assignment file holding the abundances of the run.
 }
 
 Fields the study does not provide are left out.
+
+The \code{maf_column} is the column named after the sample, the MS assay or the
+data file of the run, whichever matches most runs. If none of these columns
+holds a number, other columns are used only if they correspond one-to-one to
+the runs, by equal names or by a name that is the other one plus a suffix
+after a separator (\code{DFCI-01583} for the run \code{DFCI-01583-GC-01}); a message
+reports this. Otherwise a warning says that the run has no abundances. Runs
+sharing a column also give a warning: such a column has more weight in the
+abundance of its study variable and the variation is understated.
 }
 \examples{
 ext <- system.file("extdata", "MTBLS103", package = "mtbls2mztabm")

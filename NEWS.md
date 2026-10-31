@@ -53,6 +53,20 @@
   calculated from the available abundances of its assays
   (`mean(x, na.rm = TRUE)`). It was `null` if any of them was missing and is
   now `null` only if all of them are.
+- Where none of the abundance columns matched on the names of the runs holds a
+  number, for example the columns `DFCI-01583-GC-01` of MTBLS135, whose values
+  are in the columns `DFCI-01583`, `mtbls_factors_to_toml()` and
+  `mtbls_to_mztabm()` use other columns if they correspond one-to-one to the
+  runs (equal names, or a name that is the other one plus a suffix after a
+  separator) and report this in a message. If that is ambiguous nothing is
+  guessed and a warning says that the matched columns hold no number.
+- Abundances written with thousands separators (`1,157,497`), as in MTBLS135,
+  are read as numbers instead of being reported as `null`. A comma that may be
+  a decimal comma is not interpreted and gives a warning.
+- A warning reports MAF columns that are used by several runs, which gives them
+  more weight in the abundance of their study variables and understates the
+  variation, and a message reports abundance column names that the MAF repeats,
+  of which only the first column can be used (both as in MTBLS737).
 
 # mtbls2mztabm 0.99.0
 

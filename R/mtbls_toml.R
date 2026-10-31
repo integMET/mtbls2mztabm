@@ -42,6 +42,15 @@
 #'
 #' Fields the study does not provide are left out.
 #'
+#' The `maf_column` is the column named after the sample, the MS assay or the
+#' data file of the run, whichever matches most runs. If none of these columns
+#' holds a number, other columns are used only if they correspond one-to-one to
+#' the runs, by equal names or by a name that is the other one plus a suffix
+#' after a separator (`DFCI-01583` for the run `DFCI-01583-GC-01`); a message
+#' reports this. Otherwise a warning says that the run has no abundances. Runs
+#' sharing a column also give a warning: such a column has more weight in the
+#' abundance of its study variable and the variation is understated.
+#'
 #' @inheritParams mtbls_investigation
 #'
 #' @param file `character(1)` with the path of the TOML file to write.
@@ -114,7 +123,8 @@ mtbls_factors_to_toml <- function(mtblsId, file = paste0(mtblsId, ".toml"),
 .study_description <- function(mtblsId, dat, inv, files_uri = NULL,
                                polarity = character()) {
     isa <- dat$isa
-    runs <- .toml_runs(isa, colnames(dat$maf), polarity)
+    runs <- .toml_runs(isa, colnames(dat$maf), polarity,
+                       filled = .maf_filled(dat$maf))
     list(schema_version = .toml_schema_version,
          study = list(identifier = mtblsId,
                       title = .inv_first(inv, "Study Title"),
@@ -253,7 +263,8 @@ mtbls_factors_to_toml <- function(mtblsId, file = paste0(mtblsId, ".toml"),
 }
 
 ## One entry per row of the assay table (MS run / mzTab-M assay).
-.toml_runs <- function(isa, maf_names, polarity = character()) {
+.toml_runs <- function(isa, maf_names, polarity = character(),
+                       filled = maf_names) {
     n <- nrow(isa)
     sample <- .col_or_na(isa, "Sample Name")
     if (anyNA(sample))
@@ -267,7 +278,7 @@ mtbls_factors_to_toml <- function(mtblsId, file = paste0(mtblsId, ".toml"),
     if (length(polarity)) {
         pol[is.na(pol)] <- .polarity_plain(polarity[1L])
     }
-    cols <- .maf_columns(isa, maf_names)
+    cols <- .maf_columns(isa, maf_names, filled)
     lapply(seq_len(n), function(i)
         list(assay = assay[i], sample = sample[i], ms_assay_name = ms_name[i],
              data_file = files[i], polarity = pol[i],
