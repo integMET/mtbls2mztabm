@@ -40,7 +40,8 @@ All ISA-TAB files are retrieved from the MetaboLights FTP server with the
 [MsBackendMetaboLights](https://bioconductor.org/packages/MsBackendMetaboLights)
 package. Every function also accepts a local directory of ISA-TAB files
 through `path`; the files of MTBLS103 and MTBLS40 are shipped in
-`inst/extdata`.
+`inst/extdata`. mzTab-M files generated from other studies are in
+`inst/extdata/mztabm`.
 
 ## Step by step
 
