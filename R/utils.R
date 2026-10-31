@@ -113,6 +113,14 @@
     res
 }
 
+## Whether an ion source is electron ionization. Only the name counts: the term
+## accessions of some assay tables run on from row to row, so that electrospray
+## runs can carry the accession of electron ionization (MS:1000389).
+.is_electron_ionization <- function(x) {
+    grepl("^(electron (ioni[sz]ation|impact( ioni[sz]ation)?)|EI)$",
+          trimws(as.character(x)), ignore.case = TRUE)
+}
+
 ## Data file format as a PSI-MS CV parameter, from the file extension.
 .file_format_cv <- function(f) {
     ext <- tolower(file_ext(as.character(f)))

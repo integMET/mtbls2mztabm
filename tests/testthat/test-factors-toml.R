@@ -116,6 +116,39 @@ test_that("a missing scan polarity can be filled in", {
                      c("negative", "positive"))
 })
 
+test_that("runs with electron ionization and no scan polarity are positive", {
+    isa <- data.frame(
+        `Sample Name` = c("A", "B", "C", "D"), check.names = FALSE,
+        `Parameter Value[Ion source]` = c("electron ionization",
+                                          "electron ionization",
+                                          "electrospray ionization", NA),
+        `Term Accession Number` = c("MS_1000389", "MS_1000389", "MS_1000389",
+                                    "MS_1000389"),
+        `Parameter Value[Scan polarity]` = c(NA, "negative", NA, NA),
+        stringsAsFactors = FALSE)
+    pol <- function(r) vapply(r, function(e) e$polarity, "")
+    ## only a run without polarity whose ion source is named electron ionization
+    expect_message(r <- .toml_runs(isa, LETTERS[1:4]),
+                   "No scan polarity for 1 of 4 runs: reported as positive")
+    expect_identical(pol(r), c("positive", "negative", NA, NA))
+    ## the argument comes first and gives no message
+    expect_silent(r <- .toml_runs(isa, LETTERS[1:4], polarity = "negative"))
+    expect_identical(pol(r), rep("negative", 4L))
+    ## without a missing polarity there is nothing to report
+    isa$`Parameter Value[Scan polarity]` <- "positive"
+    expect_silent(.toml_runs(isa, LETTERS[1:4]))
+})
+
+test_that("electron ionization is recognised by its name", {
+    expect_true(all(.is_electron_ionization(
+        c("electron ionization", " Electron Ionization ", "electron ionisation",
+          "electron impact", "electron impact ionization", "EI"))))
+    expect_false(any(.is_electron_ionization(
+        c("electrospray ionization", "ESI", "chemical ionization",
+          "electron capture ionization", "electron capture negative ionization",
+          "", NA))))
+})
+
 test_that("runs are named after the data file, the MS assay or the sample", {
     isa <- data.frame(
         `Sample Name` = c("S1", "S2", "S3", "S3"),

@@ -24,6 +24,45 @@ test_that("MTBLS40 (GC-MS, raw netCDF files) is exported with the raw files as m
     expect_s4_class(RmzTabM::readMzTabM(f, validate = FALSE), "MzTabM")
 })
 
+## A copy of the ISA-TAB files of MTBLS40 (electron ionization) with an empty
+## scan polarity column, as in MTBLS27.
+study40_no_polarity <- function() {
+    d <- tempfile()
+    dir.create(d)
+    file.copy(list.files(ext40, full.names = TRUE), d)
+    a <- list.files(d, "^a_", full.names = TRUE)
+    writeLines(gsub("\tpositive\t", "\t\t", readLines(a), fixed = TRUE), a)
+    d
+}
+
+test_that("a GC-EI-MS study without scan polarity is exported as positive", {
+    skip_if_no_validator()
+    f <- tempfile(fileext = ".mztab")
+    msgs <- capture_messages(
+        out <- mtbls_to_mztabm("MTBLS40", file = f, path = study40_no_polarity(),
+                               validate = TRUE))
+    expect_match(msgs, "No scan polarity for 51 of 51 runs: reported as positive",
+                 all = FALSE)
+    expect_true(file.exists(out))
+    ## the polarity can be seen and changed in the study description
+    x <- .toml_read(attr(out, "toml"))
+    expect_identical(unique(vapply(x$run, `[[`, "", "polarity")), "positive")
+    lns <- readLines(f)
+    expect_identical(
+        sum(grepl("-scan_polarity[1]\t[MS, MS:1000130, positive scan, ]", lns,
+                  fixed = TRUE)), 51L)
+})
+
+test_that("the polarity argument overrides electron ionization", {
+    f <- tempfile(fileext = ".toml")
+    msgs <- capture_messages(
+        mtbls_factors_to_toml("MTBLS40", f, polarity = "negative",
+                              path = study40_no_polarity()))
+    expect_false(any(grepl("No scan polarity", msgs, fixed = TRUE)))
+    expect_identical(unique(vapply(.toml_read(f)$run, `[[`, "", "polarity")),
+                     "negative")
+})
+
 test_that("the MAF of MTBLS40 keeps its retention times and unidentified peaks", {
     f <- tempfile(fileext = ".mztab")
     suppressMessages(mtbls_to_mztabm("MTBLS40", file = f, path = ext40,

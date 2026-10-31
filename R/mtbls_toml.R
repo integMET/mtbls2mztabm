@@ -53,7 +53,9 @@
 #'     names it.
 #'
 #' @param polarity optional `character(1)`, `"positive"` or `"negative"`, used
-#'     for the runs whose assay table lists no scan polarity.
+#'     for the runs whose assay table lists no scan polarity. Without it, such
+#'     runs are reported as positive, with a message, if their ion source is
+#'     electron ionization.
 #'
 #' @return Invisibly, the path of the TOML file.
 #'
@@ -266,6 +268,15 @@ mtbls_factors_to_toml <- function(mtblsId, file = paste0(mtblsId, ".toml"),
     pol <- .polarity_plain(.col_or_na(isa, "Parameter Value[Scan polarity]"))
     if (length(polarity)) {
         pol[is.na(pol)] <- .polarity_plain(polarity[1L])
+    }
+    ## electron ionization measures positive ions
+    ei <- is.na(pol) &
+        .is_electron_ionization(.col_or_na(isa, "Parameter Value[Ion source]"))
+    if (any(ei)) {
+        message("No scan polarity for ", sum(ei), " of ", n, " runs: reported ",
+                "as positive because their ion source is electron ionization ",
+                "(argument 'polarity')")
+        pol[ei] <- "positive"
     }
     cols <- .maf_columns(isa, maf_names)
     lapply(seq_len(n), function(i)

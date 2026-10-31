@@ -48,6 +48,10 @@
 - `mtbls_to_mztabm()` gained the arguments `polarity` (for assay tables
   without scan polarity), `reliability`, `toml`, `parquet` and `validate`;
   `verbose = FALSE` now silences all messages.
+- Runs without a scan polarity whose ion source is electron ionization are
+  reported as positive, with a message, so that studies such as MTBLS27 export
+  without arguments. The argument `polarity` and a polarity in the assay table
+  take precedence.
 
 ## BUG FIXES
 
