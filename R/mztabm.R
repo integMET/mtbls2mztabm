@@ -189,7 +189,9 @@ mtbls_toml_to_mtd <- function(toml, factor = character(), id = NULL) {
              "(An assay that is not a mass spectrometry assay, such as NMR, ",
              "cannot be exported.)")
     uri <- x$study$files_uri
-    loc <- paste0(if (length(uri)) uri, runs$data_file)
+    ## the study description keeps the deposited file names, a location has to
+    ## be a valid URI (a name that is already encoded is not encoded again)
+    loc <- paste0(if (length(uri)) uri, URLencode(runs$data_file))
     ## mzTab-M needs a location for every run and the validator does not
     ## accept "null": use the location of the study for runs without file
     nofile <- is.na(runs$data_file)

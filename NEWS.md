@@ -61,6 +61,10 @@
   calculated from the available abundances of its assays
   (`mean(x, na.rm = TRUE)`). It was `null` if any of them was missing and is
   now `null` only if all of them are.
+- The data file path in `ms_run[n]-location` is percent-encoded, so that a file
+  name with a space (MTBLS760: `FILES/HCS _01.CDF`) gives a valid URI. A name
+  that is already encoded is not encoded again. The TOML file keeps the
+  deposited name.
 
 # mtbls2mztabm 0.99.0
 
