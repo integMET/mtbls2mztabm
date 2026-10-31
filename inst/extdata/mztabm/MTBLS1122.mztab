@@ -1,0 +1,2442 @@
+MTD	mzTab-version	2.1.0-M
+MTD	mzTab-ID	MTBLS1122
+MTD	mzTab-profile	M+S
+MTD	title	Sex Differences in Colon Cancer Metabolism Reveal A Novel Subphenotype (UPLC-MS HILIC POS assay)
+MTD	description	<p>Women have a lower incidence of colorectal cancer (CRC) than men, however, they have a higher incidence of right-sided colon cancer (RCC). This is of concern as patients with RCC have the poorest clinical outcomes among all CRC patients. Aberrant metabolism is a known hallmark and therapeutic target for cancer. We propose that metabolic subphenotypes exist between CRCs due to intertumoral molecular and genomic variation, and differences in environmental milieu of the colon which vary between the sexes. Metabolomics&nbsp;analysis of patient colon tumors (n = 197) and normal tissues (n = 39) revealed sex-specific metabolic subphenotypes dependent on anatomic location. Tumors from women with RCC were nutrient-deplete, showing enhanced energy production to fuel asparagine synthesis and amino acid uptake. The clinical importance of our findings were further investigated in an independent data set from The Cancer Genomic Atlas, and demonstrated that high asparagine synthetase (ASNS) expression correlated with poorer survival for women. This is the first study to show a unique, nutrient-deplete metabolic subphenotype in women with RCC, with implications for tumor progression and outcomes in CRC patients.</p><p><br></p><p><strong>UPLC-MS HILIC POS assay</strong> is reported in <a href='https://www.ebi.ac.uk/metabolights/MTBLS1122' rel='noopener noreferrer' target='_blank'><strong>MTBLS1122</strong></a>.</p><p><strong>UPLC-MS HILIC NEG assay</strong> is reported in <a href='https://www.ebi.ac.uk/metabolights/MTBLS1124' rel='noopener noreferrer' target='_blank'><strong>MTBLS1124</strong></a>.</p><p><strong>UPLC-MS RP POS assay</strong> is reported in <a href='https://www.ebi.ac.uk/metabolights/MTBLS1129' rel='noopener noreferrer' target='_blank'><strong>MTBLS1129</strong></a>.</p><p><strong>UPLC-MS RP NEG assay</strong> is reported in <a href='https://www.ebi.ac.uk/metabolights/MTBLS1130' rel='noopener noreferrer' target='_blank'><strong>MTBLS1130</strong></a>.</p>
+MTD	instrument[1]-name	[MS, MS:1000031, instrument model, Waters Xevo G2-S QTof]
+MTD	instrument[1]-source	[MS, MS:1000073, Electrospray ionization, ]
+MTD	instrument[1]-analyzer[1]	[MS, MS:1000443, mass analyzer type, quadrupole time-of-flight]
+MTD	instrument[1]-detector	[MS, MS:1000026, detector type, ]
+MTD	software[1]	[,, mtbls2mztabm, 0.99.1]
+MTD	software[2]	[,, RmzTabM, 0.99.4]
+MTD	publication[1]	doi:10.1038/s41598-020-61851-0 | pubmed:32184446
+MTD	publication[2]	doi:10.3390/metabo12020164 | pubmed:35208238
+MTD	uri[1]	https://www.ebi.ac.uk/metabolights/MTBLS1122
+MTD	quantification_method	[MS, MS:1001834, LC-MS label-free quantitation analysis, ]
+MTD	sample[1]	QC01
+MTD	sample[1]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[1]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[10]	QC10
+MTD	sample[10]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[10]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[100]	mennormal_2659
+MTD	sample[100]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[100]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[101]	mennormal_2663
+MTD	sample[101]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[101]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[102]	mennormal_2665
+MTD	sample[102]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[102]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[103]	mennormal_2673
+MTD	sample[103]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[103]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[104]	mennormal_2676
+MTD	sample[104]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[104]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[105]	mennormal_2691
+MTD	sample[105]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[105]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[106]	mennormal_2700
+MTD	sample[106]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[106]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[107]	mennormal_363
+MTD	sample[107]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[107]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[108]	mennormal_374
+MTD	sample[108]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[108]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[109]	mennormal_50
+MTD	sample[109]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[109]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[11]	QC11
+MTD	sample[11]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[11]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[110]	menRCCstage1_1266
+MTD	sample[110]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[110]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[111]	menRCCstage1_1475
+MTD	sample[111]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[111]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[112]	menRCCstage1_1528
+MTD	sample[112]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[112]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[113]	menRCCstage1_1543
+MTD	sample[113]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[113]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[114]	menRCCstage1_1902
+MTD	sample[114]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[114]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[115]	menRCCstage1_2034
+MTD	sample[115]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[115]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[116]	menRCCstage1_2163
+MTD	sample[116]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[116]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[117]	menRCCstage1_2554
+MTD	sample[117]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[117]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[118]	menRCCstage1_2622
+MTD	sample[118]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[118]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[119]	menRCCstage1_47
+MTD	sample[119]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[119]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[12]	QC12
+MTD	sample[12]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[12]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[120]	menRCCstage2_113
+MTD	sample[120]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[120]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[121]	menRCCstage2_1193
+MTD	sample[121]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[121]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[122]	menRCCstage2_1278
+MTD	sample[122]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[122]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[123]	menRCCstage2_130
+MTD	sample[123]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[123]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[124]	menRCCstage2_1331
+MTD	sample[124]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[124]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[125]	menRCCstage2_1379
+MTD	sample[125]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[125]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[126]	menRCCstage2_1452
+MTD	sample[126]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[126]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[127]	menRCCstage2_1501
+MTD	sample[127]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[127]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[128]	menRCCstage2_2041
+MTD	sample[128]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[128]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[129]	menRCCstage2_2054
+MTD	sample[129]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[129]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[13]	QC13
+MTD	sample[13]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[13]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[130]	menRCCstage2_2408
+MTD	sample[130]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[130]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[131]	menRCCstage2_2498
+MTD	sample[131]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[131]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[132]	menRCCstage2_2520
+MTD	sample[132]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[132]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[133]	menRCCstage2_2551
+MTD	sample[133]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[133]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[134]	menRCCstage2_2662
+MTD	sample[134]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[134]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[135]	menRCCstage2_2683
+MTD	sample[135]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[135]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[136]	menRCCstage2_329
+MTD	sample[136]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[136]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[137]	menRCCstage2_534
+MTD	sample[137]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[137]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[138]	menRCCstage2_797
+MTD	sample[138]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[138]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[139]	menRCCstage2_810
+MTD	sample[139]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[139]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[14]	QC14
+MTD	sample[14]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[14]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[140]	menRCCstage2_885
+MTD	sample[140]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[140]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[141]	menRCCstage2_981
+MTD	sample[141]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[141]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[142]	menRCCstage2_991
+MTD	sample[142]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[142]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[143]	menRCCstage3_102
+MTD	sample[143]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[143]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[144]	menRCCstage3_1369
+MTD	sample[144]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[144]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[145]	menRCCstage3_1737
+MTD	sample[145]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[145]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[146]	menRCCstage3_1749
+MTD	sample[146]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[146]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[147]	menRCCstage3_1831
+MTD	sample[147]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[147]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[148]	menRCCstage3_1877
+MTD	sample[148]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[148]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[149]	menRCCstage3_1960
+MTD	sample[149]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[149]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[15]	QC15
+MTD	sample[15]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[15]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[150]	menRCCstage3_1997
+MTD	sample[150]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[150]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[151]	menRCCstage3_2113
+MTD	sample[151]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[151]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[152]	menRCCstage3_2223
+MTD	sample[152]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[152]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[153]	menRCCstage3_2270
+MTD	sample[153]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[153]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[154]	menRCCstage3_326
+MTD	sample[154]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[154]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[155]	menRCCstage3_546
+MTD	sample[155]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[155]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[156]	menRCCstage3_605
+MTD	sample[156]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[156]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[157]	menRCCstage3_667
+MTD	sample[157]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[157]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[158]	womanLCCstage1_1037
+MTD	sample[158]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[158]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[159]	womanLCCstage1_110
+MTD	sample[159]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[159]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[16]	QC16
+MTD	sample[16]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[16]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[160]	womanLCCstage1_1221
+MTD	sample[160]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[160]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[161]	womanLCCstage1_1313
+MTD	sample[161]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[161]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[162]	womanLCCstage1_1591
+MTD	sample[162]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[162]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[163]	womanLCCstage1_1858
+MTD	sample[163]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[163]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[164]	womanLCCstage1_2261
+MTD	sample[164]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[164]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[165]	womanLCCstage1_488
+MTD	sample[165]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[165]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[166]	womanLCCstage1_577
+MTD	sample[166]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[166]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[167]	womanLCCstage1_743
+MTD	sample[167]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[167]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[168]	womanLCCstage2_1026
+MTD	sample[168]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[168]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[169]	womanLCCstage2_1029
+MTD	sample[169]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[169]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[17]	QC17
+MTD	sample[17]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[17]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[170]	womanLCCstage2_1310
+MTD	sample[170]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[170]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[171]	womanLCCstage2_1407
+MTD	sample[171]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[171]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[172]	womanLCCstage2_1427
+MTD	sample[172]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[172]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[173]	womanLCCstage2_146
+MTD	sample[173]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[173]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[174]	womanLCCstage2_1601
+MTD	sample[174]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[174]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[175]	womanLCCstage2_20
+MTD	sample[175]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[175]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[176]	womanLCCstage2_2151
+MTD	sample[176]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[176]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[177]	womanLCCstage2_276
+MTD	sample[177]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[177]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[178]	womanLCCstage2_434
+MTD	sample[178]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[178]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[179]	womanLCCstage2_468
+MTD	sample[179]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[179]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[18]	QC18
+MTD	sample[18]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[18]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[180]	womanLCCstage2_504
+MTD	sample[180]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[180]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[181]	womanLCCstage2_574
+MTD	sample[181]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[181]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[182]	womanLCCstage2_581
+MTD	sample[182]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[182]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[183]	womanLCCstage2_618
+MTD	sample[183]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[183]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[184]	womanLCCstage2_95
+MTD	sample[184]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[184]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[185]	womanLCCstage3_1097
+MTD	sample[185]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[185]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[186]	womanLCCstage3_1404
+MTD	sample[186]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[186]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[187]	womanLCCstage3_1440
+MTD	sample[187]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[187]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[188]	womanLCCstage3_1631
+MTD	sample[188]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[188]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[189]	womanLCCstage3_1783
+MTD	sample[189]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[189]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[19]	QC19
+MTD	sample[19]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[19]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[190]	womanLCCstage3_189
+MTD	sample[190]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[190]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[191]	womanLCCstage3_1890
+MTD	sample[191]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[191]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[192]	womanLCCstage3_2105
+MTD	sample[192]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[192]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[193]	womanLCCstage3_2291
+MTD	sample[193]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[193]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[194]	womanLCCstage3_23
+MTD	sample[194]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[194]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[195]	womanLCCstage3_2594
+MTD	sample[195]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[195]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[196]	womanLCCstage3_439
+MTD	sample[196]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[196]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[197]	womanLCCstage3_515
+MTD	sample[197]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[197]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[198]	womanLCCstage3_522
+MTD	sample[198]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[198]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[199]	womanLCCstage3_734
+MTD	sample[199]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[199]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[2]	QC02
+MTD	sample[2]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[2]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[20]	QC20
+MTD	sample[20]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[20]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[200]	womanLCCstage3_888
+MTD	sample[200]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[200]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[201]	womanLCCstage3_903
+MTD	sample[201]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[201]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[202]	womanLCCstage3_938
+MTD	sample[202]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[202]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[203]	womannormal_11
+MTD	sample[203]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[203]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[204]	womannormal_4
+MTD	sample[204]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[204]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[205]	womannormal_9
+MTD	sample[205]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[205]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[206]	womannormal_2316
+MTD	sample[206]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[206]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[207]	womannormal_2478
+MTD	sample[207]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[207]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[208]	womannormal_2495
+MTD	sample[208]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[208]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[209]	womannormal_2550
+MTD	sample[209]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[209]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[21]	QC21
+MTD	sample[21]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[21]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[210]	womannormal_264
+MTD	sample[210]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[210]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[211]	womannormal_2655
+MTD	sample[211]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[211]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[212]	womannormal_2670
+MTD	sample[212]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[212]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[213]	womannormal_2705
+MTD	sample[213]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[213]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[214]	womannormal_834
+MTD	sample[214]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[214]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[215]	womanRCCstage1_1617
+MTD	sample[215]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[215]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[216]	womanRCCstage1_1963
+MTD	sample[216]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[216]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[217]	womanRCCstage1_2038
+MTD	sample[217]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[217]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[218]	womanRCCstage1_216
+MTD	sample[218]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[218]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[219]	womanRCCstage1_2202
+MTD	sample[219]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[219]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[22]	QC22
+MTD	sample[22]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[22]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[220]	womanRCCstage1_2235
+MTD	sample[220]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[220]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[221]	womanRCCstage1_2258
+MTD	sample[221]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[221]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[222]	womanRCCstage1_2600
+MTD	sample[222]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[222]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[223]	womanRCCstage1_2668
+MTD	sample[223]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[223]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[224]	womanRCCstage1_491
+MTD	sample[224]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[224]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[225]	womanRCCstage1_910
+MTD	sample[225]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[225]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[226]	womanRCCstage1_941
+MTD	sample[226]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[226]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[227]	womanRCCstage2_1014
+MTD	sample[227]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[227]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[228]	womanRCCstage2_1190
+MTD	sample[228]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[228]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[229]	womanRCCstage2_1196
+MTD	sample[229]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[229]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[23]	QC23
+MTD	sample[23]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[23]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[230]	womanRCCstage2_1304
+MTD	sample[230]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[230]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[231]	womanRCCstage2_1514
+MTD	sample[231]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[231]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[232]	womanRCCstage2_1665
+MTD	sample[232]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[232]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[233]	womanRCCstage2_1683
+MTD	sample[233]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[233]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[234]	womanRCCstage2_1728
+MTD	sample[234]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[234]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[235]	womanRCCstage2_1733
+MTD	sample[235]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[235]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[236]	womanRCCstage2_1846
+MTD	sample[236]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[236]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[237]	womanRCCstage2_1937
+MTD	sample[237]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[237]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[238]	womanRCCstage2_1987
+MTD	sample[238]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[238]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[239]	womanRCCstage2_2066
+MTD	sample[239]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[239]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[24]	QC24
+MTD	sample[24]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[24]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[240]	womanRCCstage2_2479
+MTD	sample[240]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[240]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[241]	womanRCCstage2_261
+MTD	sample[241]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[241]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[242]	womanRCCstage2_2654
+MTD	sample[242]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[242]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[243]	womanRCCstage2_315
+MTD	sample[243]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[243]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[244]	womanRCCstage2_419
+MTD	sample[244]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[244]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[245]	womanRCCstage2_64
+MTD	sample[245]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[245]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[246]	womanRCCstage2_830
+MTD	sample[246]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[246]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[247]	womanRCCstage2_896
+MTD	sample[247]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[247]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[248]	womanRCCstage3_1224
+MTD	sample[248]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[248]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[249]	womanRCCstage3_1237
+MTD	sample[249]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[249]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[25]	QC25
+MTD	sample[25]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[25]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[250]	womanRCCstage3_1316
+MTD	sample[250]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[250]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[251]	womanRCCstage3_1327
+MTD	sample[251]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[251]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[252]	womanRCCstage3_1363
+MTD	sample[252]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[252]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[253]	womanRCCstage3_1455
+MTD	sample[253]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[253]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[254]	womanRCCstage3_149
+MTD	sample[254]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[254]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[255]	womanRCCstage3_1855
+MTD	sample[255]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[255]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[256]	womanRCCstage3_1924
+MTD	sample[256]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[256]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[257]	womanRCCstage3_2208
+MTD	sample[257]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[257]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[258]	womanRCCstage3_2244
+MTD	sample[258]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[258]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[259]	womanRCCstage3_2303
+MTD	sample[259]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[259]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[26]	QC26
+MTD	sample[26]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[26]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[260]	womanRCCstage3_2494
+MTD	sample[260]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[260]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[261]	womanRCCstage3_289
+MTD	sample[261]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[261]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[262]	womanRCCstage3_721
+MTD	sample[262]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[262]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[263]	womanRCCstage3_955
+MTD	sample[263]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[263]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[264]	womanRCCstage3_958
+MTD	sample[264]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[264]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[27]	QC27
+MTD	sample[27]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[27]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[28]	QC28
+MTD	sample[28]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[28]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[29]	menLCCstage1_1122
+MTD	sample[29]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[29]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[3]	QC03
+MTD	sample[3]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[3]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[30]	menLCCstage1_1532
+MTD	sample[30]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[30]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[31]	menLCCstage1_1941
+MTD	sample[31]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[31]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[32]	menLCCstage1_1969
+MTD	sample[32]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[32]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[33]	menLCCstage1_2516
+MTD	sample[33]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[33]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[34]	menLCCstage1_26
+MTD	sample[34]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[34]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[35]	menLCCstage1_2634
+MTD	sample[35]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[35]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[36]	menLCCstage1_270
+MTD	sample[36]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[36]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[37]	menLCCstage1_507
+MTD	sample[37]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[37]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[38]	menLCCstage1_543
+MTD	sample[38]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[38]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[39]	menLCCstage1_614
+MTD	sample[39]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[39]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[4]	QC04
+MTD	sample[4]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[4]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[40]	menLCCstage1_679
+MTD	sample[40]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[40]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[41]	menLCCstage1_688
+MTD	sample[41]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[41]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[42]	menLCCstage1_699
+MTD	sample[42]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[42]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[43]	menLCCstage1_755
+MTD	sample[43]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[43]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[44]	menLCCstage2_1011
+MTD	sample[44]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[44]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[45]	menLCCstage2_1063
+MTD	sample[45]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[45]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[46]	menLCCstage2_1333
+MTD	sample[46]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[46]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[47]	menLCCstage2_134
+MTD	sample[47]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[47]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[48]	menLCCstage2_1374
+MTD	sample[48]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[48]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[49]	menLCCstage2_1402
+MTD	sample[49]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[49]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[5]	QC05
+MTD	sample[5]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[5]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[50]	menLCCstage2_1415
+MTD	sample[50]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[50]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[51]	menLCCstage2_1723
+MTD	sample[51]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[51]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[52]	menLCCstage2_1788
+MTD	sample[52]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[52]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[53]	menLCCstage2_181
+MTD	sample[53]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[53]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[54]	menLCCstage2_1894
+MTD	sample[54]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[54]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[55]	menLCCstage2_203
+MTD	sample[55]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[55]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[56]	menLCCstage2_2070
+MTD	sample[56]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[56]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[57]	menLCCstage2_2247
+MTD	sample[57]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[57]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[58]	menLCCstage2_240
+MTD	sample[58]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[58]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[59]	menLCCstage2_2421
+MTD	sample[59]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[59]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[6]	QC06
+MTD	sample[6]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[6]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[60]	menLCCstage2_295
+MTD	sample[60]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[60]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[61]	menLCCstage2_373
+MTD	sample[61]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[61]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[62]	menLCCstage2_525
+MTD	sample[62]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[62]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[63]	menLCCstage2_531
+MTD	sample[63]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[63]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[64]	menLCCstage2_625
+MTD	sample[64]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[64]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[65]	menLCCstage2_714
+MTD	sample[65]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[65]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[66]	menLCCstage2_868
+MTD	sample[66]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[66]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[67]	menLCCstage2_893
+MTD	sample[67]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[67]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[68]	menLCCstage2_971
+MTD	sample[68]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[68]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[69]	menLCCstage3_1030
+MTD	sample[69]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[69]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[7]	QC07
+MTD	sample[7]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[7]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[70]	menLCCstage3_1042
+MTD	sample[70]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[70]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[71]	menLCCstage3_1638
+MTD	sample[71]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[71]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[72]	menLCCstage3_1709
+MTD	sample[72]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[72]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[73]	menLCCstage3_2124
+MTD	sample[73]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[73]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[74]	menLCCstage3_229
+MTD	sample[74]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[74]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[75]	menLCCstage3_2297
+MTD	sample[75]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[75]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[76]	menLCCstage3_2559
+MTD	sample[76]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[76]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[77]	menLCCstage3_258
+MTD	sample[77]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[77]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[78]	menLCCstage3_537
+MTD	sample[78]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[78]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[79]	menLCCstage3_67
+MTD	sample[79]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[79]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[8]	QC08
+MTD	sample[8]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[8]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[80]	menLCCstage3_664
+MTD	sample[80]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[80]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[81]	menLCCstage3_717
+MTD	sample[81]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[81]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[82]	menLCCstage3_988
+MTD	sample[82]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[82]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[83]	mennormal_6
+MTD	sample[83]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[83]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[84]	mennormal_166
+MTD	sample[84]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[84]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[85]	mennormal_2518
+MTD	sample[85]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[85]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[86]	mennormal_2332
+MTD	sample[86]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[86]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[87]	mennormal_2357
+MTD	sample[87]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[87]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[88]	mennormal_2371
+MTD	sample[88]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[88]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[89]	mennormal_2407
+MTD	sample[89]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[89]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[9]	QC09
+MTD	sample[9]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[9]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[90]	mennormal_2409
+MTD	sample[90]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[90]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[91]	mennormal_2422
+MTD	sample[91]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[91]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[92]	mennormal_2424
+MTD	sample[92]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[92]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[93]	mennormal_2480
+MTD	sample[93]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[93]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[94]	mennormal_2521
+MTD	sample[94]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[94]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[95]	mennormal_2560
+MTD	sample[95]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[95]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[96]	mennormal_2569
+MTD	sample[96]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[96]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[97]	mennormal_2612
+MTD	sample[97]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[97]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[98]	mennormal_2627
+MTD	sample[98]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[98]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	sample[99]	mennormal_2632
+MTD	sample[99]-species[1]	[NCBITaxon, NCBITaxon:9606, Homo sapiens, ]
+MTD	sample[99]-tissue[1]	[BTO, BTO:0000269, Colon, ]
+MTD	ms_run[1]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/QC01.mzML
+MTD	ms_run[1]-instrument_ref	instrument[1]
+MTD	ms_run[1]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[2]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/QC02.mzML
+MTD	ms_run[2]-instrument_ref	instrument[1]
+MTD	ms_run[2]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[3]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/QC03.mzML
+MTD	ms_run[3]-instrument_ref	instrument[1]
+MTD	ms_run[3]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[4]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/QC04.mzML
+MTD	ms_run[4]-instrument_ref	instrument[1]
+MTD	ms_run[4]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[5]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/QC05.mzML
+MTD	ms_run[5]-instrument_ref	instrument[1]
+MTD	ms_run[5]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[6]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/QC06.mzML
+MTD	ms_run[6]-instrument_ref	instrument[1]
+MTD	ms_run[6]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[7]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/QC07.mzML
+MTD	ms_run[7]-instrument_ref	instrument[1]
+MTD	ms_run[7]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[8]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/QC08.mzML
+MTD	ms_run[8]-instrument_ref	instrument[1]
+MTD	ms_run[8]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[9]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/QC09.mzML
+MTD	ms_run[9]-instrument_ref	instrument[1]
+MTD	ms_run[9]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[10]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/QC10.mzML
+MTD	ms_run[10]-instrument_ref	instrument[1]
+MTD	ms_run[10]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[11]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/QC11.mzML
+MTD	ms_run[11]-instrument_ref	instrument[1]
+MTD	ms_run[11]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[12]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/QC12.mzML
+MTD	ms_run[12]-instrument_ref	instrument[1]
+MTD	ms_run[12]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[13]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/QC13.mzML
+MTD	ms_run[13]-instrument_ref	instrument[1]
+MTD	ms_run[13]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[14]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/QC14.mzML
+MTD	ms_run[14]-instrument_ref	instrument[1]
+MTD	ms_run[14]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[15]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/QC15.mzML
+MTD	ms_run[15]-instrument_ref	instrument[1]
+MTD	ms_run[15]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[16]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/QC16.mzML
+MTD	ms_run[16]-instrument_ref	instrument[1]
+MTD	ms_run[16]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[17]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/QC17.mzML
+MTD	ms_run[17]-instrument_ref	instrument[1]
+MTD	ms_run[17]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[18]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/QC18.mzML
+MTD	ms_run[18]-instrument_ref	instrument[1]
+MTD	ms_run[18]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[19]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/QC19.mzML
+MTD	ms_run[19]-instrument_ref	instrument[1]
+MTD	ms_run[19]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[20]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/QC20.mzML
+MTD	ms_run[20]-instrument_ref	instrument[1]
+MTD	ms_run[20]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[21]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/QC21.mzML
+MTD	ms_run[21]-instrument_ref	instrument[1]
+MTD	ms_run[21]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[22]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/QC22.mzML
+MTD	ms_run[22]-instrument_ref	instrument[1]
+MTD	ms_run[22]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[23]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/QC23.mzML
+MTD	ms_run[23]-instrument_ref	instrument[1]
+MTD	ms_run[23]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[24]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/QC24.mzML
+MTD	ms_run[24]-instrument_ref	instrument[1]
+MTD	ms_run[24]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[25]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/QC25.mzML
+MTD	ms_run[25]-instrument_ref	instrument[1]
+MTD	ms_run[25]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[26]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/QC26.mzML
+MTD	ms_run[26]-instrument_ref	instrument[1]
+MTD	ms_run[26]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[27]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/QC27.mzML
+MTD	ms_run[27]-instrument_ref	instrument[1]
+MTD	ms_run[27]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[28]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/QC28.mzML
+MTD	ms_run[28]-instrument_ref	instrument[1]
+MTD	ms_run[28]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[29]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage1_1122.mzML
+MTD	ms_run[29]-instrument_ref	instrument[1]
+MTD	ms_run[29]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[30]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage1_1532.mzML
+MTD	ms_run[30]-instrument_ref	instrument[1]
+MTD	ms_run[30]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[31]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage1_1941.mzML
+MTD	ms_run[31]-instrument_ref	instrument[1]
+MTD	ms_run[31]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[32]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage1_1969.mzML
+MTD	ms_run[32]-instrument_ref	instrument[1]
+MTD	ms_run[32]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[33]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage1_2516.mzML
+MTD	ms_run[33]-instrument_ref	instrument[1]
+MTD	ms_run[33]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[34]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage1_26.mzML
+MTD	ms_run[34]-instrument_ref	instrument[1]
+MTD	ms_run[34]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[35]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage1_2634.mzML
+MTD	ms_run[35]-instrument_ref	instrument[1]
+MTD	ms_run[35]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[36]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage1_270.mzML
+MTD	ms_run[36]-instrument_ref	instrument[1]
+MTD	ms_run[36]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[37]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage1_507.mzML
+MTD	ms_run[37]-instrument_ref	instrument[1]
+MTD	ms_run[37]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[38]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage1_543.mzML
+MTD	ms_run[38]-instrument_ref	instrument[1]
+MTD	ms_run[38]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[39]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage1_614.mzML
+MTD	ms_run[39]-instrument_ref	instrument[1]
+MTD	ms_run[39]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[40]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage1_679.mzML
+MTD	ms_run[40]-instrument_ref	instrument[1]
+MTD	ms_run[40]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[41]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage1_688.mzML
+MTD	ms_run[41]-instrument_ref	instrument[1]
+MTD	ms_run[41]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[42]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage1_699.mzML
+MTD	ms_run[42]-instrument_ref	instrument[1]
+MTD	ms_run[42]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[43]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage1_755.mzML
+MTD	ms_run[43]-instrument_ref	instrument[1]
+MTD	ms_run[43]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[44]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage2_1011.mzML
+MTD	ms_run[44]-instrument_ref	instrument[1]
+MTD	ms_run[44]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[45]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage2_1063.mzML
+MTD	ms_run[45]-instrument_ref	instrument[1]
+MTD	ms_run[45]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[46]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage2_1333.mzML
+MTD	ms_run[46]-instrument_ref	instrument[1]
+MTD	ms_run[46]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[47]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage2_134.mzML
+MTD	ms_run[47]-instrument_ref	instrument[1]
+MTD	ms_run[47]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[48]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage2_1374.mzML
+MTD	ms_run[48]-instrument_ref	instrument[1]
+MTD	ms_run[48]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[49]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage2_1402.mzML
+MTD	ms_run[49]-instrument_ref	instrument[1]
+MTD	ms_run[49]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[50]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage2_1415.mzML
+MTD	ms_run[50]-instrument_ref	instrument[1]
+MTD	ms_run[50]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[51]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage2_1723.mzML
+MTD	ms_run[51]-instrument_ref	instrument[1]
+MTD	ms_run[51]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[52]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage2_1788.mzML
+MTD	ms_run[52]-instrument_ref	instrument[1]
+MTD	ms_run[52]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[53]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage2_181.mzML
+MTD	ms_run[53]-instrument_ref	instrument[1]
+MTD	ms_run[53]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[54]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage2_1894.mzML
+MTD	ms_run[54]-instrument_ref	instrument[1]
+MTD	ms_run[54]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[55]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage2_203.mzML
+MTD	ms_run[55]-instrument_ref	instrument[1]
+MTD	ms_run[55]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[56]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage2_2070.mzML
+MTD	ms_run[56]-instrument_ref	instrument[1]
+MTD	ms_run[56]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[57]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage2_2247.mzML
+MTD	ms_run[57]-instrument_ref	instrument[1]
+MTD	ms_run[57]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[58]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage2_240.mzML
+MTD	ms_run[58]-instrument_ref	instrument[1]
+MTD	ms_run[58]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[59]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage2_2421.mzML
+MTD	ms_run[59]-instrument_ref	instrument[1]
+MTD	ms_run[59]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[60]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage2_295.mzML
+MTD	ms_run[60]-instrument_ref	instrument[1]
+MTD	ms_run[60]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[61]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage2_373.mzML
+MTD	ms_run[61]-instrument_ref	instrument[1]
+MTD	ms_run[61]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[62]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage2_525.mzML
+MTD	ms_run[62]-instrument_ref	instrument[1]
+MTD	ms_run[62]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[63]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage2_531.mzML
+MTD	ms_run[63]-instrument_ref	instrument[1]
+MTD	ms_run[63]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[64]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage2_625.mzML
+MTD	ms_run[64]-instrument_ref	instrument[1]
+MTD	ms_run[64]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[65]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage2_714.mzML
+MTD	ms_run[65]-instrument_ref	instrument[1]
+MTD	ms_run[65]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[66]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage2_868.mzML
+MTD	ms_run[66]-instrument_ref	instrument[1]
+MTD	ms_run[66]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[67]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage2_893.mzML
+MTD	ms_run[67]-instrument_ref	instrument[1]
+MTD	ms_run[67]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[68]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage2_971.mzML
+MTD	ms_run[68]-instrument_ref	instrument[1]
+MTD	ms_run[68]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[69]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage3_1030.mzML
+MTD	ms_run[69]-instrument_ref	instrument[1]
+MTD	ms_run[69]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[70]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage3_1042.mzML
+MTD	ms_run[70]-instrument_ref	instrument[1]
+MTD	ms_run[70]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[71]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage3_1638.mzML
+MTD	ms_run[71]-instrument_ref	instrument[1]
+MTD	ms_run[71]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[72]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage3_1709.mzML
+MTD	ms_run[72]-instrument_ref	instrument[1]
+MTD	ms_run[72]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[73]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage3_2124.mzML
+MTD	ms_run[73]-instrument_ref	instrument[1]
+MTD	ms_run[73]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[74]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage3_229.mzML
+MTD	ms_run[74]-instrument_ref	instrument[1]
+MTD	ms_run[74]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[75]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage3_2297.mzML
+MTD	ms_run[75]-instrument_ref	instrument[1]
+MTD	ms_run[75]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[76]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage3_2559.mzML
+MTD	ms_run[76]-instrument_ref	instrument[1]
+MTD	ms_run[76]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[77]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage3_258.mzML
+MTD	ms_run[77]-instrument_ref	instrument[1]
+MTD	ms_run[77]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[78]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage3_537.mzML
+MTD	ms_run[78]-instrument_ref	instrument[1]
+MTD	ms_run[78]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[79]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage3_67.mzML
+MTD	ms_run[79]-instrument_ref	instrument[1]
+MTD	ms_run[79]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[80]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage3_664.mzML
+MTD	ms_run[80]-instrument_ref	instrument[1]
+MTD	ms_run[80]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[81]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage3_717.mzML
+MTD	ms_run[81]-instrument_ref	instrument[1]
+MTD	ms_run[81]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[82]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menLCCstage3_988.mzML
+MTD	ms_run[82]-instrument_ref	instrument[1]
+MTD	ms_run[82]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[83]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/men_normal_6.mzML
+MTD	ms_run[83]-instrument_ref	instrument[1]
+MTD	ms_run[83]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[84]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/men_normal_166.mzML
+MTD	ms_run[84]-instrument_ref	instrument[1]
+MTD	ms_run[84]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[85]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/men_normal_2518.mzML
+MTD	ms_run[85]-instrument_ref	instrument[1]
+MTD	ms_run[85]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[86]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/men_normal_2332.mzML
+MTD	ms_run[86]-instrument_ref	instrument[1]
+MTD	ms_run[86]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[87]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/men_normal_2357.mzML
+MTD	ms_run[87]-instrument_ref	instrument[1]
+MTD	ms_run[87]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[88]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/men_normal_2371.mzML
+MTD	ms_run[88]-instrument_ref	instrument[1]
+MTD	ms_run[88]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[89]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/men_normal_2407.mzML
+MTD	ms_run[89]-instrument_ref	instrument[1]
+MTD	ms_run[89]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[90]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/men_normal_2409.mzML
+MTD	ms_run[90]-instrument_ref	instrument[1]
+MTD	ms_run[90]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[91]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/men_normal_2422.mzML
+MTD	ms_run[91]-instrument_ref	instrument[1]
+MTD	ms_run[91]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[92]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/men_normal_2424.mzML
+MTD	ms_run[92]-instrument_ref	instrument[1]
+MTD	ms_run[92]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[93]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/men_normal_2480.mzML
+MTD	ms_run[93]-instrument_ref	instrument[1]
+MTD	ms_run[93]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[94]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/men_normal_2521.mzML
+MTD	ms_run[94]-instrument_ref	instrument[1]
+MTD	ms_run[94]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[95]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/men_normal_2560.mzML
+MTD	ms_run[95]-instrument_ref	instrument[1]
+MTD	ms_run[95]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[96]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/men_normal_2569.mzML
+MTD	ms_run[96]-instrument_ref	instrument[1]
+MTD	ms_run[96]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[97]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/men_normal_2612.mzML
+MTD	ms_run[97]-instrument_ref	instrument[1]
+MTD	ms_run[97]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[98]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/men_normal_2627.mzML
+MTD	ms_run[98]-instrument_ref	instrument[1]
+MTD	ms_run[98]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[99]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/men_normal_2632.mzML
+MTD	ms_run[99]-instrument_ref	instrument[1]
+MTD	ms_run[99]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[100]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/men_normal_2659.mzML
+MTD	ms_run[100]-instrument_ref	instrument[1]
+MTD	ms_run[100]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[101]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/men_normal_2663.mzML
+MTD	ms_run[101]-instrument_ref	instrument[1]
+MTD	ms_run[101]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[102]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/men_normal_2665.mzML
+MTD	ms_run[102]-instrument_ref	instrument[1]
+MTD	ms_run[102]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[103]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/men_normal_2673.mzML
+MTD	ms_run[103]-instrument_ref	instrument[1]
+MTD	ms_run[103]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[104]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/men_normal_2676.mzML
+MTD	ms_run[104]-instrument_ref	instrument[1]
+MTD	ms_run[104]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[105]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/men_normal_2691.mzML
+MTD	ms_run[105]-instrument_ref	instrument[1]
+MTD	ms_run[105]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[106]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/men_normal_2700.mzML
+MTD	ms_run[106]-instrument_ref	instrument[1]
+MTD	ms_run[106]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[107]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/men_normal_363.mzML
+MTD	ms_run[107]-instrument_ref	instrument[1]
+MTD	ms_run[107]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[108]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/men_normal_374.mzML
+MTD	ms_run[108]-instrument_ref	instrument[1]
+MTD	ms_run[108]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[109]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/men_normal_50.mzML
+MTD	ms_run[109]-instrument_ref	instrument[1]
+MTD	ms_run[109]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[110]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage1_1266.mzML
+MTD	ms_run[110]-instrument_ref	instrument[1]
+MTD	ms_run[110]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[111]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage1_1475.mzML
+MTD	ms_run[111]-instrument_ref	instrument[1]
+MTD	ms_run[111]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[112]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage1_1528.mzML
+MTD	ms_run[112]-instrument_ref	instrument[1]
+MTD	ms_run[112]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[113]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage1_1543.mzML
+MTD	ms_run[113]-instrument_ref	instrument[1]
+MTD	ms_run[113]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[114]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage1_1902.mzML
+MTD	ms_run[114]-instrument_ref	instrument[1]
+MTD	ms_run[114]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[115]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage1_2034.mzML
+MTD	ms_run[115]-instrument_ref	instrument[1]
+MTD	ms_run[115]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[116]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage1_2163.mzML
+MTD	ms_run[116]-instrument_ref	instrument[1]
+MTD	ms_run[116]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[117]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage1_2554.mzML
+MTD	ms_run[117]-instrument_ref	instrument[1]
+MTD	ms_run[117]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[118]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage1_2622.mzML
+MTD	ms_run[118]-instrument_ref	instrument[1]
+MTD	ms_run[118]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[119]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage1_47.mzML
+MTD	ms_run[119]-instrument_ref	instrument[1]
+MTD	ms_run[119]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[120]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage2_113.mzML
+MTD	ms_run[120]-instrument_ref	instrument[1]
+MTD	ms_run[120]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[121]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage2_1193.mzML
+MTD	ms_run[121]-instrument_ref	instrument[1]
+MTD	ms_run[121]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[122]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage2_1278.mzML
+MTD	ms_run[122]-instrument_ref	instrument[1]
+MTD	ms_run[122]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[123]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage2_130.mzML
+MTD	ms_run[123]-instrument_ref	instrument[1]
+MTD	ms_run[123]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[124]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage2_1331.mzML
+MTD	ms_run[124]-instrument_ref	instrument[1]
+MTD	ms_run[124]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[125]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage2_1379.mzML
+MTD	ms_run[125]-instrument_ref	instrument[1]
+MTD	ms_run[125]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[126]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage2_1452.mzML
+MTD	ms_run[126]-instrument_ref	instrument[1]
+MTD	ms_run[126]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[127]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage2_1501.mzML
+MTD	ms_run[127]-instrument_ref	instrument[1]
+MTD	ms_run[127]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[128]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage2_2041.mzML
+MTD	ms_run[128]-instrument_ref	instrument[1]
+MTD	ms_run[128]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[129]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage2_2054.mzML
+MTD	ms_run[129]-instrument_ref	instrument[1]
+MTD	ms_run[129]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[130]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage2_2408.mzML
+MTD	ms_run[130]-instrument_ref	instrument[1]
+MTD	ms_run[130]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[131]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage2_2498.mzML
+MTD	ms_run[131]-instrument_ref	instrument[1]
+MTD	ms_run[131]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[132]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage2_2520.mzML
+MTD	ms_run[132]-instrument_ref	instrument[1]
+MTD	ms_run[132]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[133]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage2_2551.mzML
+MTD	ms_run[133]-instrument_ref	instrument[1]
+MTD	ms_run[133]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[134]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage2_2662.mzML
+MTD	ms_run[134]-instrument_ref	instrument[1]
+MTD	ms_run[134]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[135]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage2_2683.mzML
+MTD	ms_run[135]-instrument_ref	instrument[1]
+MTD	ms_run[135]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[136]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage2_329.mzML
+MTD	ms_run[136]-instrument_ref	instrument[1]
+MTD	ms_run[136]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[137]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage2_534.mzML
+MTD	ms_run[137]-instrument_ref	instrument[1]
+MTD	ms_run[137]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[138]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage2_797.mzML
+MTD	ms_run[138]-instrument_ref	instrument[1]
+MTD	ms_run[138]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[139]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage2_810.mzML
+MTD	ms_run[139]-instrument_ref	instrument[1]
+MTD	ms_run[139]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[140]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage2_885.mzML
+MTD	ms_run[140]-instrument_ref	instrument[1]
+MTD	ms_run[140]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[141]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage2_981.mzML
+MTD	ms_run[141]-instrument_ref	instrument[1]
+MTD	ms_run[141]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[142]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage2_991.mzML
+MTD	ms_run[142]-instrument_ref	instrument[1]
+MTD	ms_run[142]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[143]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage3_102.mzML
+MTD	ms_run[143]-instrument_ref	instrument[1]
+MTD	ms_run[143]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[144]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage3_1369.mzML
+MTD	ms_run[144]-instrument_ref	instrument[1]
+MTD	ms_run[144]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[145]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage3_1737.mzML
+MTD	ms_run[145]-instrument_ref	instrument[1]
+MTD	ms_run[145]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[146]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage3_1749.mzML
+MTD	ms_run[146]-instrument_ref	instrument[1]
+MTD	ms_run[146]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[147]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage3_1831.mzML
+MTD	ms_run[147]-instrument_ref	instrument[1]
+MTD	ms_run[147]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[148]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage3_1877.mzML
+MTD	ms_run[148]-instrument_ref	instrument[1]
+MTD	ms_run[148]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[149]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage3_1960.mzML
+MTD	ms_run[149]-instrument_ref	instrument[1]
+MTD	ms_run[149]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[150]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage3_1997.mzML
+MTD	ms_run[150]-instrument_ref	instrument[1]
+MTD	ms_run[150]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[151]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage3_2113.mzML
+MTD	ms_run[151]-instrument_ref	instrument[1]
+MTD	ms_run[151]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[152]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage3_2223.mzML
+MTD	ms_run[152]-instrument_ref	instrument[1]
+MTD	ms_run[152]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[153]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage3_2270.mzML
+MTD	ms_run[153]-instrument_ref	instrument[1]
+MTD	ms_run[153]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[154]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage3_326.mzML
+MTD	ms_run[154]-instrument_ref	instrument[1]
+MTD	ms_run[154]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[155]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage3_546.mzML
+MTD	ms_run[155]-instrument_ref	instrument[1]
+MTD	ms_run[155]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[156]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage3_605.mzML
+MTD	ms_run[156]-instrument_ref	instrument[1]
+MTD	ms_run[156]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[157]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/menRCCstage3_667.mzML
+MTD	ms_run[157]-instrument_ref	instrument[1]
+MTD	ms_run[157]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[158]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage1_1037.mzML
+MTD	ms_run[158]-instrument_ref	instrument[1]
+MTD	ms_run[158]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[159]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage1_110.mzML
+MTD	ms_run[159]-instrument_ref	instrument[1]
+MTD	ms_run[159]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[160]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage1_1221.mzML
+MTD	ms_run[160]-instrument_ref	instrument[1]
+MTD	ms_run[160]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[161]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage1_1313.mzML
+MTD	ms_run[161]-instrument_ref	instrument[1]
+MTD	ms_run[161]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[162]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage1_1591.mzML
+MTD	ms_run[162]-instrument_ref	instrument[1]
+MTD	ms_run[162]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[163]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage1_1858.mzML
+MTD	ms_run[163]-instrument_ref	instrument[1]
+MTD	ms_run[163]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[164]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage1_2261.mzML
+MTD	ms_run[164]-instrument_ref	instrument[1]
+MTD	ms_run[164]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[165]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage1_488.mzML
+MTD	ms_run[165]-instrument_ref	instrument[1]
+MTD	ms_run[165]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[166]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage1_577.mzML
+MTD	ms_run[166]-instrument_ref	instrument[1]
+MTD	ms_run[166]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[167]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage1_743.mzML
+MTD	ms_run[167]-instrument_ref	instrument[1]
+MTD	ms_run[167]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[168]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage2_1026.mzML
+MTD	ms_run[168]-instrument_ref	instrument[1]
+MTD	ms_run[168]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[169]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage2_1029.mzML
+MTD	ms_run[169]-instrument_ref	instrument[1]
+MTD	ms_run[169]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[170]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage2_1310.mzML
+MTD	ms_run[170]-instrument_ref	instrument[1]
+MTD	ms_run[170]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[171]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage2_1407.mzML
+MTD	ms_run[171]-instrument_ref	instrument[1]
+MTD	ms_run[171]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[172]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage2_1427.mzML
+MTD	ms_run[172]-instrument_ref	instrument[1]
+MTD	ms_run[172]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[173]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage2_146.mzML
+MTD	ms_run[173]-instrument_ref	instrument[1]
+MTD	ms_run[173]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[174]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage2_1601.mzML
+MTD	ms_run[174]-instrument_ref	instrument[1]
+MTD	ms_run[174]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[175]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage2_20.mzML
+MTD	ms_run[175]-instrument_ref	instrument[1]
+MTD	ms_run[175]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[176]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage2_2151.mzML
+MTD	ms_run[176]-instrument_ref	instrument[1]
+MTD	ms_run[176]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[177]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage2_276.mzML
+MTD	ms_run[177]-instrument_ref	instrument[1]
+MTD	ms_run[177]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[178]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage2_434.mzML
+MTD	ms_run[178]-instrument_ref	instrument[1]
+MTD	ms_run[178]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[179]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage2_468.mzML
+MTD	ms_run[179]-instrument_ref	instrument[1]
+MTD	ms_run[179]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[180]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage2_504.mzML
+MTD	ms_run[180]-instrument_ref	instrument[1]
+MTD	ms_run[180]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[181]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage2_574.mzML
+MTD	ms_run[181]-instrument_ref	instrument[1]
+MTD	ms_run[181]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[182]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage2_581.mzML
+MTD	ms_run[182]-instrument_ref	instrument[1]
+MTD	ms_run[182]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[183]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage2_618.mzML
+MTD	ms_run[183]-instrument_ref	instrument[1]
+MTD	ms_run[183]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[184]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage2_95.mzML
+MTD	ms_run[184]-instrument_ref	instrument[1]
+MTD	ms_run[184]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[185]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage3_1097.mzML
+MTD	ms_run[185]-instrument_ref	instrument[1]
+MTD	ms_run[185]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[186]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage3_1404.mzML
+MTD	ms_run[186]-instrument_ref	instrument[1]
+MTD	ms_run[186]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[187]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage3_1440.mzML
+MTD	ms_run[187]-instrument_ref	instrument[1]
+MTD	ms_run[187]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[188]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage3_1631.mzML
+MTD	ms_run[188]-instrument_ref	instrument[1]
+MTD	ms_run[188]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[189]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage3_1783.mzML
+MTD	ms_run[189]-instrument_ref	instrument[1]
+MTD	ms_run[189]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[190]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage3_189.mzML
+MTD	ms_run[190]-instrument_ref	instrument[1]
+MTD	ms_run[190]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[191]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage3_1890.mzML
+MTD	ms_run[191]-instrument_ref	instrument[1]
+MTD	ms_run[191]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[192]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage3_2105.mzML
+MTD	ms_run[192]-instrument_ref	instrument[1]
+MTD	ms_run[192]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[193]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage3_2291.mzML
+MTD	ms_run[193]-instrument_ref	instrument[1]
+MTD	ms_run[193]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[194]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage3_23.mzML
+MTD	ms_run[194]-instrument_ref	instrument[1]
+MTD	ms_run[194]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[195]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage3_2594.mzML
+MTD	ms_run[195]-instrument_ref	instrument[1]
+MTD	ms_run[195]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[196]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage3_439.mzML
+MTD	ms_run[196]-instrument_ref	instrument[1]
+MTD	ms_run[196]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[197]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage3_515.mzML
+MTD	ms_run[197]-instrument_ref	instrument[1]
+MTD	ms_run[197]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[198]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage3_522.mzML
+MTD	ms_run[198]-instrument_ref	instrument[1]
+MTD	ms_run[198]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[199]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage3_734.mzML
+MTD	ms_run[199]-instrument_ref	instrument[1]
+MTD	ms_run[199]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[200]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage3_888.mzML
+MTD	ms_run[200]-instrument_ref	instrument[1]
+MTD	ms_run[200]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[201]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage3_903.mzML
+MTD	ms_run[201]-instrument_ref	instrument[1]
+MTD	ms_run[201]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[202]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenLCCstage3_938.mzML
+MTD	ms_run[202]-instrument_ref	instrument[1]
+MTD	ms_run[202]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[203]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/women_normal_11.mzML
+MTD	ms_run[203]-instrument_ref	instrument[1]
+MTD	ms_run[203]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[204]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/women_normal_4.mzML
+MTD	ms_run[204]-instrument_ref	instrument[1]
+MTD	ms_run[204]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[205]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/women_normal_9.mzML
+MTD	ms_run[205]-instrument_ref	instrument[1]
+MTD	ms_run[205]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[206]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/women_normal_2316.mzML
+MTD	ms_run[206]-instrument_ref	instrument[1]
+MTD	ms_run[206]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[207]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/women_normal_2478.mzML
+MTD	ms_run[207]-instrument_ref	instrument[1]
+MTD	ms_run[207]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[208]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/women_normal_2495.mzML
+MTD	ms_run[208]-instrument_ref	instrument[1]
+MTD	ms_run[208]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[209]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/women_normal_2550.mzML
+MTD	ms_run[209]-instrument_ref	instrument[1]
+MTD	ms_run[209]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[210]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/women_normal_264.mzML
+MTD	ms_run[210]-instrument_ref	instrument[1]
+MTD	ms_run[210]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[211]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/women_normal_2655.mzML
+MTD	ms_run[211]-instrument_ref	instrument[1]
+MTD	ms_run[211]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[212]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/women_normal_2670.mzML
+MTD	ms_run[212]-instrument_ref	instrument[1]
+MTD	ms_run[212]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[213]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/women_normal_2705.mzML
+MTD	ms_run[213]-instrument_ref	instrument[1]
+MTD	ms_run[213]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[214]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/women_normal_834.mzML
+MTD	ms_run[214]-instrument_ref	instrument[1]
+MTD	ms_run[214]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[215]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage1_1617.mzML
+MTD	ms_run[215]-instrument_ref	instrument[1]
+MTD	ms_run[215]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[216]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage1_1963.mzML
+MTD	ms_run[216]-instrument_ref	instrument[1]
+MTD	ms_run[216]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[217]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage1_2038.mzML
+MTD	ms_run[217]-instrument_ref	instrument[1]
+MTD	ms_run[217]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[218]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage_1216.mzML
+MTD	ms_run[218]-instrument_ref	instrument[1]
+MTD	ms_run[218]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[219]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage1_2202.mzML
+MTD	ms_run[219]-instrument_ref	instrument[1]
+MTD	ms_run[219]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[220]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage1_2235.mzML
+MTD	ms_run[220]-instrument_ref	instrument[1]
+MTD	ms_run[220]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[221]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage1_2258.mzML
+MTD	ms_run[221]-instrument_ref	instrument[1]
+MTD	ms_run[221]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[222]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage1_2600.mzML
+MTD	ms_run[222]-instrument_ref	instrument[1]
+MTD	ms_run[222]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[223]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage1_2668.mzML
+MTD	ms_run[223]-instrument_ref	instrument[1]
+MTD	ms_run[223]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[224]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage1_491.mzML
+MTD	ms_run[224]-instrument_ref	instrument[1]
+MTD	ms_run[224]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[225]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage1_910.mzML
+MTD	ms_run[225]-instrument_ref	instrument[1]
+MTD	ms_run[225]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[226]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage1_941.mzML
+MTD	ms_run[226]-instrument_ref	instrument[1]
+MTD	ms_run[226]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[227]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage2_1014.mzML
+MTD	ms_run[227]-instrument_ref	instrument[1]
+MTD	ms_run[227]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[228]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage2_1190.mzML
+MTD	ms_run[228]-instrument_ref	instrument[1]
+MTD	ms_run[228]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[229]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage2_1196.mzML
+MTD	ms_run[229]-instrument_ref	instrument[1]
+MTD	ms_run[229]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[230]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage2_1304.mzML
+MTD	ms_run[230]-instrument_ref	instrument[1]
+MTD	ms_run[230]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[231]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage2_1514.mzML
+MTD	ms_run[231]-instrument_ref	instrument[1]
+MTD	ms_run[231]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[232]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage2_1665.mzML
+MTD	ms_run[232]-instrument_ref	instrument[1]
+MTD	ms_run[232]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[233]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage2_1683.mzML
+MTD	ms_run[233]-instrument_ref	instrument[1]
+MTD	ms_run[233]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[234]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage2_1728.mzML
+MTD	ms_run[234]-instrument_ref	instrument[1]
+MTD	ms_run[234]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[235]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage2_1733.mzML
+MTD	ms_run[235]-instrument_ref	instrument[1]
+MTD	ms_run[235]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[236]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage2_1846.mzML
+MTD	ms_run[236]-instrument_ref	instrument[1]
+MTD	ms_run[236]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[237]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage2_1937.mzML
+MTD	ms_run[237]-instrument_ref	instrument[1]
+MTD	ms_run[237]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[238]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage2_1987.mzML
+MTD	ms_run[238]-instrument_ref	instrument[1]
+MTD	ms_run[238]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[239]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage2_2066.mzML
+MTD	ms_run[239]-instrument_ref	instrument[1]
+MTD	ms_run[239]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[240]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage2_2479.mzML
+MTD	ms_run[240]-instrument_ref	instrument[1]
+MTD	ms_run[240]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[241]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage2_261.mzML
+MTD	ms_run[241]-instrument_ref	instrument[1]
+MTD	ms_run[241]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[242]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage2_2654.mzML
+MTD	ms_run[242]-instrument_ref	instrument[1]
+MTD	ms_run[242]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[243]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage2_315.mzML
+MTD	ms_run[243]-instrument_ref	instrument[1]
+MTD	ms_run[243]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[244]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage2_419.mzML
+MTD	ms_run[244]-instrument_ref	instrument[1]
+MTD	ms_run[244]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[245]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage2_64.mzML
+MTD	ms_run[245]-instrument_ref	instrument[1]
+MTD	ms_run[245]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[246]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage2_830.mzML
+MTD	ms_run[246]-instrument_ref	instrument[1]
+MTD	ms_run[246]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[247]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage2_896.mzML
+MTD	ms_run[247]-instrument_ref	instrument[1]
+MTD	ms_run[247]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[248]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage3_1224.mzML
+MTD	ms_run[248]-instrument_ref	instrument[1]
+MTD	ms_run[248]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[249]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage3_1237.mzML
+MTD	ms_run[249]-instrument_ref	instrument[1]
+MTD	ms_run[249]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[250]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage3_1316.mzML
+MTD	ms_run[250]-instrument_ref	instrument[1]
+MTD	ms_run[250]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[251]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage3_1327.mzML
+MTD	ms_run[251]-instrument_ref	instrument[1]
+MTD	ms_run[251]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[252]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage3_1363.mzML
+MTD	ms_run[252]-instrument_ref	instrument[1]
+MTD	ms_run[252]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[253]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage3_1455.mzML
+MTD	ms_run[253]-instrument_ref	instrument[1]
+MTD	ms_run[253]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[254]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage3_149.mzML
+MTD	ms_run[254]-instrument_ref	instrument[1]
+MTD	ms_run[254]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[255]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage3_1855.mzML
+MTD	ms_run[255]-instrument_ref	instrument[1]
+MTD	ms_run[255]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[256]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage3_1924.mzML
+MTD	ms_run[256]-instrument_ref	instrument[1]
+MTD	ms_run[256]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[257]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage3_2208.mzML
+MTD	ms_run[257]-instrument_ref	instrument[1]
+MTD	ms_run[257]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[258]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage3_2244.mzML
+MTD	ms_run[258]-instrument_ref	instrument[1]
+MTD	ms_run[258]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[259]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage3_2303.mzML
+MTD	ms_run[259]-instrument_ref	instrument[1]
+MTD	ms_run[259]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[260]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage3_2494.mzML
+MTD	ms_run[260]-instrument_ref	instrument[1]
+MTD	ms_run[260]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[261]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage3_289.mzML
+MTD	ms_run[261]-instrument_ref	instrument[1]
+MTD	ms_run[261]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[262]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage3_721.mzML
+MTD	ms_run[262]-instrument_ref	instrument[1]
+MTD	ms_run[262]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[263]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage3_955.mzML
+MTD	ms_run[263]-instrument_ref	instrument[1]
+MTD	ms_run[263]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[264]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1122/FILES/womenRCCstage3_958.mzML
+MTD	ms_run[264]-instrument_ref	instrument[1]
+MTD	ms_run[264]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	assay[1]	FILES/QC01.mzML
+MTD	assay[1]-sample_ref	sample[1]
+MTD	assay[1]-ms_run_ref	ms_run[1]
+MTD	assay[10]	FILES/QC10.mzML
+MTD	assay[10]-sample_ref	sample[10]
+MTD	assay[10]-ms_run_ref	ms_run[10]
+MTD	assay[100]	FILES/men_normal_2659.mzML
+MTD	assay[100]-sample_ref	sample[100]
+MTD	assay[100]-ms_run_ref	ms_run[100]
+MTD	assay[101]	FILES/men_normal_2663.mzML
+MTD	assay[101]-sample_ref	sample[101]
+MTD	assay[101]-ms_run_ref	ms_run[101]
+MTD	assay[102]	FILES/men_normal_2665.mzML
+MTD	assay[102]-sample_ref	sample[102]
+MTD	assay[102]-ms_run_ref	ms_run[102]
+MTD	assay[103]	FILES/men_normal_2673.mzML
+MTD	assay[103]-sample_ref	sample[103]
+MTD	assay[103]-ms_run_ref	ms_run[103]
+MTD	assay[104]	FILES/men_normal_2676.mzML
+MTD	assay[104]-sample_ref	sample[104]
+MTD	assay[104]-ms_run_ref	ms_run[104]
+MTD	assay[105]	FILES/men_normal_2691.mzML
+MTD	assay[105]-sample_ref	sample[105]
+MTD	assay[105]-ms_run_ref	ms_run[105]
+MTD	assay[106]	FILES/men_normal_2700.mzML
+MTD	assay[106]-sample_ref	sample[106]
+MTD	assay[106]-ms_run_ref	ms_run[106]
+MTD	assay[107]	FILES/men_normal_363.mzML
+MTD	assay[107]-sample_ref	sample[107]
+MTD	assay[107]-ms_run_ref	ms_run[107]
+MTD	assay[108]	FILES/men_normal_374.mzML
+MTD	assay[108]-sample_ref	sample[108]
+MTD	assay[108]-ms_run_ref	ms_run[108]
+MTD	assay[109]	FILES/men_normal_50.mzML
+MTD	assay[109]-sample_ref	sample[109]
+MTD	assay[109]-ms_run_ref	ms_run[109]
+MTD	assay[11]	FILES/QC11.mzML
+MTD	assay[11]-sample_ref	sample[11]
+MTD	assay[11]-ms_run_ref	ms_run[11]
+MTD	assay[110]	FILES/menRCCstage1_1266.mzML
+MTD	assay[110]-sample_ref	sample[110]
+MTD	assay[110]-ms_run_ref	ms_run[110]
+MTD	assay[111]	FILES/menRCCstage1_1475.mzML
+MTD	assay[111]-sample_ref	sample[111]
+MTD	assay[111]-ms_run_ref	ms_run[111]
+MTD	assay[112]	FILES/menRCCstage1_1528.mzML
+MTD	assay[112]-sample_ref	sample[112]
+MTD	assay[112]-ms_run_ref	ms_run[112]
+MTD	assay[113]	FILES/menRCCstage1_1543.mzML
+MTD	assay[113]-sample_ref	sample[113]
+MTD	assay[113]-ms_run_ref	ms_run[113]
+MTD	assay[114]	FILES/menRCCstage1_1902.mzML
+MTD	assay[114]-sample_ref	sample[114]
+MTD	assay[114]-ms_run_ref	ms_run[114]
+MTD	assay[115]	FILES/menRCCstage1_2034.mzML
+MTD	assay[115]-sample_ref	sample[115]
+MTD	assay[115]-ms_run_ref	ms_run[115]
+MTD	assay[116]	FILES/menRCCstage1_2163.mzML
+MTD	assay[116]-sample_ref	sample[116]
+MTD	assay[116]-ms_run_ref	ms_run[116]
+MTD	assay[117]	FILES/menRCCstage1_2554.mzML
+MTD	assay[117]-sample_ref	sample[117]
+MTD	assay[117]-ms_run_ref	ms_run[117]
+MTD	assay[118]	FILES/menRCCstage1_2622.mzML
+MTD	assay[118]-sample_ref	sample[118]
+MTD	assay[118]-ms_run_ref	ms_run[118]
+MTD	assay[119]	FILES/menRCCstage1_47.mzML
+MTD	assay[119]-sample_ref	sample[119]
+MTD	assay[119]-ms_run_ref	ms_run[119]
+MTD	assay[12]	FILES/QC12.mzML
+MTD	assay[12]-sample_ref	sample[12]
+MTD	assay[12]-ms_run_ref	ms_run[12]
+MTD	assay[120]	FILES/menRCCstage2_113.mzML
+MTD	assay[120]-sample_ref	sample[120]
+MTD	assay[120]-ms_run_ref	ms_run[120]
+MTD	assay[121]	FILES/menRCCstage2_1193.mzML
+MTD	assay[121]-sample_ref	sample[121]
+MTD	assay[121]-ms_run_ref	ms_run[121]
+MTD	assay[122]	FILES/menRCCstage2_1278.mzML
+MTD	assay[122]-sample_ref	sample[122]
+MTD	assay[122]-ms_run_ref	ms_run[122]
+MTD	assay[123]	FILES/menRCCstage2_130.mzML
+MTD	assay[123]-sample_ref	sample[123]
+MTD	assay[123]-ms_run_ref	ms_run[123]
+MTD	assay[124]	FILES/menRCCstage2_1331.mzML
+MTD	assay[124]-sample_ref	sample[124]
+MTD	assay[124]-ms_run_ref	ms_run[124]
+MTD	assay[125]	FILES/menRCCstage2_1379.mzML
+MTD	assay[125]-sample_ref	sample[125]
+MTD	assay[125]-ms_run_ref	ms_run[125]
+MTD	assay[126]	FILES/menRCCstage2_1452.mzML
+MTD	assay[126]-sample_ref	sample[126]
+MTD	assay[126]-ms_run_ref	ms_run[126]
+MTD	assay[127]	FILES/menRCCstage2_1501.mzML
+MTD	assay[127]-sample_ref	sample[127]
+MTD	assay[127]-ms_run_ref	ms_run[127]
+MTD	assay[128]	FILES/menRCCstage2_2041.mzML
+MTD	assay[128]-sample_ref	sample[128]
+MTD	assay[128]-ms_run_ref	ms_run[128]
+MTD	assay[129]	FILES/menRCCstage2_2054.mzML
+MTD	assay[129]-sample_ref	sample[129]
+MTD	assay[129]-ms_run_ref	ms_run[129]
+MTD	assay[13]	FILES/QC13.mzML
+MTD	assay[13]-sample_ref	sample[13]
+MTD	assay[13]-ms_run_ref	ms_run[13]
+MTD	assay[130]	FILES/menRCCstage2_2408.mzML
+MTD	assay[130]-sample_ref	sample[130]
+MTD	assay[130]-ms_run_ref	ms_run[130]
+MTD	assay[131]	FILES/menRCCstage2_2498.mzML
+MTD	assay[131]-sample_ref	sample[131]
+MTD	assay[131]-ms_run_ref	ms_run[131]
+MTD	assay[132]	FILES/menRCCstage2_2520.mzML
+MTD	assay[132]-sample_ref	sample[132]
+MTD	assay[132]-ms_run_ref	ms_run[132]
+MTD	assay[133]	FILES/menRCCstage2_2551.mzML
+MTD	assay[133]-sample_ref	sample[133]
+MTD	assay[133]-ms_run_ref	ms_run[133]
+MTD	assay[134]	FILES/menRCCstage2_2662.mzML
+MTD	assay[134]-sample_ref	sample[134]
+MTD	assay[134]-ms_run_ref	ms_run[134]
+MTD	assay[135]	FILES/menRCCstage2_2683.mzML
+MTD	assay[135]-sample_ref	sample[135]
+MTD	assay[135]-ms_run_ref	ms_run[135]
+MTD	assay[136]	FILES/menRCCstage2_329.mzML
+MTD	assay[136]-sample_ref	sample[136]
+MTD	assay[136]-ms_run_ref	ms_run[136]
+MTD	assay[137]	FILES/menRCCstage2_534.mzML
+MTD	assay[137]-sample_ref	sample[137]
+MTD	assay[137]-ms_run_ref	ms_run[137]
+MTD	assay[138]	FILES/menRCCstage2_797.mzML
+MTD	assay[138]-sample_ref	sample[138]
+MTD	assay[138]-ms_run_ref	ms_run[138]
+MTD	assay[139]	FILES/menRCCstage2_810.mzML
+MTD	assay[139]-sample_ref	sample[139]
+MTD	assay[139]-ms_run_ref	ms_run[139]
+MTD	assay[14]	FILES/QC14.mzML
+MTD	assay[14]-sample_ref	sample[14]
+MTD	assay[14]-ms_run_ref	ms_run[14]
+MTD	assay[140]	FILES/menRCCstage2_885.mzML
+MTD	assay[140]-sample_ref	sample[140]
+MTD	assay[140]-ms_run_ref	ms_run[140]
+MTD	assay[141]	FILES/menRCCstage2_981.mzML
+MTD	assay[141]-sample_ref	sample[141]
+MTD	assay[141]-ms_run_ref	ms_run[141]
+MTD	assay[142]	FILES/menRCCstage2_991.mzML
+MTD	assay[142]-sample_ref	sample[142]
+MTD	assay[142]-ms_run_ref	ms_run[142]
+MTD	assay[143]	FILES/menRCCstage3_102.mzML
+MTD	assay[143]-sample_ref	sample[143]
+MTD	assay[143]-ms_run_ref	ms_run[143]
+MTD	assay[144]	FILES/menRCCstage3_1369.mzML
+MTD	assay[144]-sample_ref	sample[144]
+MTD	assay[144]-ms_run_ref	ms_run[144]
+MTD	assay[145]	FILES/menRCCstage3_1737.mzML
+MTD	assay[145]-sample_ref	sample[145]
+MTD	assay[145]-ms_run_ref	ms_run[145]
+MTD	assay[146]	FILES/menRCCstage3_1749.mzML
+MTD	assay[146]-sample_ref	sample[146]
+MTD	assay[146]-ms_run_ref	ms_run[146]
+MTD	assay[147]	FILES/menRCCstage3_1831.mzML
+MTD	assay[147]-sample_ref	sample[147]
+MTD	assay[147]-ms_run_ref	ms_run[147]
+MTD	assay[148]	FILES/menRCCstage3_1877.mzML
+MTD	assay[148]-sample_ref	sample[148]
+MTD	assay[148]-ms_run_ref	ms_run[148]
+MTD	assay[149]	FILES/menRCCstage3_1960.mzML
+MTD	assay[149]-sample_ref	sample[149]
+MTD	assay[149]-ms_run_ref	ms_run[149]
+MTD	assay[15]	FILES/QC15.mzML
+MTD	assay[15]-sample_ref	sample[15]
+MTD	assay[15]-ms_run_ref	ms_run[15]
+MTD	assay[150]	FILES/menRCCstage3_1997.mzML
+MTD	assay[150]-sample_ref	sample[150]
+MTD	assay[150]-ms_run_ref	ms_run[150]
+MTD	assay[151]	FILES/menRCCstage3_2113.mzML
+MTD	assay[151]-sample_ref	sample[151]
+MTD	assay[151]-ms_run_ref	ms_run[151]
+MTD	assay[152]	FILES/menRCCstage3_2223.mzML
+MTD	assay[152]-sample_ref	sample[152]
+MTD	assay[152]-ms_run_ref	ms_run[152]
+MTD	assay[153]	FILES/menRCCstage3_2270.mzML
+MTD	assay[153]-sample_ref	sample[153]
+MTD	assay[153]-ms_run_ref	ms_run[153]
+MTD	assay[154]	FILES/menRCCstage3_326.mzML
+MTD	assay[154]-sample_ref	sample[154]
+MTD	assay[154]-ms_run_ref	ms_run[154]
+MTD	assay[155]	FILES/menRCCstage3_546.mzML
+MTD	assay[155]-sample_ref	sample[155]
+MTD	assay[155]-ms_run_ref	ms_run[155]
+MTD	assay[156]	FILES/menRCCstage3_605.mzML
+MTD	assay[156]-sample_ref	sample[156]
+MTD	assay[156]-ms_run_ref	ms_run[156]
+MTD	assay[157]	FILES/menRCCstage3_667.mzML
+MTD	assay[157]-sample_ref	sample[157]
+MTD	assay[157]-ms_run_ref	ms_run[157]
+MTD	assay[158]	FILES/womenLCCstage1_1037.mzML
+MTD	assay[158]-sample_ref	sample[158]
+MTD	assay[158]-ms_run_ref	ms_run[158]
+MTD	assay[159]	FILES/womenLCCstage1_110.mzML
+MTD	assay[159]-sample_ref	sample[159]
+MTD	assay[159]-ms_run_ref	ms_run[159]
+MTD	assay[16]	FILES/QC16.mzML
+MTD	assay[16]-sample_ref	sample[16]
+MTD	assay[16]-ms_run_ref	ms_run[16]
+MTD	assay[160]	FILES/womenLCCstage1_1221.mzML
+MTD	assay[160]-sample_ref	sample[160]
+MTD	assay[160]-ms_run_ref	ms_run[160]
+MTD	assay[161]	FILES/womenLCCstage1_1313.mzML
+MTD	assay[161]-sample_ref	sample[161]
+MTD	assay[161]-ms_run_ref	ms_run[161]
+MTD	assay[162]	FILES/womenLCCstage1_1591.mzML
+MTD	assay[162]-sample_ref	sample[162]
+MTD	assay[162]-ms_run_ref	ms_run[162]
+MTD	assay[163]	FILES/womenLCCstage1_1858.mzML
+MTD	assay[163]-sample_ref	sample[163]
+MTD	assay[163]-ms_run_ref	ms_run[163]
+MTD	assay[164]	FILES/womenLCCstage1_2261.mzML
+MTD	assay[164]-sample_ref	sample[164]
+MTD	assay[164]-ms_run_ref	ms_run[164]
+MTD	assay[165]	FILES/womenLCCstage1_488.mzML
+MTD	assay[165]-sample_ref	sample[165]
+MTD	assay[165]-ms_run_ref	ms_run[165]
+MTD	assay[166]	FILES/womenLCCstage1_577.mzML
+MTD	assay[166]-sample_ref	sample[166]
+MTD	assay[166]-ms_run_ref	ms_run[166]
+MTD	assay[167]	FILES/womenLCCstage1_743.mzML
+MTD	assay[167]-sample_ref	sample[167]
+MTD	assay[167]-ms_run_ref	ms_run[167]
+MTD	assay[168]	FILES/womenLCCstage2_1026.mzML
+MTD	assay[168]-sample_ref	sample[168]
+MTD	assay[168]-ms_run_ref	ms_run[168]
+MTD	assay[169]	FILES/womenLCCstage2_1029.mzML
+MTD	assay[169]-sample_ref	sample[169]
+MTD	assay[169]-ms_run_ref	ms_run[169]
+MTD	assay[17]	FILES/QC17.mzML
+MTD	assay[17]-sample_ref	sample[17]
+MTD	assay[17]-ms_run_ref	ms_run[17]
+MTD	assay[170]	FILES/womenLCCstage2_1310.mzML
+MTD	assay[170]-sample_ref	sample[170]
+MTD	assay[170]-ms_run_ref	ms_run[170]
+MTD	assay[171]	FILES/womenLCCstage2_1407.mzML
+MTD	assay[171]-sample_ref	sample[171]
+MTD	assay[171]-ms_run_ref	ms_run[171]
+MTD	assay[172]	FILES/womenLCCstage2_1427.mzML
+MTD	assay[172]-sample_ref	sample[172]
+MTD	assay[172]-ms_run_ref	ms_run[172]
+MTD	assay[173]	FILES/womenLCCstage2_146.mzML
+MTD	assay[173]-sample_ref	sample[173]
+MTD	assay[173]-ms_run_ref	ms_run[173]
+MTD	assay[174]	FILES/womenLCCstage2_1601.mzML
+MTD	assay[174]-sample_ref	sample[174]
+MTD	assay[174]-ms_run_ref	ms_run[174]
+MTD	assay[175]	FILES/womenLCCstage2_20.mzML
+MTD	assay[175]-sample_ref	sample[175]
+MTD	assay[175]-ms_run_ref	ms_run[175]
+MTD	assay[176]	FILES/womenLCCstage2_2151.mzML
+MTD	assay[176]-sample_ref	sample[176]
+MTD	assay[176]-ms_run_ref	ms_run[176]
+MTD	assay[177]	FILES/womenLCCstage2_276.mzML
+MTD	assay[177]-sample_ref	sample[177]
+MTD	assay[177]-ms_run_ref	ms_run[177]
+MTD	assay[178]	FILES/womenLCCstage2_434.mzML
+MTD	assay[178]-sample_ref	sample[178]
+MTD	assay[178]-ms_run_ref	ms_run[178]
+MTD	assay[179]	FILES/womenLCCstage2_468.mzML
+MTD	assay[179]-sample_ref	sample[179]
+MTD	assay[179]-ms_run_ref	ms_run[179]
+MTD	assay[18]	FILES/QC18.mzML
+MTD	assay[18]-sample_ref	sample[18]
+MTD	assay[18]-ms_run_ref	ms_run[18]
+MTD	assay[180]	FILES/womenLCCstage2_504.mzML
+MTD	assay[180]-sample_ref	sample[180]
+MTD	assay[180]-ms_run_ref	ms_run[180]
+MTD	assay[181]	FILES/womenLCCstage2_574.mzML
+MTD	assay[181]-sample_ref	sample[181]
+MTD	assay[181]-ms_run_ref	ms_run[181]
+MTD	assay[182]	FILES/womenLCCstage2_581.mzML
+MTD	assay[182]-sample_ref	sample[182]
+MTD	assay[182]-ms_run_ref	ms_run[182]
+MTD	assay[183]	FILES/womenLCCstage2_618.mzML
+MTD	assay[183]-sample_ref	sample[183]
+MTD	assay[183]-ms_run_ref	ms_run[183]
+MTD	assay[184]	FILES/womenLCCstage2_95.mzML
+MTD	assay[184]-sample_ref	sample[184]
+MTD	assay[184]-ms_run_ref	ms_run[184]
+MTD	assay[185]	FILES/womenLCCstage3_1097.mzML
+MTD	assay[185]-sample_ref	sample[185]
+MTD	assay[185]-ms_run_ref	ms_run[185]
+MTD	assay[186]	FILES/womenLCCstage3_1404.mzML
+MTD	assay[186]-sample_ref	sample[186]
+MTD	assay[186]-ms_run_ref	ms_run[186]
+MTD	assay[187]	FILES/womenLCCstage3_1440.mzML
+MTD	assay[187]-sample_ref	sample[187]
+MTD	assay[187]-ms_run_ref	ms_run[187]
+MTD	assay[188]	FILES/womenLCCstage3_1631.mzML
+MTD	assay[188]-sample_ref	sample[188]
+MTD	assay[188]-ms_run_ref	ms_run[188]
+MTD	assay[189]	FILES/womenLCCstage3_1783.mzML
+MTD	assay[189]-sample_ref	sample[189]
+MTD	assay[189]-ms_run_ref	ms_run[189]
+MTD	assay[19]	FILES/QC19.mzML
+MTD	assay[19]-sample_ref	sample[19]
+MTD	assay[19]-ms_run_ref	ms_run[19]
+MTD	assay[190]	FILES/womenLCCstage3_189.mzML
+MTD	assay[190]-sample_ref	sample[190]
+MTD	assay[190]-ms_run_ref	ms_run[190]
+MTD	assay[191]	FILES/womenLCCstage3_1890.mzML
+MTD	assay[191]-sample_ref	sample[191]
+MTD	assay[191]-ms_run_ref	ms_run[191]
+MTD	assay[192]	FILES/womenLCCstage3_2105.mzML
+MTD	assay[192]-sample_ref	sample[192]
+MTD	assay[192]-ms_run_ref	ms_run[192]
+MTD	assay[193]	FILES/womenLCCstage3_2291.mzML
+MTD	assay[193]-sample_ref	sample[193]
+MTD	assay[193]-ms_run_ref	ms_run[193]
+MTD	assay[194]	FILES/womenLCCstage3_23.mzML
+MTD	assay[194]-sample_ref	sample[194]
+MTD	assay[194]-ms_run_ref	ms_run[194]
+MTD	assay[195]	FILES/womenLCCstage3_2594.mzML
+MTD	assay[195]-sample_ref	sample[195]
+MTD	assay[195]-ms_run_ref	ms_run[195]
+MTD	assay[196]	FILES/womenLCCstage3_439.mzML
+MTD	assay[196]-sample_ref	sample[196]
+MTD	assay[196]-ms_run_ref	ms_run[196]
+MTD	assay[197]	FILES/womenLCCstage3_515.mzML
+MTD	assay[197]-sample_ref	sample[197]
+MTD	assay[197]-ms_run_ref	ms_run[197]
+MTD	assay[198]	FILES/womenLCCstage3_522.mzML
+MTD	assay[198]-sample_ref	sample[198]
+MTD	assay[198]-ms_run_ref	ms_run[198]
+MTD	assay[199]	FILES/womenLCCstage3_734.mzML
+MTD	assay[199]-sample_ref	sample[199]
+MTD	assay[199]-ms_run_ref	ms_run[199]
+MTD	assay[2]	FILES/QC02.mzML
+MTD	assay[2]-sample_ref	sample[2]
+MTD	assay[2]-ms_run_ref	ms_run[2]
+MTD	assay[20]	FILES/QC20.mzML
+MTD	assay[20]-sample_ref	sample[20]
+MTD	assay[20]-ms_run_ref	ms_run[20]
+MTD	assay[200]	FILES/womenLCCstage3_888.mzML
+MTD	assay[200]-sample_ref	sample[200]
+MTD	assay[200]-ms_run_ref	ms_run[200]
+MTD	assay[201]	FILES/womenLCCstage3_903.mzML
+MTD	assay[201]-sample_ref	sample[201]
+MTD	assay[201]-ms_run_ref	ms_run[201]
+MTD	assay[202]	FILES/womenLCCstage3_938.mzML
+MTD	assay[202]-sample_ref	sample[202]
+MTD	assay[202]-ms_run_ref	ms_run[202]
+MTD	assay[203]	FILES/women_normal_11.mzML
+MTD	assay[203]-sample_ref	sample[203]
+MTD	assay[203]-ms_run_ref	ms_run[203]
+MTD	assay[204]	FILES/women_normal_4.mzML
+MTD	assay[204]-sample_ref	sample[204]
+MTD	assay[204]-ms_run_ref	ms_run[204]
+MTD	assay[205]	FILES/women_normal_9.mzML
+MTD	assay[205]-sample_ref	sample[205]
+MTD	assay[205]-ms_run_ref	ms_run[205]
+MTD	assay[206]	FILES/women_normal_2316.mzML
+MTD	assay[206]-sample_ref	sample[206]
+MTD	assay[206]-ms_run_ref	ms_run[206]
+MTD	assay[207]	FILES/women_normal_2478.mzML
+MTD	assay[207]-sample_ref	sample[207]
+MTD	assay[207]-ms_run_ref	ms_run[207]
+MTD	assay[208]	FILES/women_normal_2495.mzML
+MTD	assay[208]-sample_ref	sample[208]
+MTD	assay[208]-ms_run_ref	ms_run[208]
+MTD	assay[209]	FILES/women_normal_2550.mzML
+MTD	assay[209]-sample_ref	sample[209]
+MTD	assay[209]-ms_run_ref	ms_run[209]
+MTD	assay[21]	FILES/QC21.mzML
+MTD	assay[21]-sample_ref	sample[21]
+MTD	assay[21]-ms_run_ref	ms_run[21]
+MTD	assay[210]	FILES/women_normal_264.mzML
+MTD	assay[210]-sample_ref	sample[210]
+MTD	assay[210]-ms_run_ref	ms_run[210]
+MTD	assay[211]	FILES/women_normal_2655.mzML
+MTD	assay[211]-sample_ref	sample[211]
+MTD	assay[211]-ms_run_ref	ms_run[211]
+MTD	assay[212]	FILES/women_normal_2670.mzML
+MTD	assay[212]-sample_ref	sample[212]
+MTD	assay[212]-ms_run_ref	ms_run[212]
+MTD	assay[213]	FILES/women_normal_2705.mzML
+MTD	assay[213]-sample_ref	sample[213]
+MTD	assay[213]-ms_run_ref	ms_run[213]
+MTD	assay[214]	FILES/women_normal_834.mzML
+MTD	assay[214]-sample_ref	sample[214]
+MTD	assay[214]-ms_run_ref	ms_run[214]
+MTD	assay[215]	FILES/womenRCCstage1_1617.mzML
+MTD	assay[215]-sample_ref	sample[215]
+MTD	assay[215]-ms_run_ref	ms_run[215]
+MTD	assay[216]	FILES/womenRCCstage1_1963.mzML
+MTD	assay[216]-sample_ref	sample[216]
+MTD	assay[216]-ms_run_ref	ms_run[216]
+MTD	assay[217]	FILES/womenRCCstage1_2038.mzML
+MTD	assay[217]-sample_ref	sample[217]
+MTD	assay[217]-ms_run_ref	ms_run[217]
+MTD	assay[218]	FILES/womenRCCstage_1216.mzML
+MTD	assay[218]-sample_ref	sample[218]
+MTD	assay[218]-ms_run_ref	ms_run[218]
+MTD	assay[219]	FILES/womenRCCstage1_2202.mzML
+MTD	assay[219]-sample_ref	sample[219]
+MTD	assay[219]-ms_run_ref	ms_run[219]
+MTD	assay[22]	FILES/QC22.mzML
+MTD	assay[22]-sample_ref	sample[22]
+MTD	assay[22]-ms_run_ref	ms_run[22]
+MTD	assay[220]	FILES/womenRCCstage1_2235.mzML
+MTD	assay[220]-sample_ref	sample[220]
+MTD	assay[220]-ms_run_ref	ms_run[220]
+MTD	assay[221]	FILES/womenRCCstage1_2258.mzML
+MTD	assay[221]-sample_ref	sample[221]
+MTD	assay[221]-ms_run_ref	ms_run[221]
+MTD	assay[222]	FILES/womenRCCstage1_2600.mzML
+MTD	assay[222]-sample_ref	sample[222]
+MTD	assay[222]-ms_run_ref	ms_run[222]
+MTD	assay[223]	FILES/womenRCCstage1_2668.mzML
+MTD	assay[223]-sample_ref	sample[223]
+MTD	assay[223]-ms_run_ref	ms_run[223]
+MTD	assay[224]	FILES/womenRCCstage1_491.mzML
+MTD	assay[224]-sample_ref	sample[224]
+MTD	assay[224]-ms_run_ref	ms_run[224]
+MTD	assay[225]	FILES/womenRCCstage1_910.mzML
+MTD	assay[225]-sample_ref	sample[225]
+MTD	assay[225]-ms_run_ref	ms_run[225]
+MTD	assay[226]	FILES/womenRCCstage1_941.mzML
+MTD	assay[226]-sample_ref	sample[226]
+MTD	assay[226]-ms_run_ref	ms_run[226]
+MTD	assay[227]	FILES/womenRCCstage2_1014.mzML
+MTD	assay[227]-sample_ref	sample[227]
+MTD	assay[227]-ms_run_ref	ms_run[227]
+MTD	assay[228]	FILES/womenRCCstage2_1190.mzML
+MTD	assay[228]-sample_ref	sample[228]
+MTD	assay[228]-ms_run_ref	ms_run[228]
+MTD	assay[229]	FILES/womenRCCstage2_1196.mzML
+MTD	assay[229]-sample_ref	sample[229]
+MTD	assay[229]-ms_run_ref	ms_run[229]
+MTD	assay[23]	FILES/QC23.mzML
+MTD	assay[23]-sample_ref	sample[23]
+MTD	assay[23]-ms_run_ref	ms_run[23]
+MTD	assay[230]	FILES/womenRCCstage2_1304.mzML
+MTD	assay[230]-sample_ref	sample[230]
+MTD	assay[230]-ms_run_ref	ms_run[230]
+MTD	assay[231]	FILES/womenRCCstage2_1514.mzML
+MTD	assay[231]-sample_ref	sample[231]
+MTD	assay[231]-ms_run_ref	ms_run[231]
+MTD	assay[232]	FILES/womenRCCstage2_1665.mzML
+MTD	assay[232]-sample_ref	sample[232]
+MTD	assay[232]-ms_run_ref	ms_run[232]
+MTD	assay[233]	FILES/womenRCCstage2_1683.mzML
+MTD	assay[233]-sample_ref	sample[233]
+MTD	assay[233]-ms_run_ref	ms_run[233]
+MTD	assay[234]	FILES/womenRCCstage2_1728.mzML
+MTD	assay[234]-sample_ref	sample[234]
+MTD	assay[234]-ms_run_ref	ms_run[234]
+MTD	assay[235]	FILES/womenRCCstage2_1733.mzML
+MTD	assay[235]-sample_ref	sample[235]
+MTD	assay[235]-ms_run_ref	ms_run[235]
+MTD	assay[236]	FILES/womenRCCstage2_1846.mzML
+MTD	assay[236]-sample_ref	sample[236]
+MTD	assay[236]-ms_run_ref	ms_run[236]
+MTD	assay[237]	FILES/womenRCCstage2_1937.mzML
+MTD	assay[237]-sample_ref	sample[237]
+MTD	assay[237]-ms_run_ref	ms_run[237]
+MTD	assay[238]	FILES/womenRCCstage2_1987.mzML
+MTD	assay[238]-sample_ref	sample[238]
+MTD	assay[238]-ms_run_ref	ms_run[238]
+MTD	assay[239]	FILES/womenRCCstage2_2066.mzML
+MTD	assay[239]-sample_ref	sample[239]
+MTD	assay[239]-ms_run_ref	ms_run[239]
+MTD	assay[24]	FILES/QC24.mzML
+MTD	assay[24]-sample_ref	sample[24]
+MTD	assay[24]-ms_run_ref	ms_run[24]
+MTD	assay[240]	FILES/womenRCCstage2_2479.mzML
+MTD	assay[240]-sample_ref	sample[240]
+MTD	assay[240]-ms_run_ref	ms_run[240]
+MTD	assay[241]	FILES/womenRCCstage2_261.mzML
+MTD	assay[241]-sample_ref	sample[241]
+MTD	assay[241]-ms_run_ref	ms_run[241]
+MTD	assay[242]	FILES/womenRCCstage2_2654.mzML
+MTD	assay[242]-sample_ref	sample[242]
+MTD	assay[242]-ms_run_ref	ms_run[242]
+MTD	assay[243]	FILES/womenRCCstage2_315.mzML
+MTD	assay[243]-sample_ref	sample[243]
+MTD	assay[243]-ms_run_ref	ms_run[243]
+MTD	assay[244]	FILES/womenRCCstage2_419.mzML
+MTD	assay[244]-sample_ref	sample[244]
+MTD	assay[244]-ms_run_ref	ms_run[244]
+MTD	assay[245]	FILES/womenRCCstage2_64.mzML
+MTD	assay[245]-sample_ref	sample[245]
+MTD	assay[245]-ms_run_ref	ms_run[245]
+MTD	assay[246]	FILES/womenRCCstage2_830.mzML
+MTD	assay[246]-sample_ref	sample[246]
+MTD	assay[246]-ms_run_ref	ms_run[246]
+MTD	assay[247]	FILES/womenRCCstage2_896.mzML
+MTD	assay[247]-sample_ref	sample[247]
+MTD	assay[247]-ms_run_ref	ms_run[247]
+MTD	assay[248]	FILES/womenRCCstage3_1224.mzML
+MTD	assay[248]-sample_ref	sample[248]
+MTD	assay[248]-ms_run_ref	ms_run[248]
+MTD	assay[249]	FILES/womenRCCstage3_1237.mzML
+MTD	assay[249]-sample_ref	sample[249]
+MTD	assay[249]-ms_run_ref	ms_run[249]
+MTD	assay[25]	FILES/QC25.mzML
+MTD	assay[25]-sample_ref	sample[25]
+MTD	assay[25]-ms_run_ref	ms_run[25]
+MTD	assay[250]	FILES/womenRCCstage3_1316.mzML
+MTD	assay[250]-sample_ref	sample[250]
+MTD	assay[250]-ms_run_ref	ms_run[250]
+MTD	assay[251]	FILES/womenRCCstage3_1327.mzML
+MTD	assay[251]-sample_ref	sample[251]
+MTD	assay[251]-ms_run_ref	ms_run[251]
+MTD	assay[252]	FILES/womenRCCstage3_1363.mzML
+MTD	assay[252]-sample_ref	sample[252]
+MTD	assay[252]-ms_run_ref	ms_run[252]
+MTD	assay[253]	FILES/womenRCCstage3_1455.mzML
+MTD	assay[253]-sample_ref	sample[253]
+MTD	assay[253]-ms_run_ref	ms_run[253]
+MTD	assay[254]	FILES/womenRCCstage3_149.mzML
+MTD	assay[254]-sample_ref	sample[254]
+MTD	assay[254]-ms_run_ref	ms_run[254]
+MTD	assay[255]	FILES/womenRCCstage3_1855.mzML
+MTD	assay[255]-sample_ref	sample[255]
+MTD	assay[255]-ms_run_ref	ms_run[255]
+MTD	assay[256]	FILES/womenRCCstage3_1924.mzML
+MTD	assay[256]-sample_ref	sample[256]
+MTD	assay[256]-ms_run_ref	ms_run[256]
+MTD	assay[257]	FILES/womenRCCstage3_2208.mzML
+MTD	assay[257]-sample_ref	sample[257]
+MTD	assay[257]-ms_run_ref	ms_run[257]
+MTD	assay[258]	FILES/womenRCCstage3_2244.mzML
+MTD	assay[258]-sample_ref	sample[258]
+MTD	assay[258]-ms_run_ref	ms_run[258]
+MTD	assay[259]	FILES/womenRCCstage3_2303.mzML
+MTD	assay[259]-sample_ref	sample[259]
+MTD	assay[259]-ms_run_ref	ms_run[259]
+MTD	assay[26]	FILES/QC26.mzML
+MTD	assay[26]-sample_ref	sample[26]
+MTD	assay[26]-ms_run_ref	ms_run[26]
+MTD	assay[260]	FILES/womenRCCstage3_2494.mzML
+MTD	assay[260]-sample_ref	sample[260]
+MTD	assay[260]-ms_run_ref	ms_run[260]
+MTD	assay[261]	FILES/womenRCCstage3_289.mzML
+MTD	assay[261]-sample_ref	sample[261]
+MTD	assay[261]-ms_run_ref	ms_run[261]
+MTD	assay[262]	FILES/womenRCCstage3_721.mzML
+MTD	assay[262]-sample_ref	sample[262]
+MTD	assay[262]-ms_run_ref	ms_run[262]
+MTD	assay[263]	FILES/womenRCCstage3_955.mzML
+MTD	assay[263]-sample_ref	sample[263]
+MTD	assay[263]-ms_run_ref	ms_run[263]
+MTD	assay[264]	FILES/womenRCCstage3_958.mzML
+MTD	assay[264]-sample_ref	sample[264]
+MTD	assay[264]-ms_run_ref	ms_run[264]
+MTD	assay[27]	FILES/QC27.mzML
+MTD	assay[27]-sample_ref	sample[27]
+MTD	assay[27]-ms_run_ref	ms_run[27]
+MTD	assay[28]	FILES/QC28.mzML
+MTD	assay[28]-sample_ref	sample[28]
+MTD	assay[28]-ms_run_ref	ms_run[28]
+MTD	assay[29]	FILES/menLCCstage1_1122.mzML
+MTD	assay[29]-sample_ref	sample[29]
+MTD	assay[29]-ms_run_ref	ms_run[29]
+MTD	assay[3]	FILES/QC03.mzML
+MTD	assay[3]-sample_ref	sample[3]
+MTD	assay[3]-ms_run_ref	ms_run[3]
+MTD	assay[30]	FILES/menLCCstage1_1532.mzML
+MTD	assay[30]-sample_ref	sample[30]
+MTD	assay[30]-ms_run_ref	ms_run[30]
+MTD	assay[31]	FILES/menLCCstage1_1941.mzML
+MTD	assay[31]-sample_ref	sample[31]
+MTD	assay[31]-ms_run_ref	ms_run[31]
+MTD	assay[32]	FILES/menLCCstage1_1969.mzML
+MTD	assay[32]-sample_ref	sample[32]
+MTD	assay[32]-ms_run_ref	ms_run[32]
+MTD	assay[33]	FILES/menLCCstage1_2516.mzML
+MTD	assay[33]-sample_ref	sample[33]
+MTD	assay[33]-ms_run_ref	ms_run[33]
+MTD	assay[34]	FILES/menLCCstage1_26.mzML
+MTD	assay[34]-sample_ref	sample[34]
+MTD	assay[34]-ms_run_ref	ms_run[34]
+MTD	assay[35]	FILES/menLCCstage1_2634.mzML
+MTD	assay[35]-sample_ref	sample[35]
+MTD	assay[35]-ms_run_ref	ms_run[35]
+MTD	assay[36]	FILES/menLCCstage1_270.mzML
+MTD	assay[36]-sample_ref	sample[36]
+MTD	assay[36]-ms_run_ref	ms_run[36]
+MTD	assay[37]	FILES/menLCCstage1_507.mzML
+MTD	assay[37]-sample_ref	sample[37]
+MTD	assay[37]-ms_run_ref	ms_run[37]
+MTD	assay[38]	FILES/menLCCstage1_543.mzML
+MTD	assay[38]-sample_ref	sample[38]
+MTD	assay[38]-ms_run_ref	ms_run[38]
+MTD	assay[39]	FILES/menLCCstage1_614.mzML
+MTD	assay[39]-sample_ref	sample[39]
+MTD	assay[39]-ms_run_ref	ms_run[39]
+MTD	assay[4]	FILES/QC04.mzML
+MTD	assay[4]-sample_ref	sample[4]
+MTD	assay[4]-ms_run_ref	ms_run[4]
+MTD	assay[40]	FILES/menLCCstage1_679.mzML
+MTD	assay[40]-sample_ref	sample[40]
+MTD	assay[40]-ms_run_ref	ms_run[40]
+MTD	assay[41]	FILES/menLCCstage1_688.mzML
+MTD	assay[41]-sample_ref	sample[41]
+MTD	assay[41]-ms_run_ref	ms_run[41]
+MTD	assay[42]	FILES/menLCCstage1_699.mzML
+MTD	assay[42]-sample_ref	sample[42]
+MTD	assay[42]-ms_run_ref	ms_run[42]
+MTD	assay[43]	FILES/menLCCstage1_755.mzML
+MTD	assay[43]-sample_ref	sample[43]
+MTD	assay[43]-ms_run_ref	ms_run[43]
+MTD	assay[44]	FILES/menLCCstage2_1011.mzML
+MTD	assay[44]-sample_ref	sample[44]
+MTD	assay[44]-ms_run_ref	ms_run[44]
+MTD	assay[45]	FILES/menLCCstage2_1063.mzML
+MTD	assay[45]-sample_ref	sample[45]
+MTD	assay[45]-ms_run_ref	ms_run[45]
+MTD	assay[46]	FILES/menLCCstage2_1333.mzML
+MTD	assay[46]-sample_ref	sample[46]
+MTD	assay[46]-ms_run_ref	ms_run[46]
+MTD	assay[47]	FILES/menLCCstage2_134.mzML
+MTD	assay[47]-sample_ref	sample[47]
+MTD	assay[47]-ms_run_ref	ms_run[47]
+MTD	assay[48]	FILES/menLCCstage2_1374.mzML
+MTD	assay[48]-sample_ref	sample[48]
+MTD	assay[48]-ms_run_ref	ms_run[48]
+MTD	assay[49]	FILES/menLCCstage2_1402.mzML
+MTD	assay[49]-sample_ref	sample[49]
+MTD	assay[49]-ms_run_ref	ms_run[49]
+MTD	assay[5]	FILES/QC05.mzML
+MTD	assay[5]-sample_ref	sample[5]
+MTD	assay[5]-ms_run_ref	ms_run[5]
+MTD	assay[50]	FILES/menLCCstage2_1415.mzML
+MTD	assay[50]-sample_ref	sample[50]
+MTD	assay[50]-ms_run_ref	ms_run[50]
+MTD	assay[51]	FILES/menLCCstage2_1723.mzML
+MTD	assay[51]-sample_ref	sample[51]
+MTD	assay[51]-ms_run_ref	ms_run[51]
+MTD	assay[52]	FILES/menLCCstage2_1788.mzML
+MTD	assay[52]-sample_ref	sample[52]
+MTD	assay[52]-ms_run_ref	ms_run[52]
+MTD	assay[53]	FILES/menLCCstage2_181.mzML
+MTD	assay[53]-sample_ref	sample[53]
+MTD	assay[53]-ms_run_ref	ms_run[53]
+MTD	assay[54]	FILES/menLCCstage2_1894.mzML
+MTD	assay[54]-sample_ref	sample[54]
+MTD	assay[54]-ms_run_ref	ms_run[54]
+MTD	assay[55]	FILES/menLCCstage2_203.mzML
+MTD	assay[55]-sample_ref	sample[55]
+MTD	assay[55]-ms_run_ref	ms_run[55]
+MTD	assay[56]	FILES/menLCCstage2_2070.mzML
+MTD	assay[56]-sample_ref	sample[56]
+MTD	assay[56]-ms_run_ref	ms_run[56]
+MTD	assay[57]	FILES/menLCCstage2_2247.mzML
+MTD	assay[57]-sample_ref	sample[57]
+MTD	assay[57]-ms_run_ref	ms_run[57]
+MTD	assay[58]	FILES/menLCCstage2_240.mzML
+MTD	assay[58]-sample_ref	sample[58]
+MTD	assay[58]-ms_run_ref	ms_run[58]
+MTD	assay[59]	FILES/menLCCstage2_2421.mzML
+MTD	assay[59]-sample_ref	sample[59]
+MTD	assay[59]-ms_run_ref	ms_run[59]
+MTD	assay[6]	FILES/QC06.mzML
+MTD	assay[6]-sample_ref	sample[6]
+MTD	assay[6]-ms_run_ref	ms_run[6]
+MTD	assay[60]	FILES/menLCCstage2_295.mzML
+MTD	assay[60]-sample_ref	sample[60]
+MTD	assay[60]-ms_run_ref	ms_run[60]
+MTD	assay[61]	FILES/menLCCstage2_373.mzML
+MTD	assay[61]-sample_ref	sample[61]
+MTD	assay[61]-ms_run_ref	ms_run[61]
+MTD	assay[62]	FILES/menLCCstage2_525.mzML
+MTD	assay[62]-sample_ref	sample[62]
+MTD	assay[62]-ms_run_ref	ms_run[62]
+MTD	assay[63]	FILES/menLCCstage2_531.mzML
+MTD	assay[63]-sample_ref	sample[63]
+MTD	assay[63]-ms_run_ref	ms_run[63]
+MTD	assay[64]	FILES/menLCCstage2_625.mzML
+MTD	assay[64]-sample_ref	sample[64]
+MTD	assay[64]-ms_run_ref	ms_run[64]
+MTD	assay[65]	FILES/menLCCstage2_714.mzML
+MTD	assay[65]-sample_ref	sample[65]
+MTD	assay[65]-ms_run_ref	ms_run[65]
+MTD	assay[66]	FILES/menLCCstage2_868.mzML
+MTD	assay[66]-sample_ref	sample[66]
+MTD	assay[66]-ms_run_ref	ms_run[66]
+MTD	assay[67]	FILES/menLCCstage2_893.mzML
+MTD	assay[67]-sample_ref	sample[67]
+MTD	assay[67]-ms_run_ref	ms_run[67]
+MTD	assay[68]	FILES/menLCCstage2_971.mzML
+MTD	assay[68]-sample_ref	sample[68]
+MTD	assay[68]-ms_run_ref	ms_run[68]
+MTD	assay[69]	FILES/menLCCstage3_1030.mzML
+MTD	assay[69]-sample_ref	sample[69]
+MTD	assay[69]-ms_run_ref	ms_run[69]
+MTD	assay[7]	FILES/QC07.mzML
+MTD	assay[7]-sample_ref	sample[7]
+MTD	assay[7]-ms_run_ref	ms_run[7]
+MTD	assay[70]	FILES/menLCCstage3_1042.mzML
+MTD	assay[70]-sample_ref	sample[70]
+MTD	assay[70]-ms_run_ref	ms_run[70]
+MTD	assay[71]	FILES/menLCCstage3_1638.mzML
+MTD	assay[71]-sample_ref	sample[71]
+MTD	assay[71]-ms_run_ref	ms_run[71]
+MTD	assay[72]	FILES/menLCCstage3_1709.mzML
+MTD	assay[72]-sample_ref	sample[72]
+MTD	assay[72]-ms_run_ref	ms_run[72]
+MTD	assay[73]	FILES/menLCCstage3_2124.mzML
+MTD	assay[73]-sample_ref	sample[73]
+MTD	assay[73]-ms_run_ref	ms_run[73]
+MTD	assay[74]	FILES/menLCCstage3_229.mzML
+MTD	assay[74]-sample_ref	sample[74]
+MTD	assay[74]-ms_run_ref	ms_run[74]
+MTD	assay[75]	FILES/menLCCstage3_2297.mzML
+MTD	assay[75]-sample_ref	sample[75]
+MTD	assay[75]-ms_run_ref	ms_run[75]
+MTD	assay[76]	FILES/menLCCstage3_2559.mzML
+MTD	assay[76]-sample_ref	sample[76]
+MTD	assay[76]-ms_run_ref	ms_run[76]
+MTD	assay[77]	FILES/menLCCstage3_258.mzML
+MTD	assay[77]-sample_ref	sample[77]
+MTD	assay[77]-ms_run_ref	ms_run[77]
+MTD	assay[78]	FILES/menLCCstage3_537.mzML
+MTD	assay[78]-sample_ref	sample[78]
+MTD	assay[78]-ms_run_ref	ms_run[78]
+MTD	assay[79]	FILES/menLCCstage3_67.mzML
+MTD	assay[79]-sample_ref	sample[79]
+MTD	assay[79]-ms_run_ref	ms_run[79]
+MTD	assay[8]	FILES/QC08.mzML
+MTD	assay[8]-sample_ref	sample[8]
+MTD	assay[8]-ms_run_ref	ms_run[8]
+MTD	assay[80]	FILES/menLCCstage3_664.mzML
+MTD	assay[80]-sample_ref	sample[80]
+MTD	assay[80]-ms_run_ref	ms_run[80]
+MTD	assay[81]	FILES/menLCCstage3_717.mzML
+MTD	assay[81]-sample_ref	sample[81]
+MTD	assay[81]-ms_run_ref	ms_run[81]
+MTD	assay[82]	FILES/menLCCstage3_988.mzML
+MTD	assay[82]-sample_ref	sample[82]
+MTD	assay[82]-ms_run_ref	ms_run[82]
+MTD	assay[83]	FILES/men_normal_6.mzML
+MTD	assay[83]-sample_ref	sample[83]
+MTD	assay[83]-ms_run_ref	ms_run[83]
+MTD	assay[84]	FILES/men_normal_166.mzML
+MTD	assay[84]-sample_ref	sample[84]
+MTD	assay[84]-ms_run_ref	ms_run[84]
+MTD	assay[85]	FILES/men_normal_2518.mzML
+MTD	assay[85]-sample_ref	sample[85]
+MTD	assay[85]-ms_run_ref	ms_run[85]
+MTD	assay[86]	FILES/men_normal_2332.mzML
+MTD	assay[86]-sample_ref	sample[86]
+MTD	assay[86]-ms_run_ref	ms_run[86]
+MTD	assay[87]	FILES/men_normal_2357.mzML
+MTD	assay[87]-sample_ref	sample[87]
+MTD	assay[87]-ms_run_ref	ms_run[87]
+MTD	assay[88]	FILES/men_normal_2371.mzML
+MTD	assay[88]-sample_ref	sample[88]
+MTD	assay[88]-ms_run_ref	ms_run[88]
+MTD	assay[89]	FILES/men_normal_2407.mzML
+MTD	assay[89]-sample_ref	sample[89]
+MTD	assay[89]-ms_run_ref	ms_run[89]
+MTD	assay[9]	FILES/QC09.mzML
+MTD	assay[9]-sample_ref	sample[9]
+MTD	assay[9]-ms_run_ref	ms_run[9]
+MTD	assay[90]	FILES/men_normal_2409.mzML
+MTD	assay[90]-sample_ref	sample[90]
+MTD	assay[90]-ms_run_ref	ms_run[90]
+MTD	assay[91]	FILES/men_normal_2422.mzML
+MTD	assay[91]-sample_ref	sample[91]
+MTD	assay[91]-ms_run_ref	ms_run[91]
+MTD	assay[92]	FILES/men_normal_2424.mzML
+MTD	assay[92]-sample_ref	sample[92]
+MTD	assay[92]-ms_run_ref	ms_run[92]
+MTD	assay[93]	FILES/men_normal_2480.mzML
+MTD	assay[93]-sample_ref	sample[93]
+MTD	assay[93]-ms_run_ref	ms_run[93]
+MTD	assay[94]	FILES/men_normal_2521.mzML
+MTD	assay[94]-sample_ref	sample[94]
+MTD	assay[94]-ms_run_ref	ms_run[94]
+MTD	assay[95]	FILES/men_normal_2560.mzML
+MTD	assay[95]-sample_ref	sample[95]
+MTD	assay[95]-ms_run_ref	ms_run[95]
+MTD	assay[96]	FILES/men_normal_2569.mzML
+MTD	assay[96]-sample_ref	sample[96]
+MTD	assay[96]-ms_run_ref	ms_run[96]
+MTD	assay[97]	FILES/men_normal_2612.mzML
+MTD	assay[97]-sample_ref	sample[97]
+MTD	assay[97]-ms_run_ref	ms_run[97]
+MTD	assay[98]	FILES/men_normal_2627.mzML
+MTD	assay[98]-sample_ref	sample[98]
+MTD	assay[98]-ms_run_ref	ms_run[98]
+MTD	assay[99]	FILES/men_normal_2632.mzML
+MTD	assay[99]-sample_ref	sample[99]
+MTD	assay[99]-ms_run_ref	ms_run[99]
+MTD	study_variable_group[1]	[,,Gender,]
+MTD	study_variable_group[1]-description	Study factor Gender (Gender)
+MTD	study_variable_group[1]-type	[STATO, STATO:0000252, categorical variable, ]
+MTD	study_variable_group[1]-datatype	xsd:string
+MTD	study_variable_group[1]-study_variable_refs	study_variable[1]|study_variable[2]|study_variable[3]
+MTD	study_variable[1]	Pooled sample
+MTD	study_variable[1]-assay_refs	assay[1]|assay[2]|assay[3]|assay[4]|assay[5]|assay[6]|assay[7]|assay[8]|assay[9]|assay[10]|assay[11]|assay[12]|assay[13]|assay[14]|assay[15]|assay[16]|assay[17]|assay[18]|assay[19]|assay[20]|assay[21]|assay[22]|assay[23]|assay[24]|assay[25]|assay[26]|assay[27]|assay[28]
+MTD	study_variable[1]-average_function	[MS, MS:1002962, mean, ]
+MTD	study_variable[1]-variation_function	[MS, MS:1002963, variation coefficient, ]
+MTD	study_variable[1]-description	Variable Gender, value Pooled sample
+MTD	study_variable[2]	Male
+MTD	study_variable[2]-assay_refs	assay[29]|assay[30]|assay[31]|assay[32]|assay[33]|assay[34]|assay[35]|assay[36]|assay[37]|assay[38]|assay[39]|assay[40]|assay[41]|assay[42]|assay[43]|assay[44]|assay[45]|assay[46]|assay[47]|assay[48]|assay[49]|assay[50]|assay[51]|assay[52]|assay[53]|assay[54]|assay[55]|assay[56]|assay[57]|assay[58]|assay[59]|assay[60]|assay[61]|assay[62]|assay[63]|assay[64]|assay[65]|assay[66]|assay[67]|assay[68]|assay[69]|assay[70]|assay[71]|assay[72]|assay[73]|assay[74]|assay[75]|assay[76]|assay[77]|assay[78]|assay[79]|assay[80]|assay[81]|assay[82]|assay[83]|assay[84]|assay[85]|assay[86]|assay[87]|assay[88]|assay[89]|assay[90]|assay[91]|assay[92]|assay[93]|assay[94]|assay[95]|assay[96]|assay[97]|assay[98]|assay[99]|assay[100]|assay[101]|assay[102]|assay[103]|assay[104]|assay[105]|assay[106]|assay[107]|assay[108]|assay[109]|assay[110]|assay[111]|assay[112]|assay[113]|assay[114]|assay[115]|assay[116]|assay[117]|assay[118]|assay[119]|assay[120]|assay[121]|assay[122]|assay[123]|assay[124]|assay[125]|assay[126]|assay[127]|assay[128]|assay[129]|assay[130]|assay[131]|assay[132]|assay[133]|assay[134]|assay[135]|assay[136]|assay[137]|assay[138]|assay[139]|assay[140]|assay[141]|assay[142]|assay[143]|assay[144]|assay[145]|assay[146]|assay[147]|assay[148]|assay[149]|assay[150]|assay[151]|assay[152]|assay[153]|assay[154]|assay[155]|assay[156]|assay[157]
+MTD	study_variable[2]-average_function	[MS, MS:1002962, mean, ]
+MTD	study_variable[2]-variation_function	[MS, MS:1002963, variation coefficient, ]
+MTD	study_variable[2]-description	Variable Gender, value Male
+MTD	study_variable[3]	Female
+MTD	study_variable[3]-assay_refs	assay[158]|assay[159]|assay[160]|assay[161]|assay[162]|assay[163]|assay[164]|assay[165]|assay[166]|assay[167]|assay[168]|assay[169]|assay[170]|assay[171]|assay[172]|assay[173]|assay[174]|assay[175]|assay[176]|assay[177]|assay[178]|assay[179]|assay[180]|assay[181]|assay[182]|assay[183]|assay[184]|assay[185]|assay[186]|assay[187]|assay[188]|assay[189]|assay[190]|assay[191]|assay[192]|assay[193]|assay[194]|assay[195]|assay[196]|assay[197]|assay[198]|assay[199]|assay[200]|assay[201]|assay[202]|assay[203]|assay[204]|assay[205]|assay[206]|assay[207]|assay[208]|assay[209]|assay[210]|assay[211]|assay[212]|assay[213]|assay[214]|assay[215]|assay[216]|assay[217]|assay[218]|assay[219]|assay[220]|assay[221]|assay[222]|assay[223]|assay[224]|assay[225]|assay[226]|assay[227]|assay[228]|assay[229]|assay[230]|assay[231]|assay[232]|assay[233]|assay[234]|assay[235]|assay[236]|assay[237]|assay[238]|assay[239]|assay[240]|assay[241]|assay[242]|assay[243]|assay[244]|assay[245]|assay[246]|assay[247]|assay[248]|assay[249]|assay[250]|assay[251]|assay[252]|assay[253]|assay[254]|assay[255]|assay[256]|assay[257]|assay[258]|assay[259]|assay[260]|assay[261]|assay[262]|assay[263]|assay[264]
+MTD	study_variable[3]-average_function	[MS, MS:1002962, mean, ]
+MTD	study_variable[3]-variation_function	[MS, MS:1002963, variation coefficient, ]
+MTD	study_variable[3]-description	Variable Gender, value Female
+MTD	cv[1]-label	MS
+MTD	cv[1]-full_name	PSI-MS controlled vocabulary
+MTD	cv[1]-version	4.1.138
+MTD	cv[1]-uri	https://www.ebi.ac.uk/ols4/ontologies/ms
+MTD	cv[2]-label	PRIDE
+MTD	cv[2]-full_name	PRIDE PRoteomics IDEntifications (PRIDE) database controlled vocabulary
+MTD	cv[2]-version	16:10:2023 11:38
+MTD	cv[2]-uri	https://www.ebi.ac.uk/ols/ontologies/pride
+MTD	cv[3]-label	STATO
+MTD	cv[3]-full_name	General purpose STATistics Ontology
+MTD	cv[3]-version	2026-04-20
+MTD	cv[3]-uri	https://www.ebi.ac.uk/ols4/ontologies/stato
+MTD	database[1]	[MIRIAM, MIR:00000002, ChEBI, ]
+MTD	database[1]-prefix	CHEBI
+MTD	database[1]-version	unknown
+MTD	database[1]-uri	https://www.ebi.ac.uk/chebi/
+MTD	small_molecule-quantification_unit	[PRIDE, PRIDE:0000330, Arbitrary quantification unit, ]
+MTD	small_molecule-identification_reliability	[MS, MS:1002896, compound identification confidence level, ]
+
+SMH	SML_ID	SMF_ID_REFS	database_identifier	chemical_formula	smiles	inchi	chemical_name	uri	theoretical_neutral_mass	adduct_ions	reliability	best_id_confidence_measure	best_id_confidence_value	abundance_assay[1]	abundance_assay[2]	abundance_assay[3]	abundance_assay[4]	abundance_assay[5]	abundance_assay[6]	abundance_assay[7]	abundance_assay[8]	abundance_assay[9]	abundance_assay[10]	abundance_assay[11]	abundance_assay[12]	abundance_assay[13]	abundance_assay[14]	abundance_assay[15]	abundance_assay[16]	abundance_assay[17]	abundance_assay[18]	abundance_assay[19]	abundance_assay[20]	abundance_assay[21]	abundance_assay[22]	abundance_assay[23]	abundance_assay[24]	abundance_assay[25]	abundance_assay[26]	abundance_assay[27]	abundance_assay[28]	abundance_assay[29]	abundance_assay[30]	abundance_assay[31]	abundance_assay[32]	abundance_assay[33]	abundance_assay[34]	abundance_assay[35]	abundance_assay[36]	abundance_assay[37]	abundance_assay[38]	abundance_assay[39]	abundance_assay[40]	abundance_assay[41]	abundance_assay[42]	abundance_assay[43]	abundance_assay[44]	abundance_assay[45]	abundance_assay[46]	abundance_assay[47]	abundance_assay[48]	abundance_assay[49]	abundance_assay[50]	abundance_assay[51]	abundance_assay[52]	abundance_assay[53]	abundance_assay[54]	abundance_assay[55]	abundance_assay[56]	abundance_assay[57]	abundance_assay[58]	abundance_assay[59]	abundance_assay[60]	abundance_assay[61]	abundance_assay[62]	abundance_assay[63]	abundance_assay[64]	abundance_assay[65]	abundance_assay[66]	abundance_assay[67]	abundance_assay[68]	abundance_assay[69]	abundance_assay[70]	abundance_assay[71]	abundance_assay[72]	abundance_assay[73]	abundance_assay[74]	abundance_assay[75]	abundance_assay[76]	abundance_assay[77]	abundance_assay[78]	abundance_assay[79]	abundance_assay[80]	abundance_assay[81]	abundance_assay[82]	abundance_assay[83]	abundance_assay[84]	abundance_assay[85]	abundance_assay[86]	abundance_assay[87]	abundance_assay[88]	abundance_assay[89]	abundance_assay[90]	abundance_assay[91]	abundance_assay[92]	abundance_assay[93]	abundance_assay[94]	abundance_assay[95]	abundance_assay[96]	abundance_assay[97]	abundance_assay[98]	abundance_assay[99]	abundance_assay[100]	abundance_assay[101]	abundance_assay[102]	abundance_assay[103]	abundance_assay[104]	abundance_assay[105]	abundance_assay[106]	abundance_assay[107]	abundance_assay[108]	abundance_assay[109]	abundance_assay[110]	abundance_assay[111]	abundance_assay[112]	abundance_assay[113]	abundance_assay[114]	abundance_assay[115]	abundance_assay[116]	abundance_assay[117]	abundance_assay[118]	abundance_assay[119]	abundance_assay[120]	abundance_assay[121]	abundance_assay[122]	abundance_assay[123]	abundance_assay[124]	abundance_assay[125]	abundance_assay[126]	abundance_assay[127]	abundance_assay[128]	abundance_assay[129]	abundance_assay[130]	abundance_assay[131]	abundance_assay[132]	abundance_assay[133]	abundance_assay[134]	abundance_assay[135]	abundance_assay[136]	abundance_assay[137]	abundance_assay[138]	abundance_assay[139]	abundance_assay[140]	abundance_assay[141]	abundance_assay[142]	abundance_assay[143]	abundance_assay[144]	abundance_assay[145]	abundance_assay[146]	abundance_assay[147]	abundance_assay[148]	abundance_assay[149]	abundance_assay[150]	abundance_assay[151]	abundance_assay[152]	abundance_assay[153]	abundance_assay[154]	abundance_assay[155]	abundance_assay[156]	abundance_assay[157]	abundance_assay[158]	abundance_assay[159]	abundance_assay[160]	abundance_assay[161]	abundance_assay[162]	abundance_assay[163]	abundance_assay[164]	abundance_assay[165]	abundance_assay[166]	abundance_assay[167]	abundance_assay[168]	abundance_assay[169]	abundance_assay[170]	abundance_assay[171]	abundance_assay[172]	abundance_assay[173]	abundance_assay[174]	abundance_assay[175]	abundance_assay[176]	abundance_assay[177]	abundance_assay[178]	abundance_assay[179]	abundance_assay[180]	abundance_assay[181]	abundance_assay[182]	abundance_assay[183]	abundance_assay[184]	abundance_assay[185]	abundance_assay[186]	abundance_assay[187]	abundance_assay[188]	abundance_assay[189]	abundance_assay[190]	abundance_assay[191]	abundance_assay[192]	abundance_assay[193]	abundance_assay[194]	abundance_assay[195]	abundance_assay[196]	abundance_assay[197]	abundance_assay[198]	abundance_assay[199]	abundance_assay[200]	abundance_assay[201]	abundance_assay[202]	abundance_assay[203]	abundance_assay[204]	abundance_assay[205]	abundance_assay[206]	abundance_assay[207]	abundance_assay[208]	abundance_assay[209]	abundance_assay[210]	abundance_assay[211]	abundance_assay[212]	abundance_assay[213]	abundance_assay[214]	abundance_assay[215]	abundance_assay[216]	abundance_assay[217]	abundance_assay[218]	abundance_assay[219]	abundance_assay[220]	abundance_assay[221]	abundance_assay[222]	abundance_assay[223]	abundance_assay[224]	abundance_assay[225]	abundance_assay[226]	abundance_assay[227]	abundance_assay[228]	abundance_assay[229]	abundance_assay[230]	abundance_assay[231]	abundance_assay[232]	abundance_assay[233]	abundance_assay[234]	abundance_assay[235]	abundance_assay[236]	abundance_assay[237]	abundance_assay[238]	abundance_assay[239]	abundance_assay[240]	abundance_assay[241]	abundance_assay[242]	abundance_assay[243]	abundance_assay[244]	abundance_assay[245]	abundance_assay[246]	abundance_assay[247]	abundance_assay[248]	abundance_assay[249]	abundance_assay[250]	abundance_assay[251]	abundance_assay[252]	abundance_assay[253]	abundance_assay[254]	abundance_assay[255]	abundance_assay[256]	abundance_assay[257]	abundance_assay[258]	abundance_assay[259]	abundance_assay[260]	abundance_assay[261]	abundance_assay[262]	abundance_assay[263]	abundance_assay[264]	abundance_study_variable[1]	abundance_study_variable[2]	abundance_study_variable[3]	abundance_variation_study_variable[1]	abundance_variation_study_variable[2]	abundance_variation_study_variable[3]	opt_global_retention_time	opt_global_mass_to_charge
+SML	1	null	CHEBI:16737	C4H7N3O	CN1CC(=O)NC1=N	InChI=1S/C4H7N3O/c1-7-2-3(8)6-4(7)5/h2H2,1H3,(H2,5,6,8)	Creatinine	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	25905.03404	26180.67525	26161.63399	26856.51361	26844.49011	27383.9858	27870.02571	32525.21668	23396.89644	24343.06647	25575.74906	26325.66657	26118.31419	26926.30994	26122.21497	26752.82354	26957.71705	25212.34609	25545.66957	28359.64819	26234.06439	28147.29017	17858.33819	24996.42769	27366.37215	28034.44661	25238.08447	44827.93268	17917.41645	21955.01147	19020.06004	18663.65602	19722.50706	28306.75311	26022.66564	23616.95745	33288.99811	17122.07629	24022.54829	21727.94956	25792.50959	33076.16423	28855.03105	37128.3396	18247.61266	22351.21005	26378.82923	28636.62368	36275.53668	27392.16403	38438.23834	30671.8811	22596.50718	25062.07052	22180.30038	46462.19356	31313.24841	17500.05312	26220.53266	33624.51772	21339.70181	30618.49463	29541.24579	24391.07362	34759.11275	25119.70754	16291.36147	22548.19221	27898.51934	29902.314	22220.34198	22846.95625	17038.2981	41317.33784	24684.35755	32729.50813	22859.98653	20132.19552	18933.42187	14974.46494	29443.0956	16424.71694	49774.32588	16617.64335	39316.75228	25103.83282	24763.71026	25831.5965	24152.78543	27577.72327	30778.8032	15032.41264	7440.620223	25314.48518	16995.96439	25453.87549	25286.35013	26976.82918	23133.19875	26740.11793	29044.49107	24599.47799	27797.53695	29295.12524	26847.51032	28333.5236	23285.80647	21234.19348	21702.51492	33899.75192	19559.83618	23591.63074	24914.69869	27591.66859	36628.14763	26473.34832	26855.49618	25689.60667	26969.92463	17131.92728	11846.98406	28854.23725	11515.61209	16834.48951	20596.11449	23593.72767	24264.46245	21880.92438	21787.18186	20686.50442	24047.88235	25658.90375	28012.21683	32446.95413	20780.06764	29942.91494	29069.03378	21421.1083	14036.71135	15921.58778	43067.8202	13407.99184	18653.40892	26044.69296	28284.91252	32822.90885	21623.9319	19709.14605	17158.76713	31134.9896	27892.41991	19751.74469	31009.5428	26890.47989	19787.85801	22378.29045	44976.24458	45178.44716	17934.17587	32346.27075	24906.84524	25499.73648	16685.79536	36992.22258	29582.15826	21393.99086	28480.69067	29414.05252	14919.96817	31152.00701	32401.91017	22859.84593	19755.87149	16342.6741	11793.89155	30832.76964	27396.6899	27432.77585	28607.62199	36531.17225	43114.9808	31487.88837	15434.10129	27859.978	23766.53227	31097.18728	36465.35884	24180.31376	18628.03041	38353.40997	28108.55101	26723.5932	17969.01057	40026.90135	25270.29582	28480.1772	27129.35815	31796.62446	28028.21807	29299.67418	36883.73006	23141.08373	25266.32495	24851.11	27192.70112	31951.72193	23431.73625	21954.20704	28102.52208	16540.24554	25902.09121	16848.62253	17561.17031	27408.57495	22479.27995	22400.8902	33842.31558	25496.43723	25495.91749	26444.0998	10177.35284	24537.39869	25778.87799	26384.65763	26870.40615	37247.39837	49033.75641	40113.13985	22161.88849	28288.78249	16267.90846	28077.40642	29411.84019	22025.84914	22771.43316	16559.40166	20888.62435	39929.61011	28076.62007	33579.66412	21677.4265	43481.96549	28413.82738	26585.618	26328.53843	33821.65208	37326.4857	25422.69387	27677.06051	25775.69882	25043.87031	21789.9295	28741.42463	16025.80124	21881.71078	26473.9131094737	25358.2701416512	26953.3888564486	0.0679468768808181	0.27626363566612	0.275449524848117	328.769	114.06554
+SML	2	null	CHEBI:16919	C4H9N3O2	CN(CC(O)=O)C(N)=N	InChI=1S/C4H9N3O2/c1-7(4(5)6)2-3(8)9/h2H2,1H3,(H3,5,6)(H,8,9)	Creatine	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	41404.8475	42227.55483	46073.82024	50773.8239	49432.30831	58707.1161	50803.80993	54185.96366	55862.79726	50618.02741	49567.01389	48007.27758	47629.0836	57078.95673	51874.14073	50212.41427	53225.59341	49724.99885	50628.10229	29453.7795	29558.56046	36408.36873	59068.25963	265281.3152	29518.35852	98900.72344	16039.63498	20687.7081	106430.5312	40621.57739	39001.42983	44451.43689	25511.40714	24657.27972	30150.12398	25701.59561	34576.0123	437183.1091	93515.45345	47444.36487	24896.49665	64760.56679	37973.14799	41665.48451	119043.7417	162669.2226	21989.57577	76682.22498	34851.82913	71751.50535	33665.0532	51686.97542	40012.88104	45603.98858	25637.43398	87982.9876	36491.56563	107203.5212	10790.4394	71884.03097	63892.3333	109828.953	44028.55929	17814.92701	30961.40407	33680.7649	254335.5966	18201.57771	57267.11488	52958.46764	52949.82891	67524.28403	12742.12093	125657.5912	251928.4569	108154.6664	306270.7482	99691.00053	108394.9289	67520.99152	62589.10813	222684.5874	17304.32614	7612.153572	172128.1071	79311.81199	87048.43679	127947.8398	210824.481	131753.4062	195038.3863	308622.8258	97317.11574	101865.6406	202420.3766	151891.8064	160580.8639	167491.4721	157457.9226	40506.77858	32334.54221	70702.22295	28310.34515	22966.8046	73489.44859	195667.3654	67177.22491	134505.4545	97284.15523	24060.86532	35046.93212	33133.05825	75201.18812	52302.31073	83221.81699	22299.3975	24556.03084	101716.6271	48474.97046	45371.56136	62200.304	198342.3074	2639416.301	301590.944	47891.70671	309906.101	54388.71875	45822.71378	113518.7407	131103.1561	21849.88454	104681.9705	124214.9598	23109.09184	76552.58829	126676.5304	172441.3452	67711.95997	21613.3776	53712.31465	28539.2748	23966.8369	247074.4116	30500.36573	46561.13776	67450.3009	52566.17358	145476.0036	21093.41932	16781.99772	20609.04377	16992.40246	57547.01391	35695.66655	14165.20996	125549.1927	15477.37889	27574.45329	33990.77757	13974.94497	24867.52136	8436.810105	7172.73675	42435.78551	37472.68499	57690.19473	94742.87716	16013.8867	85038.6847	21923.00144	44318.82322	19676.95003	40887.41953	35610.30806	39865.78031	31784.33176	9214.175372	6894.464992	23761.89314	63660.30727	27804.56244	40217.94115	4623.48902	26862.72048	36717.61196	6858.277601	13358.12452	76514.38266	18447.91237	29606.25737	23149.00058	27503.70297	34485.72491	25455.44975	133515.1042	74103.36044	72251.86402	59871.82672	83808.44056	531795.849	52115.4844	157186.0366	71747.4737	116297.765	29822.04128	76630.37784	33873.19866	23438.11351	30689.80897	25943.86007	11179.92605	30488.92491	85613.20392	98815.06458	70758.34123	46588.84858	25752.92528	109950.3381	47735.57989	23178.27912	27817.50004	22380.64377	48604.74382	64803.04911	46436.27022	60062.2988	25537.07283	57036.99601	62904.19599	31825.07432	133765.1959	17402.24462	55517.57223	155748.6924	12751.08942	32917.37439	25060.84234	38458.14908	33883.7563	21905.98906	15136.69759	83985.92374	47336.64182	16557.86393	18162.88598	44043.88027	48816.5936	23051.17884	52292.40092	73956.84792	157077.7561	11017.98279	38278.946	75258.68542	80568.62299	50423.0342363158	107707.808593969	50336.8130019626	0.0874871994289036	2.20582890458619	1.15549386702913	164.308	114.06533
+SML	3	null	CHEBI:17126	C7H15NO3	C[N+](C)(C)CC(O)CC([O-])=O	InChI=1S/C7H15NO3/c1-8(2,3)5-6(9)4-7(10)11/h6,9H,4-5H2,1-3H3	Carnitine	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	15719050.68	15885774.66	15614257.35	15853859.52	15691554.71	15719593.27	15995713.82	16062021.36	15885232.57	15887062.94	15885652.15	15718261.73	16422427.95	15953648.6	15646831.48	15714667.07	15050526.41	15179986.49	15001839.19	14200145.75	20324256.25	20645232.48	16901257.31	13971738.22	16403722.72	18674255.3	11524638.73	14405830.46	16898474.72	18860233.09	17903009.6	10914194.04	18960193.58	17114603.34	14328112.76	15101017.05	12140385.32	11722962.65	12999628.76	15204129.28	16490629.71	15691640	16945154.86	16694755.33	16317436.09	15560679.33	16705134.35	15745826.45	13419610.76	13006002.47	15208039.36	14507469.37	15486909.37	16003853.03	16233957.45	13045902.97	13734570	20609740.37	16512586.26	16682738.83	14819152.18	18368071.74	13825235.57	15200888.91	17566801.61	11836729.97	11200512.95	13579498.45	11683247.7	16378835.23	19701273.71	14229212.32	15037208.94	14416932.11	12730151.41	15245328.2	13159289.55	11425800.6	10823815.36	9159891.051	14391722.54	11240230.56	11401029.87	15546222.83	27788268.78	12636154.28	13393425.74	13993308.11	14211641.57	17164936.37	13211121.05	10873297.87	15062104.38	14604749.77	10042318.31	12157176.79	12984108.92	15905830.3	13254612.72	13841861.14	16211693.49	13889889.56	20799121.23	15859865.44	17533567.31	16247693.26	16327479.05	11521215.41	15429426.4	16101516.41	14938488.6	15603978.41	15524600.93	16852340.68	17990802.82	18860327.59	16074552.82	12997629.73	21608141.27	19188007.13	11899314.35	14847336.62	559124.6385	12776899.3	12810510.94	18524150.47	14184312.74	14649563.89	14682017.06	14571864.09	15585227.17	12931971.02	15142740.63	18844554.52	17953634.29	19197812.27	17776013.05	18511804.9	18739774.94	17277348.81	15996336.12	15162294.1	13401876.39	15786269.81	17349630.64	16057746.32	13942199.8	9910174.814	11280970.24	17405509.43	15817998.22	21991226.77	14364254.1	15567371.74	15266396.92	12441025.32	11448049.21	18623897.7	13968801.16	14953682.11	10502504.54	15693885.72	15458522.94	14898192.73	14748043.83	16305650.1	17282885.68	14247492.66	9382703.286	16107904.11	19847605.15	16861540.36	19483856.3	18784561.29	11713294.09	16282748.31	15749383.3	15436338.4	15458702.94	15233467.56	16526461.65	15195162.66	14207819.36	12842975.11	13312140.66	13406149.85	16010967.66	12629899.92	15633706.64	16260437.25	15328091.07	14638930.27	12317084.05	13348948.47	14056836.42	11655829.81	13404682.67	12178165.71	11602183.64	13821236.22	11759753.48	10974211.33	13506087.64	11310801.2	10521770.77	13342162.02	16893349.02	15866247.14	16132076.96	15413812.64	15944398.38	15404866.19	14068830.27	14816724.58	14065989.69	12427083	16280795.69	11653309.06	16289078.93	20106776.59	11621301.77	18990304.17	15951482.59	13905419.3	14482032.12	17610654.7	21627120.21	16813384.23	14804780.81	16611472.52	11311100.52	16451546.6	15144752.54	12697734.73	11613347.16	19634709.48	16281514.63	9975799.237	16552358.86	14939547.16	15286032.77	16509255.3	14916534.15	18268410.03	18741805.61	15007369.52	16696573.95	18286478.71	12580788.18	16764380.16	13226879.95	16394128.98	14411944.2	12056208.74	13114609.75	15730945.3657895	15166864.3291744	14925664.142271	0.0219172687707737	0.200621320292608	0.167732029076176	332.969	162.11322
+SML	4	null	CHEBI:17553	C2H8NO4P	NCCOP(O)(O)=O	InChI=1S/C2H8NO4P/c3-1-2-7-8(4,5)6/h1-3H2,(H2,4,5,6)	O-Phosphoethanolamine	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	5429.626981	5424.942697	5130.08109	5625.975688	5095.984073	3005.852535	7298.02559	5418.212254	6783.663619	5471.2657	4841.524026	5477.450062	5474.974062	2226.334499	5105.782759	2138.80199	5441.90709	5441.009363	5464.804351	11140.72542	8533.220485	7945.281796	8605.650335	2635.460148	4819.682001	4540.844417	3482.833709	1923.260469	4172.684868	9135.869496	5429.259421	1590.398963	11029.11404	8080.880514	5474.959099	7163.83832	2285.562649	909.7995356	3485.224512	7477.966692	6052.014901	6248.690645	6534.566218	8131.567199	3518.59824	5286.338924	10178.21599	5886.925119	6349.293954	1193.944947	4356.54481	4942.838589	8293.193558	4288.209493	9976.914719	2330.307642	5455.239343	9394.637998	5930.123042	2882.004049	12322.18816	5649.68842	7293.237724	8266.803117	6717.573774	2072.427984	1132.305642	5532.643245	3862.844644	6335.016851	2748.817873	2377.424839	8658.367647	1780.511714	3176.702681	2169.208478	1140.832281	1635.861725	2609.867131	1910.89759	2677.458274	2721.553438	2005.48835	8276.120565	1348.390935	3925.501989	4280.322337	6199.496606	2798.071488	3543.978682	3680.697066	961.6592509	4732.113683	4171.888831	1579.942318	1511.434997	6884.388311	4383.028896	466.7712081	3635.017622	6019.379718	4347.690533	14358.89498	9942.377542	7471.7378	4970.256781	10819.81988	2820.236011	7182.162099	8275.993299	5282.308912	5525.620366	6783.343829	4696.351894	4487.911419	12416.66208	5772.729783	1278.365839	11724.9684	9084.149738	971.4585798	747.6577539	891.9368185	1579.538272	5164.330035	1669.220322	5329.286395	10524.54379	5956.923129	2626.412201	8918.344923	5065.801782	5863.322528	3751.562417	2749.589805	10393.07278	7988.488942	6397.526992	7684.630668	10733.28132	7681.093019	6583.765994	2693.493289	4885.643382	4632.392358	7038.505033	5447.708804	2050.075408	4582.334728	9211.310019	8117.796548	10337.64867	3320.052699	5289.770253	8095.192106	2995.215576	1331.134526	10632.54704	5905.110098	5471.520426	7551.794833	4433.654796	5326.254194	5683.111481	5213.118884	5200.292698	6246.685257	6178.867346	753.5076731	9524.651193	6919.874598	7311.174536	11732.56951	8961.457988	1175.521428	4822.640972	4987.845281	4268.008827	5001.838278	4925.844889	9260.467816	4736.34048	2758.642055	2594.014688	3630.274034	2058.277803	4740.672835	4986.233963	5177.537357	2954.344149	6244.241822	6407.805962	2882.038816	1069.907371	2372.616737	2552.787469	2795.695422	1836.788636	1483.368982	1057.541022	1352.516381	1736.906674	6227.802279	1254.526665	1763.780308	1775.280023	6864.785407	7813.228656	6249.616956	8521.930054	9171.853676	6750.056387	2537.943514	10029.21486	5094.592426	5527.655318	6072.711477	4526.467686	3965.643364	13792.16473	1353.045511	6015.723483	5645.504281	3680.650952	8952.192853	5348.331625	10902.80484	6025.743219	9652.069305	9204.083039	937.6558639	8438.856473	4854.268793	3236.986679	2081.758814	4784.385788	6211.639732	2072.522056	3149.159688	6434.049833	1931.71042	11888.24189	5305.041742	6066.204075	3710.637935	8175.467709	8054.353706	5685.275473	1871.377296	7146.568157	2338.458612	7262.683563	5335.822879	2839.164469	3787.905299	5068.22202257895	5298.83566108372	5275.85951087851	0.256862741327904	0.573618386954175	0.540175245877922	441.159	164.00193
+SML	5	null	CHEBI:18186	C9H11NO3	NC(Cc1ccc(O)cc1)C(O)=O	InChI=1S/C9H11NO3/c10-8(9(12)13)5-6-1-3-7(11)4-2-6/h1-4,8,11H,5,10H2,(H,12,13)	Tyrosine	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	44532.24877	41933.28751	41903.66502	44806.88053	43310.02205	44352.07559	45503.7275	42023.32529	43351.52878	43925.98119	42066.87342	44663.69067	44486.79404	44536.23986	41839.69777	44635.61489	44591.23958	41772.13105	41825.65192	18686.36392	33575.35935	185838.7904	49651.02409	202053.6142	14299.17841	42248.16134	15685.44886	26778.00428	46414.04899	25031.59195	42857.41617	81158.08341	52899.43943	48033.70764	43800.73276	31525.16172	28952.27136	5332.165141	38892.02796	44864.57909	39229.99358	95632.73476	79939.0226	17713.61092	20208.54232	34559.37527	46354.67361	93850.00157	10684.85253	18236.25748	32042.35404	17197.28763	39443.42557	60561.74827	41497.81645	17796.34288	31536.69841	39813.86008	52607.77661	24438.61255	45260.13574	221438.7668	148111.5765	99177.68036	10904.83359	38293.14529	37504.77527	21758.15517	50829.7096	39143.57671	4440.730277	93241.29339	38996.13877	19810.90749	37148.19665	74016.62217	225934.1778	41782.32435	32937.3673	30099.51231	66942.09447	23754.412	10508.33616	14943.26945	4549.20153	9256.750765	35924.3452	43940.28845	44530.09783	114538.5156	25390.64299	56821.40989	42414.4072	46257.85719	40731.27695	25882.64359	40824.02386	70119.27216	34660.11127	16928.02089	38113.17039	36361.53858	35967.38541	43893.72447	223096.7646	31724.173	144975.8552	52547.68002	29896.79246	2801.427752	16695.23037	40335.34336	35928.95231	13516.23805	87097.48966	46788.14338	76137.17816	39074.1302	96344.6908	56654.09863	8253.305222	392357.5506	460020.1783	32427.05245	78763.61609	21703.35144	35535.82414	63541.59277	47115.8441	40500.88328	33412.21301	31077.48888	37330.15952	20658.45394	16553.02595	42615.4115	152477.6374	31237.51404	102036.0359	91385.85932	47699.36254	33686.39774	61869.71778	76173.3225	16979.0022	77229.02245	70713.14991	16499.69178	65382.74297	11321.60904	60978.06421	36346.46595	59438.60836	42536.72368	67472.47106	12773.58836	11564.84365	90845.00356	34431.61827	30736.55155	33444.42898	41252.90634	33172.56352	8096.613288	37452.78127	4847.315482	80099.65294	13000.16702	5316.926986	37579.42153	39443.26966	55242.7608	32205.45351	31565.825	2010.98735	27234.02112	72790.23372	39104.18859	31557.43544	182223.434	19329.49356	111104.8267	37421.19619	57141.14553	4222.415027	28376.72837	63921.60895	40030.25841	45110.86925	37835.85554	36277.77658	24712.50541	42794.10786	715.6853516	95815.20685	23972.16593	24078.82566	3419.519976	28327.06644	395762.236	8675.73373	39693.59806	60732.80026	20447.32917	2923.842692	35272.03065	75824.34235	54371.90449	65846.66108	98112.2021	90707.39574	122823.2277	23001.61662	42229.71823	37953.56718	47854.76743	19846.92332	10548.96459	40990.74301	22386.23687	21741.99972	46928.96313	94836.62157	197809.403	37494.56077	98568.75399	42233.1899	156457.3585	51906.33744	160792.2332	69120.39635	21505.18009	70110.24188	27897.42594	10865.83804	3420.790044	76631.48193	13555.49066	23797.90506	36310.61667	36420.35871	53033.04885	43456.75153	36727.35422	22665.34834	26757.05585	151356.2519	109095.061	46530.9609	118640.8232	508941.5092	32291.32427	42330.50949	14045.48954	27740.48093	43476.8776542105	56274.9723421473	55178.4943166037	0.0303830747678454	1.12986861932546	1.22578400438557	283.101	182.08064
+SML	6	null	CHEBI:17929	C8H18N4O2	CN(C)C(=N)NCCC[C@H](N)C(O)=O	InChI=1S/C8H18N4O2/c1-12(2)8(10)11-5-3-4-6(9)7(13)14/h6H,3-5,9H2,1-2H3,(H2,10,11)(H,13,14)/t6-/m0/s1	NG,NG-dimethyl-L-arginine (ADMA)	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	2629584.573	2802988.255	2843815.799	2778453.124	2776588.661	2923074.506	2931128.994	2838760.676	2843492.221	2556520.881	2650400.104	2799588.487	2843469.799	2575321.593	2770728.025	2383992.773	2792893.523	3085768.293	2771657.262	2046882.016	1737682.445	16617391.95	4682750.082	11699959.34	1227290.009	737819.3914	279955.6977	367977.6452	1197093.735	1593029.842	2269442.945	791983.9833	3454162.456	2706838.161	1175593.799	1142645.084	229933.4068	95893.25407	699516.2408	2238138.234	1970431.973	8309152.922	5009765.83	2049425.598	5123274.214	577051.6287	5057300.92	2181871.158	584780.0774	79992.06983	882578.5286	700553.5574	2618191.486	5526139.816	2704241.492	76976.65306	436736.6871	1555474.005	1859415.923	744345.3412	1544407.985	15565924.21	6686234.541	6337020.709	806343.8215	2154047.862	515170.2066	1879216.682	3161473.13	2862195.721	452576.9934	962527.7145	836360.919	81760.72964	467841.6339	326821.6001	3753230.075	830778.3624	209200.9631	186017.5994	626971.3155	218109.7713	67248.99163	695280.8194	744628.5047	748517.3855	550403.2052	1050879.941	774265.2188	3000909.435	317185.8818	711285.0643	650323.5414	634886.1967	307821.2812	72133.83207	521277.5611	846562.7443	245413.0584	1395601.814	2146736.393	1109709.648	1412656.002	2631352.974	14295831.65	1037935.947	9908593.381	655832.4367	795775.8289	1634982.511	1296248.052	1918739.756	1312552.884	1290528.903	1903347.723	1902683.271	1985928.399	515403.9785	4582722.661	3920437.539	91208.5975	9375351.126	10825867.71	152493.7879	681219.649	271201.6348	1633434.016	3909177.196	2155944.039	807097.7697	1076621.271	606353.2866	841986.7166	1770206.41	274368.4536	3435288.769	10771545.68	921792.5188	2851545.828	3249497.152	3446544.101	2865655.341	864594.3337	4161522.369	474957.2808	4496790.525	845564.5988	424627.4892	658365.2133	1276056.178	2660981.971	1530901.682	815224.8231	1925163.541	7687227.354	335094.6746	86343.68619	3803310.348	296176.9424	1602176.884	706608.427	1006288.351	2173524.67	436013.852	341819.7978	1372975.501	4976920.439	838805.5551	71684.10748	2975270.047	1144845.634	2702815.382	2738679.081	1314483.327	241942.4224	604269.3376	1410381.323	1325535.991	686802.4229	11694735.7	2027418.919	10075673.9	1640061.004	2296033.121	1213127.133	216823.5593	2455779.154	1435597.053	2204938.176	1485655.571	1821337.444	699107.8657	337125.1963	18861.11881	4054631.963	196603.4432	436520.1443	249034.3749	89784.81352	3911754.638	100987.7758	256755.2201	716361.9855	262310.0282	197437.8865	182811.6316	5052556.038	4281373.776	1998608.904	4731548.894	7032445.968	7145594.101	418088.6268	446745.1046	1813227.257	416257.3902	715588.8286	180120.3597	625533.0535	784285.2125	214024.8878	1889735.109	10169746.75	12451726.87	3052871.707	5928296.292	1250582.313	12630107.89	4746864.292	3718828.511	201581.9074	511678.5152	482850.9826	403257.9915	291722.6037	897268.7819	2492479.376	75080.81351	957062.6845	1832411.898	2128709.829	1834544.875	2073300.969	2383373.468	1888342.566	919643.9084	12220834.56	5117225.793	1153102.97	3951990.846	12000455.89	801881.2595	1851002.812	617737.6648	462228.8973	2768327.76573684	2313015.45897287	2329612.03536084	0.056421116631648	1.33198366800055	1.27564960294089	459.503	203.15015
+SML	7	null	CHEBI:17748	C10H14N2O5	Cc1cn([C@H]2C[C@H](O)[C@@H](CO)O2)c(=O)[nH]c1=O	InChI=1S/C10H14N2O5/c1-5-3-12(10(16)11-9(5)15)8-2-6(14)7(4-13)17-8/h3,6-8,13-14H,2,4H2,1H3,(H,11,15,16)/t6-,7+,8+/m0/s1	Thymidine	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	3425.423387	5399.883721	4799.169373	2119.262818	3770.375456	2607.60902	4091.727768	3776.758243	3544.257488	3822.612109	3375.8008	3356.78558	4631.62937	3716.117257	4202.550685	3360.40429	3534.358737	3540.91992	2175.41017	1594.527053	12384.92343	20717.32584	8857.174933	135377.3468	6275.942234	2708.899271	2227.736864	1184.656307	22264.18984	66472.85441	1120.3633	662.4193471	970.937009	658.1855236	939.582713	1311.556995	4021.821929	2671.103612	1424.257063	20916.49221	1452.029277	53396.89279	3119.823636	9355.651381	10022.64862	5023.465471	27631.95416	11457.97382	2935.387772	416.8421514	2099.10755	1494.388636	4390.978895	43976.90119	47502.14256	376.2645408	9875.927417	1948.88094	22393.18621	600.8888931	4633.96055	10625.74187	51986.88064	17089.26646	6805.438189	5543.265156	1975.451066	266.2254917	14756.50699	9283.250393	6807.150259	1602.1675	690.6584757	2441.024914	3558.497937	1099.049079	26979.04786	4525.600784	2830.05228	2623.743544	839.220522	3267.337895	1246.905824	9187.474647	14685.27853	2260.048011	4210.474186	3307.207493	2729.296694	13118.79611	2572.222268	2295.085396	3360.80485	2521.40337	1558.923705	2032.46029	2174.41085	1682.184856	3981.034328	4504.748441	2327.641513	1495.80625	5814.25577	1068.229062	26313.63187	16859.00308	16996.48161	4801.998595	29859.70421	3936.6597	7035.127801	24166.09472	1959.062447	4135.000875	5428.619121	36392.94261	24933.78214	3010.474236	76494.8586	49344.31808	2748.650732	86168.01935	11139.84354	14446.11918	2039.404004	1907.418425	1239.394684	44343.96104	12392.34619	4921.558642	17236.33854	845.3440532	532.1585019	2876.516471	1295.091796	21254.89234	18135.9267	13116.69174	2915.383437	9947.946356	59805.37537	2352.694937	1842.398064	20686.19366	1907.590666	6620.914919	813.8691593	4597.768207	5079.877476	19058.17512	27394.38214	1861.183745	7882.707343	4697.386251	13933.69013	1976.897674	3791.011097	4021.175034	826.1515177	1386.511306	35011.56614	1734.010755	5748.705933	5116.172934	16436.49689	8308.106183	9902.36375	5393.250834	212.9091801	57683.8867	1341.682557	11047.61629	1348.747706	126799.1453	2401.626124	900.7385067	33830.81212	1056.86354	2326.140063	43993.10235	2192.503274	3942.476241	6386.529044	5766.955063	6052.752178	1327.217103	1549.895481	4393.523823	24115.54675	5573.124496	9200.421293	6148.152719	1702.789752	2564.680927	7331.689018	1623.614517	517.3691563	2981.428641	2820.824431	50055.38907	2290.68211	2834.297023	2340.510191	4070.474794	3164.345236	3968.900376	16220.94168	24711.22537	2363.220536	21539.79118	27033.27803	17588.9295	4219.692542	2300.873426	2629.908656	2526.600982	1661.212087	1562.325325	4152.034791	2425.018193	1410.806494	2210.540536	26978.00254	21058.04236	6458.37075	21300.25903	1137.64432	20016.27539	26026.49803	18388.19505	10387.43563	5399.577432	2714.034675	2247.440412	1494.091393	3620.770628	909.3071963	232.9444821	898.3118625	10612.94891	1943.536322	5179.514869	1675.11929	18707.01413	2310.899412	7296.473167	13462.63602	6296.520247	5588.621896	6725.917712	41766.39227	38762.4061	1214.998611	648.4197585	2313.548466	3644.7924311579	11956.5537464558	10240.6332064131	0.222584499383412	1.6241630563439	1.58613941071542	418.342	241.08269
+SML	8	null	CHEBI:16335	C10H13N5O4	Nc1ncnc2n(cnc12)[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O	InChI=1S/C10H13N5O4/c11-8-5-9(13-2-12-8)15(3-14-5)10-7(18)6(17)4(1-16)19-10/h2-4,6-7,10,16-18H,1H2,(H2,11,12,13)/t4-,6-,7-,10-/m1/s1	Adenosine	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	1215765.393	1049672.876	1214986.305	1197107.387	1146456.445	1228431.094	1210051.205	1335486.376	1220298.419	1210643.612	1460197.461	1234916.874	1210303.803	1164450.584	1213101.202	1212189.861	1097734.656	1171858.703	1139203.214	212522.5613	98488.0862	41969.11451	45987.84207	28080.78352	124587.4785	1708416.325	89344.62154	138096.2504	102111.6414	1441805.565	327543.9416	26044.05806	1672196.77	741897.4851	130016.6592	647939.9996	1882458.819	46197.21553	265790.8738	50052.37216	259213.1602	14707.83723	54140.03599	485646.863	41835.98728	255317.3608	35245.37458	135729.0039	786567.6878	73713.38793	370343.9545	518141.2471	603692.5819	20362.26857	316288.0451	980357.9649	1493408.44	254856.9377	828897.3388	843841.76	131733.5518	21760.09778	26469.5077	99121.30857	1472850.886	169856.4526	103206.3977	455114.0399	21699.78511	554716.47	1457602.372	40449.18025	1084492.287	830711.7152	367210.1555	376515.8568	4683.099297	118028.6402	198379.7381	1764375.99	262039.2095	284503.4683	2930368.097	393657.2535	569015.6233	148640.3839	228975.5436	75453.77041	365267.0336	14430.85623	1052390.103	107580.8548	131865.6031	88779.62159	135747.931	240002.022	441406.034	171679.2332	342118.4039	176578.9224	161208.6769	361146.9579	1381734.281	568912.4344	33513.36919	378413.0465	52029.89379	74730.60403	110217.9952	194212.762	588615.284	85656.99938	309296.9711	69876.20605	168103.2967	50669.57395	33211.77072	1175717.366	25698.20881	58901.23142	860061.2992	12293.81763	55557.13223	127493.5089	55305.97838	3839814.668	604072.6783	26556.34565	131358.2245	189409.9266	997677.7092	283927.6086	581281.7776	125955.5101	650119.1168	43324.31658	12334.33622	43726.95496	142569.8887	113881.0675	62701.24324	22006.81345	53577.0703	57356.9902	1502281.74	103373.5086	53785.63039	199097.6115	55545.03414	215351.5605	1527162.016	163204.376	723342.6738	760891.0718	16287.2404	257588.8087	73162.44104	84796.09245	645117.114	843946.9699	121766.2453	251206.2673	89777.48758	243880.6585	635439.3415	112065.1185	44791.54028	389841.176	362927.4829	108117.6885	323068.3789	220295.6482	277055.74	356738.6205	366604.4685	125207.9016	32382.74204	254722.1571	1281518.966	18242.61349	281496.1737	104731.8236	9089.153051	114060.2505	104219.2076	1621578.5	194227.431	102927.7968	213094.9121	421496.3408	1395664.386	2866680.451	127562.9711	1505392.469	48291.95706	328758.7104	271350.1188	95338.30745	526148.3895	1589.821899	778549.8785	78344.8972	246704.9982	69451.05666	27562.50025	1348943.784	105404.1543	79806.32825	41064.68226	36137.08884	66918.59078	29498.38294	190255.2219	3072253.821	225876.1527	187905.357	1168926.262	365387.7212	305346.1552	391241.5898	412549.8319	132940.5299	59630.78932	48313.71567	101595.218	81712.24771	242110.0891	51499.74921	67384.88614	16962.14082	2167504.324	988671.736	147437.555	284357.8722	163884.2362	156401.1227	489823.8498	50444.03983	1650702.723	207744.2087	356847.2914	638414.8301	52357.52517	84273.29687	260742.955	1468480.252	139110.3519	29959.80853	49300.96396	134405.2375	8367.473595	206410.4468	313571.4926	676498.8002	312449.4421	1206992.3931579	406869.012426178	396113.873539112	0.0705088529704701	1.43474304822939	1.41692442467589	165.251	268.10616
+SML	9	null	CHEBI:78759	C20H41NO2	CCCCCCCCCCCCC\C=C\[C@@H](O)[C@H](CO)N(C)C	InChI=1S/C20H41NO2/c1-4-5-6-7-8-9-10-11-12-13-14-15-16-17-20(23)19(18-22)21(2)3/h16-17,19-20,22-23H,4-15,18H2,1-3H3/b17-16+/t19-,20+/m0/s1	Dimethylsphingosine	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	15674.95167	15396.14001	15062.35338	15902.04612	15914.2177	16063.2112	16612.96731	16801.39437	16426.40652	16063.48421	17529.96411	14428.32899	15964.05887	16884.43645	14037.61172	16077.39413	14928.48275	16085.31365	15348.88567	10661.08712	13510.87482	48986.06944	14023.03596	4418.996935	12245.37635	12114.18768	13103.3105	7527.601995	7652.748363	9933.703084	19564.93448	12305.33895	11880.23754	19171.94617	18555.88717	14238.00655	10065.61971	2922.840642	4980.038854	7586.100468	15033.26498	36910.56579	24012.59659	11348.76768	10563.53642	15050.91958	30298.95162	16348.88336	13680.59196	10344.81798	7841.139654	7308.119856	13336.96806	22037.13044	12123.16156	4045.067597	10023.24042	19829.83842	17643.03574	5210.865154	9065.695814	11264.46643	37758.16757	22710.44438	9665.221248	31474.0329	1691.669125	14594.041	8003.660448	17850.8291	14161.86643	10063.64199	18594.38032	3070.907534	3204.194307	13382.687	3058.873874	7300.334276	10587.38179	4090.873002	38258.02779	2414.024781	5531.638841	9456.864496	2629.549611	11110.82555	19291.75009	11959.00184	14439.18145	21161.26705	4745.991864	6601.653667	9368.490421	32266.85669	29663.77276	20012.18205	20779.60341	18319.50419	12634.02941	11433.57256	8804.45932	13389.88213	6609.210961	11834.82589	33464.73182	3997.509082	12520.99616	1606.267462	16912.23548	6685.279289	12811.70783	16368.92621	24025.47738	35771.5369	14909.93112	29120.36932	43858.40855	19062.77571	26984.97316	25075.18696	11277.95805	10492.77772	5326.927721	6137.211295	14821.92665	6991.540427	10292.1099	16317.95984	11402.77632	8638.425764	11463.9497	6128.794264	9751.562924	11430.02067	16778.61796	5944.597051	20901.1493	10033.893	26620.10788	42327.44543	10356.74341	5747.559578	7863.687126	40396.70651	12050.51415	5818.086119	14002.36912	7232.546065	10831.25163	9584.672472	13311.76956	16370.98213	10408.73063	10561.65983	24817.56158	5823.942985	7326.292098	19623.16501	14744.05985	12066.25432	10664.38402	27440.4381	13494.21026	8450.265104	9378.055591	18398.63052	29473.29411	13114.43582	12837.65118	24534.58403	11213.78604	15159.12089	17669.27568	22548.60229	8434.569765	8041.392982	17228.34272	10471.93744	12781.10382	22824.95953	17002.59649	30926.40499	28236.69189	13618.93988	25315.97939	11296.15184	22987.72187	7063.666188	17750.97847	16544.00063	10274.29817	8439.890791	11758.1302	2031.068902	35927.76087	7206.917065	5201.303488	2670.781581	5183.590221	24060.89207	7328.881528	6182.293544	26251.13438	13033.07849	4324.559135	7793.015668	56385.83849	30824.15443	17621.91639	17496.32621	23153.09241	18700.20492	14364.8835	6987.064576	11188.43992	14976.98217	10001.09152	9849.06568	16245.70763	12193.56593	10287.69699	18739.00893	65885.37148	38974.83437	11830.30424	10096.68914	20819.84904	33223.54694	22823.90042	24388.733	44581.26615	10042.70683	4693.369499	9408.415267	8954.675771	11227.2293	27875.62117	11732.35101	7728.335262	25872.69187	9879.140831	15690.8459	17855.84272	22676.0385	28106.67736	11975.1705	42736.01118	38477.7882	9508.077858	9592.471969	2089.557131	45998.21541	9459.010376	11832.9876	6133.488437	15852.7183594737	14437.776878907	16815.199665	0.0540045178879531	0.667734793041806	0.669106921235356	32.589	328.31953
+SML	10	null	CHEBI:16960	C15H23N5O14P2	Nc1ncnc2n(cnc12)[C@@H]1O[C@H](COP(O)(=O)OP(O)(=O)OC[C@H]2OC(O)[C@H](O)[C@@H]2O)[C@@H](O)[C@H]1O	InChI=1S/C15H23N5O14P2/c16-12-7-13(18-3-17-12)20(4-19-7)14-10(23)8(21)5(32-14)1-30-35(26,27)34-36(28,29)31-2-6-9(22)11(24)15(25)33-6/h3-6,8-11,14-15,21-25H,1-2H2,(H,26,27)(H,28,29)(H2,16,17,18)/t5-,6-,8-,9-,10-,11-,14-,15?/m1/s1	ADP-ribose	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	2559.212996	1997.213857	2595.360659	2493.827601	2473.920726	2548.420902	3109.459279	2546.307671	2395.487483	2568.486057	2334.172684	2999.426579	2667.051761	1969.612265	1388.378865	2952.792957	1924.00305	2561.936994	2576.838647	6745.00876	7570.801788	3227.669668	2709.304195	1186.308049	2972.484803	8251.73702	2183.943263	1290.700331	3520.138352	4090.94768	7574.767567	3306.371483	8092.398982	7238.691311	2679.656888	3002.868431	2209.886199	720.7630027	3185.948692	5899.854472	4249.798639	3104.135104	2362.303543	4537.605452	318.8055707	317.0673751	2987.086157	4367.538587	2504.764167	702.7489474	3880.895837	2859.539222	5207.149121	2690.639362	7083.672275	338.3947802	1874.314202	2457.406326	6702.859104	3434.779004	5765.417266	2790.972128	7649.012081	4365.295568	3458.707173	1531.854579	3874.249786	715.5202259	3260.108057	7883.800854	3080.779608	2332.116572	9506.34655	1221.982916	3437.787609	2672.718053	870.660256	5280.459124	1899.624885	3897.474573	3480.207134	2386.38864	206.2105751	3731.762013	331.7486158	4121.58513	2929.599786	6737.404035	3224.5985	471.2297533	2401.284189	447.2232249	3585.894889	3644.903732	2399.061644	2574.747033	1177.685877	4301.310511	1921.477401	5614.75609	8069.682052	4059.196711	5562.894022	8718.539502	2834.095052	2308.208411	2174.362034	3050.839347	3532.83199	2545.415292	5239.376128	3224.790177	3208.583046	3425.819913	2382.607766	4314.294952	3614.590795	1990.623898	2655.194308	3469.03102	366.6188334	94.05945603	306.7577811	1725.111761	3595.44974	2494.000256	2660.466888	3708.61684	7568.246407	1719.062278	3319.215448	3242.491568	2559.316437	3088.856844	2055.4409	2880.824012	3774.492967	2741.125913	4742.571925	3787.970757	3862.627131	3491.15674	2034.959658	6514.032792	2863.180157	3131.972735	3157.831049	1794.904415	2874.124369	2866.31321	7030.496146	3937.120084	4535.510067	5059.635539	4174.705834	1381.693542	462.1092112	10896.4526	1843.894864	5673.674357	2243.728794	3326.3272	3424.196447	360.4754313	2455.340435	2231.895284	2316.423937	1977.064683	319.1619726	7906.142102	5434.111783	6618.62127	4776.827517	3198.789652	0	2909.866145	5955.332865	4835.110239	7963.776542	2440.040268	2785.749501	2148.808759	929.0753162	2805.977141	5086.771789	1540.614362	4011.580308	1428.326157	4913.45513	3370.192079	4089.87955	2805.333199	2541.091763	79.9734656	1608.881532	3599.820713	3465.206194	94.43308409	301.9226975	325.51793	278.7835836	1728.948221	3346.581713	426.0425606	99.05355442	2369.068107	3925.076856	2013.41938	6295.197864	3978.523261	3223.344944	4000.289128	1801.138705	6933.284914	2500.511336	2459.406846	2609.232326	3138.537311	2338.008624	2474.902525	3429.178425	4802.365934	2826.013688	4077.194006	2878.88256	2871.847014	7113.002639	1453.489482	4151.200697	4390.843217	1535.380445	3283.975414	3035.698509	655.1957182	1783.831014	3014.117791	7382.751095	1080.969392	2140.554322	5188.476105	2339.542639	8423.572587	3454.845111	6922.588626	3164.562126	1725.815564	2325.0495	3535.898819	964.3374981	2961.441474	1532.964985	3379.04677	5076.191547	1717.889711	2483.011321	2455.89005436842	3414.63611204364	3200.02477163935	0.165929097867507	0.593574249907552	0.642222122097153	447.481	542.06879
+

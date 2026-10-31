@@ -1,0 +1,138 @@
+MTD	mzTab-version	2.1.0-M
+MTD	mzTab-ID	MTBLS1066
+MTD	mzTab-profile	M+S
+MTD	title	Untargeted Metabolomics Reveals Molecular Effects of Ketogenic Diet on Healthy and Tumor Xenograft Mouse Models
+MTD	description	The application of ketogenic diet (KD) (high fat/low carbohydrate/adequate protein) as an auxiliary cancer therapy is a field of growing attention. KD provides sufficient energy supply for healthy cells, while possibly impairing energy production in highly glycolytic tumor cells. Moreover, KD regulates insulin and tumor related growth factors (like insulin growth factor-1, IGF-1). In order to provide molecular evidence for the proposed additional inhibition of tumor growth when combining chemotherapy with KD, we applied untargeted quantitative metabolome analysis on a spontaneous breast cancer xenograft mouse model, using MDA-MB-468 cells. Healthy mice and mice bearing breast cancer xenografts and receiving cyclophosphamide chemotherapy were compared after treatment with control diet and KD. Metabolomic profiling was performed on plasma samples, applying high-performance liquid chromatography coupled to tandem mass spectrometry. Statistical analysis revealed metabolic fingerprints comprising numerous significantly regulated features in the group of mice bearing breast cancer. This fingerprint disappeared after treatment with KD, resulting in recovery to the metabolic status observed in healthy mice receiving control diet. Moreover, amino acid metabolism as well as fatty acid transport were found to be affected by both the tumor and the applied KD. Our results provide clear evidence of a significant molecular effect of adjuvant KD in the context of tumor growth inhibition and suggest additional mechanisms of tumor suppression beyond the proposed constrain in energy supply of tumor cells.
+MTD	instrument[1]-name	[MS, MS:1000031, instrument model, Thermo Scientific Q Exactive Plus]
+MTD	instrument[1]-source	[MS, MS:1000073, electrospray ionization, ]
+MTD	instrument[1]-analyzer[1]	[MS, MS:1000484, orbitrap, ]
+MTD	instrument[1]-detector	[MS, MS:1000026, detector type, ]
+MTD	software[1]	[,, mtbls2mztabm, 0.99.1]
+MTD	software[2]	[,, RmzTabM, 0.99.4]
+MTD	publication[1]	doi:10.3390/ijms20163873 | pubmed:31398922
+MTD	uri[1]	https://www.ebi.ac.uk/metabolights/MTBLS1066
+MTD	quantification_method	[MS, MS:1001834, LC-MS label-free quantitation analysis, ]
+MTD	sample[1]	H_C
+MTD	sample[1]-species[1]	[NCBITAXON, NCBITAXON:10090, Mus musculus, ]
+MTD	sample[1]-tissue[1]	[BTO, BTO:0000131, blood plasma, ]
+MTD	sample[2]	H_MCT
+MTD	sample[2]-species[1]	[NCBITaxon, NCBITaxon:10090, Mus Musculus, ]
+MTD	sample[2]-tissue[1]	[BTO, BTO:0000131, blood plasma, ]
+MTD	sample[3]	BC_C
+MTD	sample[3]-species[1]	[NCBITaxon, NCBITaxon:10090, Mus Musculus, ]
+MTD	sample[3]-tissue[1]	[BTO, BTO:0000131, blood plasma, ]
+MTD	sample[4]	BC_MCT
+MTD	sample[4]-species[1]	[NCBITaxon, NCBITaxon:10090, Mus Musculus, ]
+MTD	sample[4]-tissue[1]	[BTO, BTO:0000131, blood plasma, ]
+MTD	sample[5]	H_LCT
+MTD	sample[5]-species[1]	[NCBITaxon, NCBITaxon:10090, Mus Musculus, ]
+MTD	sample[5]-tissue[1]	[BTO, BTO:0000131, blood plasma, ]
+MTD	sample[6]	Pool
+MTD	sample[6]-species[1]	[NCBITaxon, NCBITaxon:10090, Mus Musculus, ]
+MTD	sample[6]-tissue[1]	[BTO, BTO:0000131, blood plasma, ]
+MTD	sample[7]	Blank
+MTD	sample[7]-species[1]	[,, blank, ]
+MTD	sample[7]-tissue[1]	[CHEBI, CHEBI:46787, solvent, ]
+MTD	ms_run[1]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1066/FILES/014_DaLi_H9M9_H_C_R1_neg_19.mzML
+MTD	ms_run[1]-instrument_ref	instrument[1]
+MTD	ms_run[1]-scan_polarity[1]	[MS, MS:1000129, negative scan, ]
+MTD	ms_run[2]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1066/FILES/033_DaLi_H9M9_H_MCT_R1_neg_38.mzML
+MTD	ms_run[2]-instrument_ref	instrument[1]
+MTD	ms_run[2]-scan_polarity[1]	[MS, MS:1000129, negative scan, ]
+MTD	ms_run[3]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1066/FILES/032_DaLi_H9M9_BC_C_R1_neg_37.mzML
+MTD	ms_run[3]-instrument_ref	instrument[1]
+MTD	ms_run[3]-scan_polarity[1]	[MS, MS:1000129, negative scan, ]
+MTD	ms_run[4]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1066/FILES/017_DaLi_H9M9_BC_MCT_R1_neg_22.mzML
+MTD	ms_run[4]-instrument_ref	instrument[1]
+MTD	ms_run[4]-scan_polarity[1]	[MS, MS:1000129, negative scan, ]
+MTD	ms_run[5]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1066/FILES/019_DaLi_H9M9_H_LCT_R1_neg_24.mzML
+MTD	ms_run[5]-instrument_ref	instrument[1]
+MTD	ms_run[5]-scan_polarity[1]	[MS, MS:1000129, negative scan, ]
+MTD	ms_run[6]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1066/FILES/003_DaLi_H9M9_Pool_01_neg_08.mzML
+MTD	ms_run[6]-instrument_ref	instrument[1]
+MTD	ms_run[6]-scan_polarity[1]	[MS, MS:1000129, negative scan, ]
+MTD	ms_run[7]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS1066/FILES/000_DaLi_H9M9_Blank_01_neg_05.mzML
+MTD	ms_run[7]-instrument_ref	instrument[1]
+MTD	ms_run[7]-scan_polarity[1]	[MS, MS:1000129, negative scan, ]
+MTD	assay[1]	FILES/014_DaLi_H9M9_H_C_R1_neg_19.mzML
+MTD	assay[1]-sample_ref	sample[1]
+MTD	assay[1]-ms_run_ref	ms_run[1]
+MTD	assay[2]	FILES/033_DaLi_H9M9_H_MCT_R1_neg_38.mzML
+MTD	assay[2]-sample_ref	sample[2]
+MTD	assay[2]-ms_run_ref	ms_run[2]
+MTD	assay[3]	FILES/032_DaLi_H9M9_BC_C_R1_neg_37.mzML
+MTD	assay[3]-sample_ref	sample[3]
+MTD	assay[3]-ms_run_ref	ms_run[3]
+MTD	assay[4]	FILES/017_DaLi_H9M9_BC_MCT_R1_neg_22.mzML
+MTD	assay[4]-sample_ref	sample[4]
+MTD	assay[4]-ms_run_ref	ms_run[4]
+MTD	assay[5]	FILES/019_DaLi_H9M9_H_LCT_R1_neg_24.mzML
+MTD	assay[5]-sample_ref	sample[5]
+MTD	assay[5]-ms_run_ref	ms_run[5]
+MTD	assay[6]	FILES/003_DaLi_H9M9_Pool_01_neg_08.mzML
+MTD	assay[6]-sample_ref	sample[6]
+MTD	assay[6]-ms_run_ref	ms_run[6]
+MTD	assay[7]	FILES/000_DaLi_H9M9_Blank_01_neg_05.mzML
+MTD	assay[7]-sample_ref	sample[7]
+MTD	assay[7]-ms_run_ref	ms_run[7]
+MTD	study_variable_group[1]	[,,Diet,]
+MTD	study_variable_group[1]-description	Study factor Diet (Diet)
+MTD	study_variable_group[1]-type	[STATO, STATO:0000252, categorical variable, ]
+MTD	study_variable_group[1]-datatype	xsd:string
+MTD	study_variable_group[1]-study_variable_refs	study_variable[1]|study_variable[2]|study_variable[3]|study_variable[4]
+MTD	study_variable[1]	CTRL
+MTD	study_variable[1]-assay_refs	assay[1]|assay[3]
+MTD	study_variable[1]-average_function	[MS, MS:1002962, mean, ]
+MTD	study_variable[1]-variation_function	[MS, MS:1002963, variation coefficient, ]
+MTD	study_variable[1]-description	Variable Diet, value CTRL
+MTD	study_variable[2]	LCT-MCT8 ketogenic diet
+MTD	study_variable[2]-assay_refs	assay[2]|assay[4]|assay[5]
+MTD	study_variable[2]-average_function	[MS, MS:1002962, mean, ]
+MTD	study_variable[2]-variation_function	[MS, MS:1002963, variation coefficient, ]
+MTD	study_variable[2]-description	Variable Diet, value LCT-MCT8 ketogenic diet
+MTD	study_variable[3]	Pooled QC
+MTD	study_variable[3]-assay_refs	assay[6]
+MTD	study_variable[3]-average_function	[MS, MS:1002962, mean, ]
+MTD	study_variable[3]-variation_function	[MS, MS:1002963, variation coefficient, ]
+MTD	study_variable[3]-description	Variable Diet, value Pooled QC
+MTD	study_variable[4]	Blank QC
+MTD	study_variable[4]-assay_refs	assay[7]
+MTD	study_variable[4]-average_function	[MS, MS:1002962, mean, ]
+MTD	study_variable[4]-variation_function	[MS, MS:1002963, variation coefficient, ]
+MTD	study_variable[4]-description	Variable Diet, value Blank QC
+MTD	cv[1]-label	MS
+MTD	cv[1]-full_name	PSI-MS controlled vocabulary
+MTD	cv[1]-version	4.1.138
+MTD	cv[1]-uri	https://www.ebi.ac.uk/ols4/ontologies/ms
+MTD	cv[2]-label	PRIDE
+MTD	cv[2]-full_name	PRIDE PRoteomics IDEntifications (PRIDE) database controlled vocabulary
+MTD	cv[2]-version	16:10:2023 11:38
+MTD	cv[2]-uri	https://www.ebi.ac.uk/ols/ontologies/pride
+MTD	cv[3]-label	STATO
+MTD	cv[3]-full_name	General purpose STATistics Ontology
+MTD	cv[3]-version	2026-04-20
+MTD	cv[3]-uri	https://www.ebi.ac.uk/ols4/ontologies/stato
+MTD	database[1]	[MIRIAM, MIR:00000002, ChEBI, ]
+MTD	database[1]-prefix	CHEBI
+MTD	database[1]-version	unknown
+MTD	database[1]-uri	https://www.ebi.ac.uk/chebi/
+MTD	small_molecule-quantification_unit	[PRIDE, PRIDE:0000330, Arbitrary quantification unit, ]
+MTD	small_molecule-identification_reliability	[MS, MS:1002896, compound identification confidence level, ]
+
+SMH	SML_ID	SMF_ID_REFS	database_identifier	chemical_formula	smiles	inchi	chemical_name	uri	theoretical_neutral_mass	adduct_ions	reliability	best_id_confidence_measure	best_id_confidence_value	abundance_assay[1]	abundance_assay[2]	abundance_assay[3]	abundance_assay[4]	abundance_assay[5]	abundance_assay[6]	abundance_assay[7]	abundance_study_variable[1]	abundance_study_variable[2]	abundance_study_variable[3]	abundance_study_variable[4]	abundance_variation_study_variable[1]	abundance_variation_study_variable[2]	abundance_variation_study_variable[3]	abundance_variation_study_variable[4]	opt_global_retention_time	opt_global_mass_to_charge
+SML	1	null	CHEBI:18211	C6H13N3O3	NC(CCCNC(N)=O)C(O)=O	InChI=1S/C6H13N3O3/c7-4(5(10)11)2-1-3-9-6(8)12/h4H,1-3,7H2,(H,10,11)(H3,8,9,12)	Citrulline	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	51.48	174.0883
+SML	2	null	CHEBI:28300	C5H10N2O3	NC(CCC(N)=O)C(O)=O	InChI=1S/C5H10N2O3/c6-3(5(9)10)1-2-4(7)8/h3H,1-2,6H2,(H2,7,8)(H,9,10)	Glutamine	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	50.01	145.0618
+SML	3	null	CHEBI:73685	C7H12N2O4	CC(=O)NC(CCC(N)=O)C(O)=O	InChI=1S/C7H12N2O4/c1-4(10)9-5(7(12)13)2-3-6(8)11/h5H,2-3H2,1H3,(H2,8,11)(H,9,10)(H,12,13)	N-Acetylglutamine	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	77.93	187.0724
+SML	4	null	CHEBI:27226	C5H4N4O3	null	null	Uric acid	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	81.37	167.021
+SML	5	null	CHEBI:18300	C4H4O4	OC(=O)C=C/C(O)=O	InChI=1S/C4H4O4/c5-3(6)1-2-4(7)8/h1-2H,(H,5,6)(H,7,8)/b2-1-	Maleic acid	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	96.93	115.0035
+SML	6	null	CHEBI:37024	C6H11NO4	NC(CCCC(O)=O)C(O)=O	InChI=1S/C6H11NO4/c7-4(6(10)11)2-1-3-5(8)9/h4H,1-3,7H2,(H,8,9)(H,10,11)	2-Aminoadipic acid	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	56.27	160.0615
+SML	7	null	CHEBI:145052	C8H12O4	OC(=O)C1CCC(CC1)C(O)=O	InChI=1S/C8H12O4/c9-7(10)5-1-2-6(4-3-5)8(11)12/h5-6H,1-4H2,(H,9,10)(H,11,12)	1,4-Cyclohexanedicarboxylic acid	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	306.18	171.0662
+SML	8	null	CHEBI:30846	C5H4O3	OC(=O)c1ccoc1	InChI=1S/C5H4O3/c6-5(7)4-1-2-8-3-4/h1-3H,(H,6,7)	3-Furoic acid	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	98.88	111.0089
+SML	9	null	CHEBI:15344	C4H6O3	CC(=O)CC(O)=O	InChI=1S/C4H6O3/c1-3(5)2-4(6)7/h2H2,1H3,(H,6,7)	Acetoacetic acid	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	78.42	101.0243
+SML	10	null	CHEBI:18211	C6H13N3O3	NC(CCCNC(N)=O)C(O)=O	InChI=1S/C6H13N3O3/c7-4(5(10)11)2-1-3-9-6(8)12/h4H,1-3,7H2,(H,10,11)(H3,8,9,12)	Citrulline	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	51.48	174.0883
+SML	11	null	CHEBI:28300	C5H10N2O3	NC(CCC(N)=O)C(O)=O	InChI=1S/C5H10N2O3/c6-3(5(9)10)1-2-4(7)8/h3H,1-2,6H2,(H2,7,8)(H,9,10)	Glutamine	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	50.01	145.0618
+SML	12	null	CHEBI:18300	C4H4O4	OC(=O)C=C/C(O)=O	InChI=1S/C4H4O4/c5-3(6)1-2-4(7)8/h1-2H,(H,5,6)(H,7,8)/b2-1-	Maleic acid	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	66.73	133.0142
+SML	13	null	CHEBI:17533	C7H11NO5	CC(=O)N[C@@H](CCC(O)=O)C(O)=O	InChI=1S/C7H11NO5/c1-4(9)8-5(7(12)13)2-3-6(10)11/h5H,2-3H2,1H3,(H,8,9)(H,10,11)(H,12,13)/t5-/m0/s1	N-Acetylglutamic acid	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	115.84	188.0564
+SML	14	null	CHEBI:73685	C7H12N2O4	CC(=O)NC(CCC(N)=O)C(O)=O	InChI=1S/C7H12N2O4/c1-4(10)9-5(7(12)13)2-3-6(8)11/h5H,2-3H2,1H3,(H2,8,11)(H,9,10)(H,12,13)	N-Acetylglutamine	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	77.93	187.0724
+SML	15	null	CHEBI:18186	C9H11NO3	NC(Cc1ccc(O)cc1)C(O)=O	InChI=1S/C9H11NO3/c10-8(9(12)13)5-6-1-3-7(11)4-2-6/h1-4,8,11H,5,10H2,(H,12,13)	Tyrosine	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	126.66	180.0666
+

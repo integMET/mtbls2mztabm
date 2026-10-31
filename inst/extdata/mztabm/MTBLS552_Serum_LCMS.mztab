@@ -1,0 +1,1336 @@
+MTD	mzTab-version	2.1.0-M
+MTD	mzTab-ID	MTBLS552
+MTD	mzTab-profile	M+S
+MTD	title	Metabolomic alterations in invasive ductal carcinoma of breast: A comprehensive metabolomic study using tissue and serum samples
+MTD	description	Invasive ductal carcinoma (IDC) is the most common type of breast cancer and the leading cause of breast cancer related mortality. In the present study, metabolomic profiles of 72 tissue samples and 146 serum samples were analysed using targeted liquid chromatography multiple reaction monitoring mass spectrometry (LC-MRM/MS) and untargeted gas chromatography mass spectrometry (GC-MS) approaches. Combination of univariate and multivariate statistical treatment identified significant alterations of 42 and 32 metabolites in tissue and serum samples of IDC respectively when compared to control. A decent interconnection of metabolomic changes was observed between tissue and serum, indicating a bi-directional interaction of metabolites in IDC. Additionally, 8 tissue metabolites and 9 serum metabolites showed progressive change from control to benign to IDC suggesting their possible role in malignant transformation. We have identified a panel of three metabolites viz. tryptophan, tyrosine, and creatine in tissue and serum, which could be useful in screening of IDC subjects from both control and benign. The metabolomic alterations in IDC showed perturbations in purine and pyrimidine metabolism, amino sugar metabolism, amino acid metabolism, fatty acid biosynthesis etc. Comprehensively, this study provides valuable insights into metabolic adaptations of IDC, which can help to identify diagnostic markers as well as potential therapeutic targets.
+MTD	instrument[1]-name	[MS, MS:1000031, instrument model, AB SCIEX QTRAP 4000]
+MTD	instrument[1]-source	[MS, MS:1000073, electrospray ionization, ]
+MTD	instrument[1]-analyzer[1]	[MS, MS:1000443, mass analyzer type, hybrid triple quadrupole-linear ion trap]
+MTD	instrument[1]-detector	[MS, MS:1000026, detector type, ]
+MTD	software[1]	[,, mtbls2mztabm, 0.99.1]
+MTD	software[2]	[,, RmzTabM, 0.99.4]
+MTD	publication[1]	doi:10.18632/oncotarget.23626 | pubmed:29416801
+MTD	uri[1]	https://www.ebi.ac.uk/metabolights/MTBLS552
+MTD	quantification_method	[MS, MS:1001834, LC-MS label-free quantitation analysis, ]
+MTD	sample[1]	BB_1
+MTD	sample[1]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[1]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[10]	BB_10
+MTD	sample[10]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[10]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[100]	MB_36
+MTD	sample[100]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[100]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[101]	MB_37
+MTD	sample[101]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[101]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[102]	MB_38
+MTD	sample[102]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[102]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[103]	MB_39
+MTD	sample[103]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[103]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[104]	MB_40
+MTD	sample[104]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[104]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[105]	MB_41
+MTD	sample[105]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[105]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[106]	MB_42
+MTD	sample[106]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[106]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[107]	MB_43
+MTD	sample[107]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[107]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[108]	MB_44
+MTD	sample[108]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[108]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[109]	MB_45
+MTD	sample[109]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[109]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[11]	BB_11
+MTD	sample[11]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[11]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[110]	MB_46
+MTD	sample[110]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[110]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[111]	MB_47
+MTD	sample[111]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[111]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[112]	MB_48
+MTD	sample[112]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[112]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[113]	MB_49
+MTD	sample[113]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[113]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[114]	MB_50
+MTD	sample[114]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[114]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[115]	MB_51
+MTD	sample[115]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[115]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[116]	MB_52
+MTD	sample[116]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[116]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[117]	MB_53
+MTD	sample[117]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[117]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[118]	MB_54
+MTD	sample[118]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[118]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[119]	MB_55
+MTD	sample[119]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[119]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[12]	BB_12
+MTD	sample[12]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[12]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[120]	MB_56
+MTD	sample[120]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[120]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[121]	MB_57
+MTD	sample[121]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[121]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[122]	MB_58
+MTD	sample[122]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[122]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[123]	MB_59
+MTD	sample[123]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[123]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[124]	MB_60
+MTD	sample[124]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[124]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[125]	MB_61
+MTD	sample[125]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[125]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[126]	MB_62
+MTD	sample[126]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[126]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[127]	MB_63
+MTD	sample[127]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[127]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[128]	MB_64
+MTD	sample[128]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[128]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[129]	MB_65
+MTD	sample[129]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[129]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[13]	BB_13
+MTD	sample[13]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[13]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[130]	MB_66
+MTD	sample[130]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[130]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[131]	MB_67
+MTD	sample[131]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[131]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[132]	MB_68
+MTD	sample[132]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[132]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[133]	MB_69
+MTD	sample[133]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[133]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[134]	MB_70
+MTD	sample[134]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[134]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[135]	MB_71
+MTD	sample[135]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[135]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[136]	MB_72
+MTD	sample[136]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[136]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[137]	MB_73
+MTD	sample[137]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[137]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[138]	MB_74
+MTD	sample[138]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[138]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[139]	MB_75
+MTD	sample[139]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[139]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[14]	BB_14
+MTD	sample[14]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[14]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[140]	MB_76
+MTD	sample[140]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[140]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[15]	BB_15
+MTD	sample[15]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[15]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[16]	BB_16
+MTD	sample[16]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[16]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[17]	BB_17
+MTD	sample[17]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[17]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[18]	BB_18
+MTD	sample[18]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[18]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[19]	BB_19
+MTD	sample[19]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[19]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[2]	BB_2
+MTD	sample[2]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[2]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[20]	BB_20
+MTD	sample[20]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[20]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[21]	BB_21
+MTD	sample[21]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[21]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[22]	BB_22
+MTD	sample[22]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[22]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[23]	BB_23
+MTD	sample[23]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[23]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[24]	BB_24
+MTD	sample[24]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[24]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[25]	BB_25
+MTD	sample[25]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[25]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[26]	BB_26
+MTD	sample[26]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[26]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[27]	BB_27
+MTD	sample[27]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[27]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[28]	BB_28
+MTD	sample[28]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[28]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[29]	BB_29
+MTD	sample[29]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[29]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[3]	BB_3
+MTD	sample[3]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[3]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[30]	BB_30
+MTD	sample[30]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[30]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[31]	BB_31
+MTD	sample[31]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[31]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[32]	BB_32
+MTD	sample[32]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[32]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[33]	HCB_1
+MTD	sample[33]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[33]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[34]	HCB_2
+MTD	sample[34]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[34]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[35]	HCB_3
+MTD	sample[35]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[35]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[36]	HCB_4
+MTD	sample[36]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[36]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[37]	HCB_5
+MTD	sample[37]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[37]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[38]	HCB_6
+MTD	sample[38]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[38]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[39]	HCB_7
+MTD	sample[39]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[39]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[4]	BB_4
+MTD	sample[4]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[4]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[40]	HCB_8
+MTD	sample[40]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[40]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[41]	HCB_9
+MTD	sample[41]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[41]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[42]	HCB_10
+MTD	sample[42]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[42]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[43]	HCB_11
+MTD	sample[43]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[43]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[44]	HCB_12
+MTD	sample[44]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[44]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[45]	HCB_13
+MTD	sample[45]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[45]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[46]	HCB_14
+MTD	sample[46]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[46]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[47]	HCB_15
+MTD	sample[47]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[47]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[48]	HCB_16
+MTD	sample[48]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[48]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[49]	HCB_17
+MTD	sample[49]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[49]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[5]	BB_5
+MTD	sample[5]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[5]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[50]	HCB_18
+MTD	sample[50]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[50]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[51]	HCB_19
+MTD	sample[51]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[51]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[52]	HCB_20
+MTD	sample[52]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[52]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[53]	HCB_21
+MTD	sample[53]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[53]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[54]	HCB_22
+MTD	sample[54]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[54]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[55]	HCB_23
+MTD	sample[55]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[55]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[56]	HCB_24
+MTD	sample[56]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[56]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[57]	HCB_25
+MTD	sample[57]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[57]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[58]	HCB_26
+MTD	sample[58]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[58]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[59]	HCB_27
+MTD	sample[59]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[59]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[6]	BB_6
+MTD	sample[6]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[6]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[60]	HCB_28
+MTD	sample[60]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[60]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[61]	HCB_29
+MTD	sample[61]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[61]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[62]	HCB_30
+MTD	sample[62]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[62]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[63]	HCB_31
+MTD	sample[63]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[63]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[64]	HCB_32
+MTD	sample[64]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[64]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[65]	MB_1
+MTD	sample[65]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[65]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[66]	MB_2
+MTD	sample[66]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[66]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[67]	MB_3
+MTD	sample[67]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[67]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[68]	MB_4
+MTD	sample[68]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[68]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[69]	MB_5
+MTD	sample[69]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[69]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[7]	BB_7
+MTD	sample[7]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[7]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[70]	MB_6
+MTD	sample[70]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[70]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[71]	MB_7
+MTD	sample[71]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[71]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[72]	MB_8
+MTD	sample[72]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[72]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[73]	MB_9
+MTD	sample[73]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[73]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[74]	MB_10
+MTD	sample[74]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[74]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[75]	MB_11
+MTD	sample[75]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[75]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[76]	MB_12
+MTD	sample[76]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[76]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[77]	MB_13
+MTD	sample[77]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[77]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[78]	MB_14
+MTD	sample[78]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[78]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[79]	MB_15
+MTD	sample[79]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[79]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[8]	BB_8
+MTD	sample[8]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[8]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[80]	MB_16
+MTD	sample[80]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[80]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[81]	MB_17
+MTD	sample[81]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[81]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[82]	MB_18
+MTD	sample[82]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[82]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[83]	MB_19
+MTD	sample[83]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[83]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[84]	MB_20
+MTD	sample[84]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[84]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[85]	MB_21
+MTD	sample[85]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[85]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[86]	MB_22
+MTD	sample[86]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[86]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[87]	MB_23
+MTD	sample[87]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[87]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[88]	MB_24
+MTD	sample[88]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[88]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[89]	MB_25
+MTD	sample[89]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[89]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[9]	BB_9
+MTD	sample[9]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[9]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[90]	MB_26
+MTD	sample[90]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[90]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[91]	MB_27
+MTD	sample[91]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[91]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[92]	MB_28
+MTD	sample[92]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[92]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[93]	MB_29
+MTD	sample[93]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[93]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[94]	MB_30
+MTD	sample[94]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[94]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[95]	MB_31
+MTD	sample[95]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[95]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[96]	MB_32
+MTD	sample[96]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[96]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[97]	MB_33
+MTD	sample[97]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[97]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[98]	MB_34
+MTD	sample[98]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[98]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	sample[99]	MB_35
+MTD	sample[99]-species[1]	[NCBITAXON, NCBITAXON:9606, Homo sapiens, ]
+MTD	sample[99]-tissue[1]	[BTO, BTO:0000133, blood serum, ]
+MTD	ms_run[1]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_BB_1.mzML
+MTD	ms_run[1]-instrument_ref	instrument[1]
+MTD	ms_run[1]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[2]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_BB_2.mzML
+MTD	ms_run[2]-instrument_ref	instrument[1]
+MTD	ms_run[2]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[3]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_BB_3.mzML
+MTD	ms_run[3]-instrument_ref	instrument[1]
+MTD	ms_run[3]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[4]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_BB_4.mzML
+MTD	ms_run[4]-instrument_ref	instrument[1]
+MTD	ms_run[4]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[5]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_BB_5.mzML
+MTD	ms_run[5]-instrument_ref	instrument[1]
+MTD	ms_run[5]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[6]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_BB_6.mzML
+MTD	ms_run[6]-instrument_ref	instrument[1]
+MTD	ms_run[6]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[7]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_BB_7.mzML
+MTD	ms_run[7]-instrument_ref	instrument[1]
+MTD	ms_run[7]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[8]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_BB_8.mzML
+MTD	ms_run[8]-instrument_ref	instrument[1]
+MTD	ms_run[8]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[9]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_BB_9.mzML
+MTD	ms_run[9]-instrument_ref	instrument[1]
+MTD	ms_run[9]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[10]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_BB_10.mzML
+MTD	ms_run[10]-instrument_ref	instrument[1]
+MTD	ms_run[10]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[11]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_BB_11.mzML
+MTD	ms_run[11]-instrument_ref	instrument[1]
+MTD	ms_run[11]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[12]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_BB_12.mzML
+MTD	ms_run[12]-instrument_ref	instrument[1]
+MTD	ms_run[12]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[13]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_BB_13.mzML
+MTD	ms_run[13]-instrument_ref	instrument[1]
+MTD	ms_run[13]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[14]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_BB_14.mzML
+MTD	ms_run[14]-instrument_ref	instrument[1]
+MTD	ms_run[14]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[15]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_BB_15.mzML
+MTD	ms_run[15]-instrument_ref	instrument[1]
+MTD	ms_run[15]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[16]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_BB_16.mzML
+MTD	ms_run[16]-instrument_ref	instrument[1]
+MTD	ms_run[16]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[17]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_BB_17.mzML
+MTD	ms_run[17]-instrument_ref	instrument[1]
+MTD	ms_run[17]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[18]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_BB_18.mzML
+MTD	ms_run[18]-instrument_ref	instrument[1]
+MTD	ms_run[18]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[19]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_BB_19.mzML
+MTD	ms_run[19]-instrument_ref	instrument[1]
+MTD	ms_run[19]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[20]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_BB_20.mzML
+MTD	ms_run[20]-instrument_ref	instrument[1]
+MTD	ms_run[20]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[21]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_BB_21.mzML
+MTD	ms_run[21]-instrument_ref	instrument[1]
+MTD	ms_run[21]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[22]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_BB_22.mzML
+MTD	ms_run[22]-instrument_ref	instrument[1]
+MTD	ms_run[22]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[23]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_BB_23.mzML
+MTD	ms_run[23]-instrument_ref	instrument[1]
+MTD	ms_run[23]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[24]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_BB_24.mzML
+MTD	ms_run[24]-instrument_ref	instrument[1]
+MTD	ms_run[24]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[25]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_BB_25.mzML
+MTD	ms_run[25]-instrument_ref	instrument[1]
+MTD	ms_run[25]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[26]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_BB_26.mzML
+MTD	ms_run[26]-instrument_ref	instrument[1]
+MTD	ms_run[26]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[27]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_BB_27.mzML
+MTD	ms_run[27]-instrument_ref	instrument[1]
+MTD	ms_run[27]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[28]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_BB_28.mzML
+MTD	ms_run[28]-instrument_ref	instrument[1]
+MTD	ms_run[28]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[29]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_BB_29.mzML
+MTD	ms_run[29]-instrument_ref	instrument[1]
+MTD	ms_run[29]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[30]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_BB_30.mzML
+MTD	ms_run[30]-instrument_ref	instrument[1]
+MTD	ms_run[30]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[31]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_BB_31.mzML
+MTD	ms_run[31]-instrument_ref	instrument[1]
+MTD	ms_run[31]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[32]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_BB_32.mzML
+MTD	ms_run[32]-instrument_ref	instrument[1]
+MTD	ms_run[32]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[33]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_HCB_1.mzML
+MTD	ms_run[33]-instrument_ref	instrument[1]
+MTD	ms_run[33]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[34]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_HCB_2.mzML
+MTD	ms_run[34]-instrument_ref	instrument[1]
+MTD	ms_run[34]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[35]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_HCB_3.mzML
+MTD	ms_run[35]-instrument_ref	instrument[1]
+MTD	ms_run[35]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[36]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_HCB_4.mzML
+MTD	ms_run[36]-instrument_ref	instrument[1]
+MTD	ms_run[36]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[37]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_HCB_5.mzML
+MTD	ms_run[37]-instrument_ref	instrument[1]
+MTD	ms_run[37]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[38]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_HCB_6.mzML
+MTD	ms_run[38]-instrument_ref	instrument[1]
+MTD	ms_run[38]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[39]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_HCB_7.mzML
+MTD	ms_run[39]-instrument_ref	instrument[1]
+MTD	ms_run[39]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[40]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_HCB_8.mzML
+MTD	ms_run[40]-instrument_ref	instrument[1]
+MTD	ms_run[40]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[41]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_HCB_9.mzML
+MTD	ms_run[41]-instrument_ref	instrument[1]
+MTD	ms_run[41]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[42]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_HCB_10.mzML
+MTD	ms_run[42]-instrument_ref	instrument[1]
+MTD	ms_run[42]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[43]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_HCB_11.mzML
+MTD	ms_run[43]-instrument_ref	instrument[1]
+MTD	ms_run[43]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[44]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_HCB_12.mzML
+MTD	ms_run[44]-instrument_ref	instrument[1]
+MTD	ms_run[44]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[45]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_HCB_13.mzML
+MTD	ms_run[45]-instrument_ref	instrument[1]
+MTD	ms_run[45]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[46]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_HCB_14.mzML
+MTD	ms_run[46]-instrument_ref	instrument[1]
+MTD	ms_run[46]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[47]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_HCB_15.mzML
+MTD	ms_run[47]-instrument_ref	instrument[1]
+MTD	ms_run[47]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[48]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_HCB_16.mzML
+MTD	ms_run[48]-instrument_ref	instrument[1]
+MTD	ms_run[48]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[49]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_HCB_17.mzML
+MTD	ms_run[49]-instrument_ref	instrument[1]
+MTD	ms_run[49]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[50]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_HCB_18.mzML
+MTD	ms_run[50]-instrument_ref	instrument[1]
+MTD	ms_run[50]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[51]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_HCB_19.mzML
+MTD	ms_run[51]-instrument_ref	instrument[1]
+MTD	ms_run[51]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[52]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_HCB_20.mzML
+MTD	ms_run[52]-instrument_ref	instrument[1]
+MTD	ms_run[52]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[53]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_HCB_21.mzML
+MTD	ms_run[53]-instrument_ref	instrument[1]
+MTD	ms_run[53]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[54]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_HCB_22.mzML
+MTD	ms_run[54]-instrument_ref	instrument[1]
+MTD	ms_run[54]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[55]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_HCB_23.mzML
+MTD	ms_run[55]-instrument_ref	instrument[1]
+MTD	ms_run[55]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[56]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_HCB_24.mzML
+MTD	ms_run[56]-instrument_ref	instrument[1]
+MTD	ms_run[56]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[57]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_HCB_25.mzML
+MTD	ms_run[57]-instrument_ref	instrument[1]
+MTD	ms_run[57]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[58]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_HCB_26.mzML
+MTD	ms_run[58]-instrument_ref	instrument[1]
+MTD	ms_run[58]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[59]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_HCB_27.mzML
+MTD	ms_run[59]-instrument_ref	instrument[1]
+MTD	ms_run[59]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[60]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_HCB_28.mzML
+MTD	ms_run[60]-instrument_ref	instrument[1]
+MTD	ms_run[60]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[61]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_HCB_29.mzML
+MTD	ms_run[61]-instrument_ref	instrument[1]
+MTD	ms_run[61]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[62]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_HCB_30.mzML
+MTD	ms_run[62]-instrument_ref	instrument[1]
+MTD	ms_run[62]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[63]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_HCB_31.mzML
+MTD	ms_run[63]-instrument_ref	instrument[1]
+MTD	ms_run[63]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[64]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_HCB_32.mzML
+MTD	ms_run[64]-instrument_ref	instrument[1]
+MTD	ms_run[64]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[65]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_1.mzML
+MTD	ms_run[65]-instrument_ref	instrument[1]
+MTD	ms_run[65]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[66]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_2.mzML
+MTD	ms_run[66]-instrument_ref	instrument[1]
+MTD	ms_run[66]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[67]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_3.mzML
+MTD	ms_run[67]-instrument_ref	instrument[1]
+MTD	ms_run[67]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[68]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_4.mzML
+MTD	ms_run[68]-instrument_ref	instrument[1]
+MTD	ms_run[68]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[69]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_5.mzML
+MTD	ms_run[69]-instrument_ref	instrument[1]
+MTD	ms_run[69]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[70]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_6.mzML
+MTD	ms_run[70]-instrument_ref	instrument[1]
+MTD	ms_run[70]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[71]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_7.mzML
+MTD	ms_run[71]-instrument_ref	instrument[1]
+MTD	ms_run[71]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[72]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_8.mzML
+MTD	ms_run[72]-instrument_ref	instrument[1]
+MTD	ms_run[72]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[73]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_9.mzML
+MTD	ms_run[73]-instrument_ref	instrument[1]
+MTD	ms_run[73]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[74]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_10.mzML
+MTD	ms_run[74]-instrument_ref	instrument[1]
+MTD	ms_run[74]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[75]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_11.mzML
+MTD	ms_run[75]-instrument_ref	instrument[1]
+MTD	ms_run[75]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[76]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_12.mzML
+MTD	ms_run[76]-instrument_ref	instrument[1]
+MTD	ms_run[76]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[77]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_13.mzML
+MTD	ms_run[77]-instrument_ref	instrument[1]
+MTD	ms_run[77]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[78]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_14.mzML
+MTD	ms_run[78]-instrument_ref	instrument[1]
+MTD	ms_run[78]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[79]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_15.mzML
+MTD	ms_run[79]-instrument_ref	instrument[1]
+MTD	ms_run[79]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[80]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_16.mzML
+MTD	ms_run[80]-instrument_ref	instrument[1]
+MTD	ms_run[80]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[81]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_17.mzML
+MTD	ms_run[81]-instrument_ref	instrument[1]
+MTD	ms_run[81]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[82]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_18.mzML
+MTD	ms_run[82]-instrument_ref	instrument[1]
+MTD	ms_run[82]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[83]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_19.mzML
+MTD	ms_run[83]-instrument_ref	instrument[1]
+MTD	ms_run[83]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[84]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_20.mzML
+MTD	ms_run[84]-instrument_ref	instrument[1]
+MTD	ms_run[84]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[85]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_21.mzML
+MTD	ms_run[85]-instrument_ref	instrument[1]
+MTD	ms_run[85]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[86]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_22.mzML
+MTD	ms_run[86]-instrument_ref	instrument[1]
+MTD	ms_run[86]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[87]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_23.mzML
+MTD	ms_run[87]-instrument_ref	instrument[1]
+MTD	ms_run[87]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[88]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_24.mzML
+MTD	ms_run[88]-instrument_ref	instrument[1]
+MTD	ms_run[88]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[89]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_25.mzML
+MTD	ms_run[89]-instrument_ref	instrument[1]
+MTD	ms_run[89]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[90]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_26.mzML
+MTD	ms_run[90]-instrument_ref	instrument[1]
+MTD	ms_run[90]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[91]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_27.mzML
+MTD	ms_run[91]-instrument_ref	instrument[1]
+MTD	ms_run[91]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[92]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_28.mzML
+MTD	ms_run[92]-instrument_ref	instrument[1]
+MTD	ms_run[92]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[93]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_29.mzML
+MTD	ms_run[93]-instrument_ref	instrument[1]
+MTD	ms_run[93]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[94]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_30.mzML
+MTD	ms_run[94]-instrument_ref	instrument[1]
+MTD	ms_run[94]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[95]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_31.mzML
+MTD	ms_run[95]-instrument_ref	instrument[1]
+MTD	ms_run[95]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[96]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_32.mzML
+MTD	ms_run[96]-instrument_ref	instrument[1]
+MTD	ms_run[96]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[97]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_33.mzML
+MTD	ms_run[97]-instrument_ref	instrument[1]
+MTD	ms_run[97]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[98]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_34.mzML
+MTD	ms_run[98]-instrument_ref	instrument[1]
+MTD	ms_run[98]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[99]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_35.mzML
+MTD	ms_run[99]-instrument_ref	instrument[1]
+MTD	ms_run[99]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[100]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_36.mzML
+MTD	ms_run[100]-instrument_ref	instrument[1]
+MTD	ms_run[100]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[101]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_37.mzML
+MTD	ms_run[101]-instrument_ref	instrument[1]
+MTD	ms_run[101]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[102]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_38.mzML
+MTD	ms_run[102]-instrument_ref	instrument[1]
+MTD	ms_run[102]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[103]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_39.mzML
+MTD	ms_run[103]-instrument_ref	instrument[1]
+MTD	ms_run[103]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[104]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_40.mzML
+MTD	ms_run[104]-instrument_ref	instrument[1]
+MTD	ms_run[104]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[105]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_41.mzML
+MTD	ms_run[105]-instrument_ref	instrument[1]
+MTD	ms_run[105]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[106]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_42.mzML
+MTD	ms_run[106]-instrument_ref	instrument[1]
+MTD	ms_run[106]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[107]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_43.mzML
+MTD	ms_run[107]-instrument_ref	instrument[1]
+MTD	ms_run[107]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[108]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_44.mzML
+MTD	ms_run[108]-instrument_ref	instrument[1]
+MTD	ms_run[108]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[109]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_45.mzML
+MTD	ms_run[109]-instrument_ref	instrument[1]
+MTD	ms_run[109]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[110]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_46.mzML
+MTD	ms_run[110]-instrument_ref	instrument[1]
+MTD	ms_run[110]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[111]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_47.mzML
+MTD	ms_run[111]-instrument_ref	instrument[1]
+MTD	ms_run[111]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[112]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_48.mzML
+MTD	ms_run[112]-instrument_ref	instrument[1]
+MTD	ms_run[112]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[113]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_49.mzML
+MTD	ms_run[113]-instrument_ref	instrument[1]
+MTD	ms_run[113]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[114]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_50.mzML
+MTD	ms_run[114]-instrument_ref	instrument[1]
+MTD	ms_run[114]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[115]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_51.mzML
+MTD	ms_run[115]-instrument_ref	instrument[1]
+MTD	ms_run[115]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[116]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_52.mzML
+MTD	ms_run[116]-instrument_ref	instrument[1]
+MTD	ms_run[116]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[117]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_53.mzML
+MTD	ms_run[117]-instrument_ref	instrument[1]
+MTD	ms_run[117]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[118]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_54.mzML
+MTD	ms_run[118]-instrument_ref	instrument[1]
+MTD	ms_run[118]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[119]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_55.mzML
+MTD	ms_run[119]-instrument_ref	instrument[1]
+MTD	ms_run[119]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[120]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_56.mzML
+MTD	ms_run[120]-instrument_ref	instrument[1]
+MTD	ms_run[120]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[121]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_57.mzML
+MTD	ms_run[121]-instrument_ref	instrument[1]
+MTD	ms_run[121]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[122]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_58.mzML
+MTD	ms_run[122]-instrument_ref	instrument[1]
+MTD	ms_run[122]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[123]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_59.mzML
+MTD	ms_run[123]-instrument_ref	instrument[1]
+MTD	ms_run[123]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[124]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_60.mzML
+MTD	ms_run[124]-instrument_ref	instrument[1]
+MTD	ms_run[124]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[125]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_61.mzML
+MTD	ms_run[125]-instrument_ref	instrument[1]
+MTD	ms_run[125]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[126]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_62.mzML
+MTD	ms_run[126]-instrument_ref	instrument[1]
+MTD	ms_run[126]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[127]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_63.mzML
+MTD	ms_run[127]-instrument_ref	instrument[1]
+MTD	ms_run[127]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[128]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_64.mzML
+MTD	ms_run[128]-instrument_ref	instrument[1]
+MTD	ms_run[128]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[129]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_65.mzML
+MTD	ms_run[129]-instrument_ref	instrument[1]
+MTD	ms_run[129]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[130]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_66.mzML
+MTD	ms_run[130]-instrument_ref	instrument[1]
+MTD	ms_run[130]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[131]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_67.mzML
+MTD	ms_run[131]-instrument_ref	instrument[1]
+MTD	ms_run[131]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[132]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_68.mzML
+MTD	ms_run[132]-instrument_ref	instrument[1]
+MTD	ms_run[132]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[133]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_69.mzML
+MTD	ms_run[133]-instrument_ref	instrument[1]
+MTD	ms_run[133]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[134]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_70.mzML
+MTD	ms_run[134]-instrument_ref	instrument[1]
+MTD	ms_run[134]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[135]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_71.mzML
+MTD	ms_run[135]-instrument_ref	instrument[1]
+MTD	ms_run[135]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[136]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_72.mzML
+MTD	ms_run[136]-instrument_ref	instrument[1]
+MTD	ms_run[136]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[137]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_73.mzML
+MTD	ms_run[137]-instrument_ref	instrument[1]
+MTD	ms_run[137]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[138]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_74.mzML
+MTD	ms_run[138]-instrument_ref	instrument[1]
+MTD	ms_run[138]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[139]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_75.mzML
+MTD	ms_run[139]-instrument_ref	instrument[1]
+MTD	ms_run[139]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	ms_run[140]-location	ftp://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS552/FILES/HILIC_MB_76.mzML
+MTD	ms_run[140]-instrument_ref	instrument[1]
+MTD	ms_run[140]-scan_polarity[1]	[MS, MS:1000130, positive scan, ]
+MTD	assay[1]	FILES/HILIC_BB_1.mzML
+MTD	assay[1]-sample_ref	sample[1]
+MTD	assay[1]-ms_run_ref	ms_run[1]
+MTD	assay[10]	FILES/HILIC_BB_10.mzML
+MTD	assay[10]-sample_ref	sample[10]
+MTD	assay[10]-ms_run_ref	ms_run[10]
+MTD	assay[100]	FILES/HILIC_MB_36.mzML
+MTD	assay[100]-sample_ref	sample[100]
+MTD	assay[100]-ms_run_ref	ms_run[100]
+MTD	assay[101]	FILES/HILIC_MB_37.mzML
+MTD	assay[101]-sample_ref	sample[101]
+MTD	assay[101]-ms_run_ref	ms_run[101]
+MTD	assay[102]	FILES/HILIC_MB_38.mzML
+MTD	assay[102]-sample_ref	sample[102]
+MTD	assay[102]-ms_run_ref	ms_run[102]
+MTD	assay[103]	FILES/HILIC_MB_39.mzML
+MTD	assay[103]-sample_ref	sample[103]
+MTD	assay[103]-ms_run_ref	ms_run[103]
+MTD	assay[104]	FILES/HILIC_MB_40.mzML
+MTD	assay[104]-sample_ref	sample[104]
+MTD	assay[104]-ms_run_ref	ms_run[104]
+MTD	assay[105]	FILES/HILIC_MB_41.mzML
+MTD	assay[105]-sample_ref	sample[105]
+MTD	assay[105]-ms_run_ref	ms_run[105]
+MTD	assay[106]	FILES/HILIC_MB_42.mzML
+MTD	assay[106]-sample_ref	sample[106]
+MTD	assay[106]-ms_run_ref	ms_run[106]
+MTD	assay[107]	FILES/HILIC_MB_43.mzML
+MTD	assay[107]-sample_ref	sample[107]
+MTD	assay[107]-ms_run_ref	ms_run[107]
+MTD	assay[108]	FILES/HILIC_MB_44.mzML
+MTD	assay[108]-sample_ref	sample[108]
+MTD	assay[108]-ms_run_ref	ms_run[108]
+MTD	assay[109]	FILES/HILIC_MB_45.mzML
+MTD	assay[109]-sample_ref	sample[109]
+MTD	assay[109]-ms_run_ref	ms_run[109]
+MTD	assay[11]	FILES/HILIC_BB_11.mzML
+MTD	assay[11]-sample_ref	sample[11]
+MTD	assay[11]-ms_run_ref	ms_run[11]
+MTD	assay[110]	FILES/HILIC_MB_46.mzML
+MTD	assay[110]-sample_ref	sample[110]
+MTD	assay[110]-ms_run_ref	ms_run[110]
+MTD	assay[111]	FILES/HILIC_MB_47.mzML
+MTD	assay[111]-sample_ref	sample[111]
+MTD	assay[111]-ms_run_ref	ms_run[111]
+MTD	assay[112]	FILES/HILIC_MB_48.mzML
+MTD	assay[112]-sample_ref	sample[112]
+MTD	assay[112]-ms_run_ref	ms_run[112]
+MTD	assay[113]	FILES/HILIC_MB_49.mzML
+MTD	assay[113]-sample_ref	sample[113]
+MTD	assay[113]-ms_run_ref	ms_run[113]
+MTD	assay[114]	FILES/HILIC_MB_50.mzML
+MTD	assay[114]-sample_ref	sample[114]
+MTD	assay[114]-ms_run_ref	ms_run[114]
+MTD	assay[115]	FILES/HILIC_MB_51.mzML
+MTD	assay[115]-sample_ref	sample[115]
+MTD	assay[115]-ms_run_ref	ms_run[115]
+MTD	assay[116]	FILES/HILIC_MB_52.mzML
+MTD	assay[116]-sample_ref	sample[116]
+MTD	assay[116]-ms_run_ref	ms_run[116]
+MTD	assay[117]	FILES/HILIC_MB_53.mzML
+MTD	assay[117]-sample_ref	sample[117]
+MTD	assay[117]-ms_run_ref	ms_run[117]
+MTD	assay[118]	FILES/HILIC_MB_54.mzML
+MTD	assay[118]-sample_ref	sample[118]
+MTD	assay[118]-ms_run_ref	ms_run[118]
+MTD	assay[119]	FILES/HILIC_MB_55.mzML
+MTD	assay[119]-sample_ref	sample[119]
+MTD	assay[119]-ms_run_ref	ms_run[119]
+MTD	assay[12]	FILES/HILIC_BB_12.mzML
+MTD	assay[12]-sample_ref	sample[12]
+MTD	assay[12]-ms_run_ref	ms_run[12]
+MTD	assay[120]	FILES/HILIC_MB_56.mzML
+MTD	assay[120]-sample_ref	sample[120]
+MTD	assay[120]-ms_run_ref	ms_run[120]
+MTD	assay[121]	FILES/HILIC_MB_57.mzML
+MTD	assay[121]-sample_ref	sample[121]
+MTD	assay[121]-ms_run_ref	ms_run[121]
+MTD	assay[122]	FILES/HILIC_MB_58.mzML
+MTD	assay[122]-sample_ref	sample[122]
+MTD	assay[122]-ms_run_ref	ms_run[122]
+MTD	assay[123]	FILES/HILIC_MB_59.mzML
+MTD	assay[123]-sample_ref	sample[123]
+MTD	assay[123]-ms_run_ref	ms_run[123]
+MTD	assay[124]	FILES/HILIC_MB_60.mzML
+MTD	assay[124]-sample_ref	sample[124]
+MTD	assay[124]-ms_run_ref	ms_run[124]
+MTD	assay[125]	FILES/HILIC_MB_61.mzML
+MTD	assay[125]-sample_ref	sample[125]
+MTD	assay[125]-ms_run_ref	ms_run[125]
+MTD	assay[126]	FILES/HILIC_MB_62.mzML
+MTD	assay[126]-sample_ref	sample[126]
+MTD	assay[126]-ms_run_ref	ms_run[126]
+MTD	assay[127]	FILES/HILIC_MB_63.mzML
+MTD	assay[127]-sample_ref	sample[127]
+MTD	assay[127]-ms_run_ref	ms_run[127]
+MTD	assay[128]	FILES/HILIC_MB_64.mzML
+MTD	assay[128]-sample_ref	sample[128]
+MTD	assay[128]-ms_run_ref	ms_run[128]
+MTD	assay[129]	FILES/HILIC_MB_65.mzML
+MTD	assay[129]-sample_ref	sample[129]
+MTD	assay[129]-ms_run_ref	ms_run[129]
+MTD	assay[13]	FILES/HILIC_BB_13.mzML
+MTD	assay[13]-sample_ref	sample[13]
+MTD	assay[13]-ms_run_ref	ms_run[13]
+MTD	assay[130]	FILES/HILIC_MB_66.mzML
+MTD	assay[130]-sample_ref	sample[130]
+MTD	assay[130]-ms_run_ref	ms_run[130]
+MTD	assay[131]	FILES/HILIC_MB_67.mzML
+MTD	assay[131]-sample_ref	sample[131]
+MTD	assay[131]-ms_run_ref	ms_run[131]
+MTD	assay[132]	FILES/HILIC_MB_68.mzML
+MTD	assay[132]-sample_ref	sample[132]
+MTD	assay[132]-ms_run_ref	ms_run[132]
+MTD	assay[133]	FILES/HILIC_MB_69.mzML
+MTD	assay[133]-sample_ref	sample[133]
+MTD	assay[133]-ms_run_ref	ms_run[133]
+MTD	assay[134]	FILES/HILIC_MB_70.mzML
+MTD	assay[134]-sample_ref	sample[134]
+MTD	assay[134]-ms_run_ref	ms_run[134]
+MTD	assay[135]	FILES/HILIC_MB_71.mzML
+MTD	assay[135]-sample_ref	sample[135]
+MTD	assay[135]-ms_run_ref	ms_run[135]
+MTD	assay[136]	FILES/HILIC_MB_72.mzML
+MTD	assay[136]-sample_ref	sample[136]
+MTD	assay[136]-ms_run_ref	ms_run[136]
+MTD	assay[137]	FILES/HILIC_MB_73.mzML
+MTD	assay[137]-sample_ref	sample[137]
+MTD	assay[137]-ms_run_ref	ms_run[137]
+MTD	assay[138]	FILES/HILIC_MB_74.mzML
+MTD	assay[138]-sample_ref	sample[138]
+MTD	assay[138]-ms_run_ref	ms_run[138]
+MTD	assay[139]	FILES/HILIC_MB_75.mzML
+MTD	assay[139]-sample_ref	sample[139]
+MTD	assay[139]-ms_run_ref	ms_run[139]
+MTD	assay[14]	FILES/HILIC_BB_14.mzML
+MTD	assay[14]-sample_ref	sample[14]
+MTD	assay[14]-ms_run_ref	ms_run[14]
+MTD	assay[140]	FILES/HILIC_MB_76.mzML
+MTD	assay[140]-sample_ref	sample[140]
+MTD	assay[140]-ms_run_ref	ms_run[140]
+MTD	assay[15]	FILES/HILIC_BB_15.mzML
+MTD	assay[15]-sample_ref	sample[15]
+MTD	assay[15]-ms_run_ref	ms_run[15]
+MTD	assay[16]	FILES/HILIC_BB_16.mzML
+MTD	assay[16]-sample_ref	sample[16]
+MTD	assay[16]-ms_run_ref	ms_run[16]
+MTD	assay[17]	FILES/HILIC_BB_17.mzML
+MTD	assay[17]-sample_ref	sample[17]
+MTD	assay[17]-ms_run_ref	ms_run[17]
+MTD	assay[18]	FILES/HILIC_BB_18.mzML
+MTD	assay[18]-sample_ref	sample[18]
+MTD	assay[18]-ms_run_ref	ms_run[18]
+MTD	assay[19]	FILES/HILIC_BB_19.mzML
+MTD	assay[19]-sample_ref	sample[19]
+MTD	assay[19]-ms_run_ref	ms_run[19]
+MTD	assay[2]	FILES/HILIC_BB_2.mzML
+MTD	assay[2]-sample_ref	sample[2]
+MTD	assay[2]-ms_run_ref	ms_run[2]
+MTD	assay[20]	FILES/HILIC_BB_20.mzML
+MTD	assay[20]-sample_ref	sample[20]
+MTD	assay[20]-ms_run_ref	ms_run[20]
+MTD	assay[21]	FILES/HILIC_BB_21.mzML
+MTD	assay[21]-sample_ref	sample[21]
+MTD	assay[21]-ms_run_ref	ms_run[21]
+MTD	assay[22]	FILES/HILIC_BB_22.mzML
+MTD	assay[22]-sample_ref	sample[22]
+MTD	assay[22]-ms_run_ref	ms_run[22]
+MTD	assay[23]	FILES/HILIC_BB_23.mzML
+MTD	assay[23]-sample_ref	sample[23]
+MTD	assay[23]-ms_run_ref	ms_run[23]
+MTD	assay[24]	FILES/HILIC_BB_24.mzML
+MTD	assay[24]-sample_ref	sample[24]
+MTD	assay[24]-ms_run_ref	ms_run[24]
+MTD	assay[25]	FILES/HILIC_BB_25.mzML
+MTD	assay[25]-sample_ref	sample[25]
+MTD	assay[25]-ms_run_ref	ms_run[25]
+MTD	assay[26]	FILES/HILIC_BB_26.mzML
+MTD	assay[26]-sample_ref	sample[26]
+MTD	assay[26]-ms_run_ref	ms_run[26]
+MTD	assay[27]	FILES/HILIC_BB_27.mzML
+MTD	assay[27]-sample_ref	sample[27]
+MTD	assay[27]-ms_run_ref	ms_run[27]
+MTD	assay[28]	FILES/HILIC_BB_28.mzML
+MTD	assay[28]-sample_ref	sample[28]
+MTD	assay[28]-ms_run_ref	ms_run[28]
+MTD	assay[29]	FILES/HILIC_BB_29.mzML
+MTD	assay[29]-sample_ref	sample[29]
+MTD	assay[29]-ms_run_ref	ms_run[29]
+MTD	assay[3]	FILES/HILIC_BB_3.mzML
+MTD	assay[3]-sample_ref	sample[3]
+MTD	assay[3]-ms_run_ref	ms_run[3]
+MTD	assay[30]	FILES/HILIC_BB_30.mzML
+MTD	assay[30]-sample_ref	sample[30]
+MTD	assay[30]-ms_run_ref	ms_run[30]
+MTD	assay[31]	FILES/HILIC_BB_31.mzML
+MTD	assay[31]-sample_ref	sample[31]
+MTD	assay[31]-ms_run_ref	ms_run[31]
+MTD	assay[32]	FILES/HILIC_BB_32.mzML
+MTD	assay[32]-sample_ref	sample[32]
+MTD	assay[32]-ms_run_ref	ms_run[32]
+MTD	assay[33]	FILES/HILIC_HCB_1.mzML
+MTD	assay[33]-sample_ref	sample[33]
+MTD	assay[33]-ms_run_ref	ms_run[33]
+MTD	assay[34]	FILES/HILIC_HCB_2.mzML
+MTD	assay[34]-sample_ref	sample[34]
+MTD	assay[34]-ms_run_ref	ms_run[34]
+MTD	assay[35]	FILES/HILIC_HCB_3.mzML
+MTD	assay[35]-sample_ref	sample[35]
+MTD	assay[35]-ms_run_ref	ms_run[35]
+MTD	assay[36]	FILES/HILIC_HCB_4.mzML
+MTD	assay[36]-sample_ref	sample[36]
+MTD	assay[36]-ms_run_ref	ms_run[36]
+MTD	assay[37]	FILES/HILIC_HCB_5.mzML
+MTD	assay[37]-sample_ref	sample[37]
+MTD	assay[37]-ms_run_ref	ms_run[37]
+MTD	assay[38]	FILES/HILIC_HCB_6.mzML
+MTD	assay[38]-sample_ref	sample[38]
+MTD	assay[38]-ms_run_ref	ms_run[38]
+MTD	assay[39]	FILES/HILIC_HCB_7.mzML
+MTD	assay[39]-sample_ref	sample[39]
+MTD	assay[39]-ms_run_ref	ms_run[39]
+MTD	assay[4]	FILES/HILIC_BB_4.mzML
+MTD	assay[4]-sample_ref	sample[4]
+MTD	assay[4]-ms_run_ref	ms_run[4]
+MTD	assay[40]	FILES/HILIC_HCB_8.mzML
+MTD	assay[40]-sample_ref	sample[40]
+MTD	assay[40]-ms_run_ref	ms_run[40]
+MTD	assay[41]	FILES/HILIC_HCB_9.mzML
+MTD	assay[41]-sample_ref	sample[41]
+MTD	assay[41]-ms_run_ref	ms_run[41]
+MTD	assay[42]	FILES/HILIC_HCB_10.mzML
+MTD	assay[42]-sample_ref	sample[42]
+MTD	assay[42]-ms_run_ref	ms_run[42]
+MTD	assay[43]	FILES/HILIC_HCB_11.mzML
+MTD	assay[43]-sample_ref	sample[43]
+MTD	assay[43]-ms_run_ref	ms_run[43]
+MTD	assay[44]	FILES/HILIC_HCB_12.mzML
+MTD	assay[44]-sample_ref	sample[44]
+MTD	assay[44]-ms_run_ref	ms_run[44]
+MTD	assay[45]	FILES/HILIC_HCB_13.mzML
+MTD	assay[45]-sample_ref	sample[45]
+MTD	assay[45]-ms_run_ref	ms_run[45]
+MTD	assay[46]	FILES/HILIC_HCB_14.mzML
+MTD	assay[46]-sample_ref	sample[46]
+MTD	assay[46]-ms_run_ref	ms_run[46]
+MTD	assay[47]	FILES/HILIC_HCB_15.mzML
+MTD	assay[47]-sample_ref	sample[47]
+MTD	assay[47]-ms_run_ref	ms_run[47]
+MTD	assay[48]	FILES/HILIC_HCB_16.mzML
+MTD	assay[48]-sample_ref	sample[48]
+MTD	assay[48]-ms_run_ref	ms_run[48]
+MTD	assay[49]	FILES/HILIC_HCB_17.mzML
+MTD	assay[49]-sample_ref	sample[49]
+MTD	assay[49]-ms_run_ref	ms_run[49]
+MTD	assay[5]	FILES/HILIC_BB_5.mzML
+MTD	assay[5]-sample_ref	sample[5]
+MTD	assay[5]-ms_run_ref	ms_run[5]
+MTD	assay[50]	FILES/HILIC_HCB_18.mzML
+MTD	assay[50]-sample_ref	sample[50]
+MTD	assay[50]-ms_run_ref	ms_run[50]
+MTD	assay[51]	FILES/HILIC_HCB_19.mzML
+MTD	assay[51]-sample_ref	sample[51]
+MTD	assay[51]-ms_run_ref	ms_run[51]
+MTD	assay[52]	FILES/HILIC_HCB_20.mzML
+MTD	assay[52]-sample_ref	sample[52]
+MTD	assay[52]-ms_run_ref	ms_run[52]
+MTD	assay[53]	FILES/HILIC_HCB_21.mzML
+MTD	assay[53]-sample_ref	sample[53]
+MTD	assay[53]-ms_run_ref	ms_run[53]
+MTD	assay[54]	FILES/HILIC_HCB_22.mzML
+MTD	assay[54]-sample_ref	sample[54]
+MTD	assay[54]-ms_run_ref	ms_run[54]
+MTD	assay[55]	FILES/HILIC_HCB_23.mzML
+MTD	assay[55]-sample_ref	sample[55]
+MTD	assay[55]-ms_run_ref	ms_run[55]
+MTD	assay[56]	FILES/HILIC_HCB_24.mzML
+MTD	assay[56]-sample_ref	sample[56]
+MTD	assay[56]-ms_run_ref	ms_run[56]
+MTD	assay[57]	FILES/HILIC_HCB_25.mzML
+MTD	assay[57]-sample_ref	sample[57]
+MTD	assay[57]-ms_run_ref	ms_run[57]
+MTD	assay[58]	FILES/HILIC_HCB_26.mzML
+MTD	assay[58]-sample_ref	sample[58]
+MTD	assay[58]-ms_run_ref	ms_run[58]
+MTD	assay[59]	FILES/HILIC_HCB_27.mzML
+MTD	assay[59]-sample_ref	sample[59]
+MTD	assay[59]-ms_run_ref	ms_run[59]
+MTD	assay[6]	FILES/HILIC_BB_6.mzML
+MTD	assay[6]-sample_ref	sample[6]
+MTD	assay[6]-ms_run_ref	ms_run[6]
+MTD	assay[60]	FILES/HILIC_HCB_28.mzML
+MTD	assay[60]-sample_ref	sample[60]
+MTD	assay[60]-ms_run_ref	ms_run[60]
+MTD	assay[61]	FILES/HILIC_HCB_29.mzML
+MTD	assay[61]-sample_ref	sample[61]
+MTD	assay[61]-ms_run_ref	ms_run[61]
+MTD	assay[62]	FILES/HILIC_HCB_30.mzML
+MTD	assay[62]-sample_ref	sample[62]
+MTD	assay[62]-ms_run_ref	ms_run[62]
+MTD	assay[63]	FILES/HILIC_HCB_31.mzML
+MTD	assay[63]-sample_ref	sample[63]
+MTD	assay[63]-ms_run_ref	ms_run[63]
+MTD	assay[64]	FILES/HILIC_HCB_32.mzML
+MTD	assay[64]-sample_ref	sample[64]
+MTD	assay[64]-ms_run_ref	ms_run[64]
+MTD	assay[65]	FILES/HILIC_MB_1.mzML
+MTD	assay[65]-sample_ref	sample[65]
+MTD	assay[65]-ms_run_ref	ms_run[65]
+MTD	assay[66]	FILES/HILIC_MB_2.mzML
+MTD	assay[66]-sample_ref	sample[66]
+MTD	assay[66]-ms_run_ref	ms_run[66]
+MTD	assay[67]	FILES/HILIC_MB_3.mzML
+MTD	assay[67]-sample_ref	sample[67]
+MTD	assay[67]-ms_run_ref	ms_run[67]
+MTD	assay[68]	FILES/HILIC_MB_4.mzML
+MTD	assay[68]-sample_ref	sample[68]
+MTD	assay[68]-ms_run_ref	ms_run[68]
+MTD	assay[69]	FILES/HILIC_MB_5.mzML
+MTD	assay[69]-sample_ref	sample[69]
+MTD	assay[69]-ms_run_ref	ms_run[69]
+MTD	assay[7]	FILES/HILIC_BB_7.mzML
+MTD	assay[7]-sample_ref	sample[7]
+MTD	assay[7]-ms_run_ref	ms_run[7]
+MTD	assay[70]	FILES/HILIC_MB_6.mzML
+MTD	assay[70]-sample_ref	sample[70]
+MTD	assay[70]-ms_run_ref	ms_run[70]
+MTD	assay[71]	FILES/HILIC_MB_7.mzML
+MTD	assay[71]-sample_ref	sample[71]
+MTD	assay[71]-ms_run_ref	ms_run[71]
+MTD	assay[72]	FILES/HILIC_MB_8.mzML
+MTD	assay[72]-sample_ref	sample[72]
+MTD	assay[72]-ms_run_ref	ms_run[72]
+MTD	assay[73]	FILES/HILIC_MB_9.mzML
+MTD	assay[73]-sample_ref	sample[73]
+MTD	assay[73]-ms_run_ref	ms_run[73]
+MTD	assay[74]	FILES/HILIC_MB_10.mzML
+MTD	assay[74]-sample_ref	sample[74]
+MTD	assay[74]-ms_run_ref	ms_run[74]
+MTD	assay[75]	FILES/HILIC_MB_11.mzML
+MTD	assay[75]-sample_ref	sample[75]
+MTD	assay[75]-ms_run_ref	ms_run[75]
+MTD	assay[76]	FILES/HILIC_MB_12.mzML
+MTD	assay[76]-sample_ref	sample[76]
+MTD	assay[76]-ms_run_ref	ms_run[76]
+MTD	assay[77]	FILES/HILIC_MB_13.mzML
+MTD	assay[77]-sample_ref	sample[77]
+MTD	assay[77]-ms_run_ref	ms_run[77]
+MTD	assay[78]	FILES/HILIC_MB_14.mzML
+MTD	assay[78]-sample_ref	sample[78]
+MTD	assay[78]-ms_run_ref	ms_run[78]
+MTD	assay[79]	FILES/HILIC_MB_15.mzML
+MTD	assay[79]-sample_ref	sample[79]
+MTD	assay[79]-ms_run_ref	ms_run[79]
+MTD	assay[8]	FILES/HILIC_BB_8.mzML
+MTD	assay[8]-sample_ref	sample[8]
+MTD	assay[8]-ms_run_ref	ms_run[8]
+MTD	assay[80]	FILES/HILIC_MB_16.mzML
+MTD	assay[80]-sample_ref	sample[80]
+MTD	assay[80]-ms_run_ref	ms_run[80]
+MTD	assay[81]	FILES/HILIC_MB_17.mzML
+MTD	assay[81]-sample_ref	sample[81]
+MTD	assay[81]-ms_run_ref	ms_run[81]
+MTD	assay[82]	FILES/HILIC_MB_18.mzML
+MTD	assay[82]-sample_ref	sample[82]
+MTD	assay[82]-ms_run_ref	ms_run[82]
+MTD	assay[83]	FILES/HILIC_MB_19.mzML
+MTD	assay[83]-sample_ref	sample[83]
+MTD	assay[83]-ms_run_ref	ms_run[83]
+MTD	assay[84]	FILES/HILIC_MB_20.mzML
+MTD	assay[84]-sample_ref	sample[84]
+MTD	assay[84]-ms_run_ref	ms_run[84]
+MTD	assay[85]	FILES/HILIC_MB_21.mzML
+MTD	assay[85]-sample_ref	sample[85]
+MTD	assay[85]-ms_run_ref	ms_run[85]
+MTD	assay[86]	FILES/HILIC_MB_22.mzML
+MTD	assay[86]-sample_ref	sample[86]
+MTD	assay[86]-ms_run_ref	ms_run[86]
+MTD	assay[87]	FILES/HILIC_MB_23.mzML
+MTD	assay[87]-sample_ref	sample[87]
+MTD	assay[87]-ms_run_ref	ms_run[87]
+MTD	assay[88]	FILES/HILIC_MB_24.mzML
+MTD	assay[88]-sample_ref	sample[88]
+MTD	assay[88]-ms_run_ref	ms_run[88]
+MTD	assay[89]	FILES/HILIC_MB_25.mzML
+MTD	assay[89]-sample_ref	sample[89]
+MTD	assay[89]-ms_run_ref	ms_run[89]
+MTD	assay[9]	FILES/HILIC_BB_9.mzML
+MTD	assay[9]-sample_ref	sample[9]
+MTD	assay[9]-ms_run_ref	ms_run[9]
+MTD	assay[90]	FILES/HILIC_MB_26.mzML
+MTD	assay[90]-sample_ref	sample[90]
+MTD	assay[90]-ms_run_ref	ms_run[90]
+MTD	assay[91]	FILES/HILIC_MB_27.mzML
+MTD	assay[91]-sample_ref	sample[91]
+MTD	assay[91]-ms_run_ref	ms_run[91]
+MTD	assay[92]	FILES/HILIC_MB_28.mzML
+MTD	assay[92]-sample_ref	sample[92]
+MTD	assay[92]-ms_run_ref	ms_run[92]
+MTD	assay[93]	FILES/HILIC_MB_29.mzML
+MTD	assay[93]-sample_ref	sample[93]
+MTD	assay[93]-ms_run_ref	ms_run[93]
+MTD	assay[94]	FILES/HILIC_MB_30.mzML
+MTD	assay[94]-sample_ref	sample[94]
+MTD	assay[94]-ms_run_ref	ms_run[94]
+MTD	assay[95]	FILES/HILIC_MB_31.mzML
+MTD	assay[95]-sample_ref	sample[95]
+MTD	assay[95]-ms_run_ref	ms_run[95]
+MTD	assay[96]	FILES/HILIC_MB_32.mzML
+MTD	assay[96]-sample_ref	sample[96]
+MTD	assay[96]-ms_run_ref	ms_run[96]
+MTD	assay[97]	FILES/HILIC_MB_33.mzML
+MTD	assay[97]-sample_ref	sample[97]
+MTD	assay[97]-ms_run_ref	ms_run[97]
+MTD	assay[98]	FILES/HILIC_MB_34.mzML
+MTD	assay[98]-sample_ref	sample[98]
+MTD	assay[98]-ms_run_ref	ms_run[98]
+MTD	assay[99]	FILES/HILIC_MB_35.mzML
+MTD	assay[99]-sample_ref	sample[99]
+MTD	assay[99]-ms_run_ref	ms_run[99]
+MTD	study_variable_group[1]	[,,Group,]
+MTD	study_variable_group[1]-description	Study factor Group (Group)
+MTD	study_variable_group[1]-type	[STATO, STATO:0000252, categorical variable, ]
+MTD	study_variable_group[1]-datatype	xsd:string
+MTD	study_variable_group[1]-study_variable_refs	study_variable[1]|study_variable[2]|study_variable[3]
+MTD	study_variable[1]	Benign
+MTD	study_variable[1]-assay_refs	assay[1]|assay[2]|assay[3]|assay[4]|assay[5]|assay[6]|assay[7]|assay[8]|assay[9]|assay[10]|assay[11]|assay[12]|assay[13]|assay[14]|assay[15]|assay[16]|assay[17]|assay[18]|assay[19]|assay[20]|assay[21]|assay[22]|assay[23]|assay[24]|assay[25]|assay[26]|assay[27]|assay[28]|assay[29]|assay[30]|assay[31]|assay[32]
+MTD	study_variable[1]-average_function	[MS, MS:1002962, mean, ]
+MTD	study_variable[1]-variation_function	[MS, MS:1002963, variation coefficient, ]
+MTD	study_variable[1]-description	Variable Group, value Benign
+MTD	study_variable[2]	Control
+MTD	study_variable[2]-assay_refs	assay[33]|assay[34]|assay[35]|assay[36]|assay[37]|assay[38]|assay[39]|assay[40]|assay[41]|assay[42]|assay[43]|assay[44]|assay[45]|assay[46]|assay[47]|assay[48]|assay[49]|assay[50]|assay[51]|assay[52]|assay[53]|assay[54]|assay[55]|assay[56]|assay[57]|assay[58]|assay[59]|assay[60]|assay[61]|assay[62]|assay[63]|assay[64]
+MTD	study_variable[2]-average_function	[MS, MS:1002962, mean, ]
+MTD	study_variable[2]-variation_function	[MS, MS:1002963, variation coefficient, ]
+MTD	study_variable[2]-description	Variable Group, value Control
+MTD	study_variable[3]	Malignant
+MTD	study_variable[3]-assay_refs	assay[65]|assay[66]|assay[67]|assay[68]|assay[69]|assay[70]|assay[71]|assay[72]|assay[73]|assay[74]|assay[75]|assay[76]|assay[77]|assay[78]|assay[79]|assay[80]|assay[81]|assay[82]|assay[83]|assay[84]|assay[85]|assay[86]|assay[87]|assay[88]|assay[89]|assay[90]|assay[91]|assay[92]|assay[93]|assay[94]|assay[95]|assay[96]|assay[97]|assay[98]|assay[99]|assay[100]|assay[101]|assay[102]|assay[103]|assay[104]|assay[105]|assay[106]|assay[107]|assay[108]|assay[109]|assay[110]|assay[111]|assay[112]|assay[113]|assay[114]|assay[115]|assay[116]|assay[117]|assay[118]|assay[119]|assay[120]|assay[121]|assay[122]|assay[123]|assay[124]|assay[125]|assay[126]|assay[127]|assay[128]|assay[129]|assay[130]|assay[131]|assay[132]|assay[133]|assay[134]|assay[135]|assay[136]|assay[137]|assay[138]|assay[139]|assay[140]
+MTD	study_variable[3]-average_function	[MS, MS:1002962, mean, ]
+MTD	study_variable[3]-variation_function	[MS, MS:1002963, variation coefficient, ]
+MTD	study_variable[3]-description	Variable Group, value Malignant
+MTD	cv[1]-label	MS
+MTD	cv[1]-full_name	PSI-MS controlled vocabulary
+MTD	cv[1]-version	4.1.138
+MTD	cv[1]-uri	https://www.ebi.ac.uk/ols4/ontologies/ms
+MTD	cv[2]-label	PRIDE
+MTD	cv[2]-full_name	PRIDE PRoteomics IDEntifications (PRIDE) database controlled vocabulary
+MTD	cv[2]-version	16:10:2023 11:38
+MTD	cv[2]-uri	https://www.ebi.ac.uk/ols/ontologies/pride
+MTD	cv[3]-label	STATO
+MTD	cv[3]-full_name	General purpose STATistics Ontology
+MTD	cv[3]-version	2026-04-20
+MTD	cv[3]-uri	https://www.ebi.ac.uk/ols4/ontologies/stato
+MTD	database[1]	[MIRIAM, MIR:00000002, ChEBI, ]
+MTD	database[1]-prefix	CHEBI
+MTD	database[1]-version	unknown
+MTD	database[1]-uri	https://www.ebi.ac.uk/chebi/
+MTD	small_molecule-quantification_unit	[PRIDE, PRIDE:0000330, Arbitrary quantification unit, ]
+MTD	small_molecule-identification_reliability	[MS, MS:1002896, compound identification confidence level, ]
+
+SMH	SML_ID	SMF_ID_REFS	database_identifier	chemical_formula	smiles	inchi	chemical_name	uri	theoretical_neutral_mass	adduct_ions	reliability	best_id_confidence_measure	best_id_confidence_value	abundance_assay[1]	abundance_assay[2]	abundance_assay[3]	abundance_assay[4]	abundance_assay[5]	abundance_assay[6]	abundance_assay[7]	abundance_assay[8]	abundance_assay[9]	abundance_assay[10]	abundance_assay[11]	abundance_assay[12]	abundance_assay[13]	abundance_assay[14]	abundance_assay[15]	abundance_assay[16]	abundance_assay[17]	abundance_assay[18]	abundance_assay[19]	abundance_assay[20]	abundance_assay[21]	abundance_assay[22]	abundance_assay[23]	abundance_assay[24]	abundance_assay[25]	abundance_assay[26]	abundance_assay[27]	abundance_assay[28]	abundance_assay[29]	abundance_assay[30]	abundance_assay[31]	abundance_assay[32]	abundance_assay[33]	abundance_assay[34]	abundance_assay[35]	abundance_assay[36]	abundance_assay[37]	abundance_assay[38]	abundance_assay[39]	abundance_assay[40]	abundance_assay[41]	abundance_assay[42]	abundance_assay[43]	abundance_assay[44]	abundance_assay[45]	abundance_assay[46]	abundance_assay[47]	abundance_assay[48]	abundance_assay[49]	abundance_assay[50]	abundance_assay[51]	abundance_assay[52]	abundance_assay[53]	abundance_assay[54]	abundance_assay[55]	abundance_assay[56]	abundance_assay[57]	abundance_assay[58]	abundance_assay[59]	abundance_assay[60]	abundance_assay[61]	abundance_assay[62]	abundance_assay[63]	abundance_assay[64]	abundance_assay[65]	abundance_assay[66]	abundance_assay[67]	abundance_assay[68]	abundance_assay[69]	abundance_assay[70]	abundance_assay[71]	abundance_assay[72]	abundance_assay[73]	abundance_assay[74]	abundance_assay[75]	abundance_assay[76]	abundance_assay[77]	abundance_assay[78]	abundance_assay[79]	abundance_assay[80]	abundance_assay[81]	abundance_assay[82]	abundance_assay[83]	abundance_assay[84]	abundance_assay[85]	abundance_assay[86]	abundance_assay[87]	abundance_assay[88]	abundance_assay[89]	abundance_assay[90]	abundance_assay[91]	abundance_assay[92]	abundance_assay[93]	abundance_assay[94]	abundance_assay[95]	abundance_assay[96]	abundance_assay[97]	abundance_assay[98]	abundance_assay[99]	abundance_assay[100]	abundance_assay[101]	abundance_assay[102]	abundance_assay[103]	abundance_assay[104]	abundance_assay[105]	abundance_assay[106]	abundance_assay[107]	abundance_assay[108]	abundance_assay[109]	abundance_assay[110]	abundance_assay[111]	abundance_assay[112]	abundance_assay[113]	abundance_assay[114]	abundance_assay[115]	abundance_assay[116]	abundance_assay[117]	abundance_assay[118]	abundance_assay[119]	abundance_assay[120]	abundance_assay[121]	abundance_assay[122]	abundance_assay[123]	abundance_assay[124]	abundance_assay[125]	abundance_assay[126]	abundance_assay[127]	abundance_assay[128]	abundance_assay[129]	abundance_assay[130]	abundance_assay[131]	abundance_assay[132]	abundance_assay[133]	abundance_assay[134]	abundance_assay[135]	abundance_assay[136]	abundance_assay[137]	abundance_assay[138]	abundance_assay[139]	abundance_assay[140]	abundance_study_variable[1]	abundance_study_variable[2]	abundance_study_variable[3]	abundance_variation_study_variable[1]	abundance_variation_study_variable[2]	abundance_variation_study_variable[3]
+SML	1	null	CHEBI:37024	C6H11NO4	NC(CCCC(O)=O)C(O)=O	InChI=1S/C6H11NO4/c7-4(6(10)11)2-1-3-5(8)9/h4H,1-3,7H2,(H,8,9)(H,10,11)	Aminoadipate	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+SML	2	null	CHEBI:22652	C6H8O6	null	null	Ascorbic acid	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+SML	3	null	CHEBI:27897	C11H12N2O2	NC(Cc1c[nH]c2ccccc12)C(O)=O	InChI=1S/C11H12N2O2/c12-9(11(14)15)5-7-6-13-10-4-2-1-3-8(7)10/h1-4,6,9,13H,5,12H2,(H,14,15)	Tryptophan	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+SML	4	null	CHEBI:28044	C9H11NO2	NC(Cc1ccccc1)C(O)=O	InChI=1S/C9H11NO2/c10-8(9(11)12)6-7-4-2-1-3-5-7/h1-5,8H,6,10H2,(H,11,12)	Phenylalanine	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+SML	5	null	CHEBI:17659	C9H14N2O12P2	O[C@@H]1[C@@H](COP(O)(=O)OP(O)(O)=O)O[C@H]([C@@H]1O)n1ccc(=O)[nH]c1=O	InChI=1S/C9H14N2O12P2/c12-5-1-2-11(9(15)10-5)8-7(14)6(13)4(22-8)3-21-25(19,20)23-24(16,17)18/h1-2,4,6-8,13-14H,3H2,(H,19,20)(H,10,12,15)(H2,16,17,18)/t4-,6-,7-,8-/m1/s1	UDP	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+SML	6	null	CHEBI:18186	C9H11NO3	NC(Cc1ccc(O)cc1)C(O)=O	InChI=1S/C9H11NO3/c10-8(9(12)13)5-6-1-3-7(11)4-2-6/h1-4,8,11H,5,10H2,(H,12,13)	Tyrosine	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+SML	7	null	CHEBI:17775	C5H4N4O3	O=c1[nH]c2[nH]c(=O)[nH]c(=O)c2[nH]1	InChI=1S/C5H4N4O3/c10-3-1-2(7-4(11)6-1)8-5(12)9-3/h(H4,6,7,8,9,10,11,12)	Uric acid	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+SML	8	null	CHEBI:32816	C3H4O3	CC(=O)C(O)=O	InChI=1S/C3H4O3/c1-2(4)3(5)6/h1H3,(H,5,6)	Pyruvate	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+SML	9	null	CHEBI:27570	C6H9N3O2	NC(Cc1c[nH]cn1)C(O)=O	InChI=1S/C6H9N3O2/c7-5(6(10)11)1-4-2-8-3-9-4/h2-3,5H,1,7H2,(H,8,9)(H,10,11)	Histidine	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+SML	10	null	CHEBI:17677	C9H16N3O14P3	Nc1ccn([C@@H]2O[C@H](COP(O)(=O)OP(O)(=O)OP(O)(O)=O)[C@@H](O)[C@H]2O)c(=O)n1	InChI=1S/C9H16N3O14P3/c10-5-1-2-12(9(15)11-5)8-7(14)6(13)4(24-8)3-23-28(19,20)26-29(21,22)25-27(16,17)18/h1-2,4,6-8,13-14H,3H2,(H,19,20)(H,21,22)(H2,10,11,15)(H2,16,17,18)/t4-,6-,7-,8-/m1/s1	CTP	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+SML	11	null	CHEBI:16919	C4H9N3O2	CN(CC(O)=O)C(N)=N	InChI=1S/C4H9N3O2/c1-7(4(5)6)2-3(8)9/h2H2,1H3,(H3,5,6)(H,8,9)	Creatine	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+SML	12	null	CHEBI:30915	C5H6O5	OC(=O)CCC(=O)C(O)=O	InChI=1S/C5H6O5/c6-3(5(9)10)1-2-4(7)8/h1-2H2,(H,7,8)(H,9,10)	alpha-KetoGlutaric acid	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+SML	13	null	CHEBI:16856	C10H17N3O6S	N[C@@H](CCC(=O)N[C@@H](CS)C(=O)NCC(=O)O)C(=O)O	InChI=1S/C10H17N3O6S/c11-5(10(18)19)1-2-7(14)13-6(4-20)9(17)12-3-8(15)16/h5-6,20H,1-4,11H2,(H,12,17)(H,13,14)(H,15,16)(H,18,19)/t5-,6-/m0/s1	Glutathione Reduced	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+SML	14	null	CHEBI:17489	C10H12N5O6P	Nc1ncnc2n(cnc12)[C@@H]1O[C@@H]2COP(O)(=O)O[C@H]2[C@H]1O	InChI=1S/C10H12N5O6P/c11-8-5-9(13-2-12-8)15(3-14-5)10-6(16)7-4(20-10)1-19-22(17,18)21-7/h2-4,6-7,10,16H,1H2,(H,17,18)(H2,11,12,13)/t4-,6-,7-,10-/m1/s1	cAMP	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+SML	15	null	CHEBI:35621	C4H9NO2	CCC(N)C(O)=O	InChI=1S/C4H9NO2/c1-2-3(5)4(6)7/h3H,2,5H2,1H3,(H,6,7)	Aminobutyric acid	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+SML	16	null	CHEBI:30653	C4H9NO3	NC(CCO)C(O)=O	InChI=1S/C4H9NO3/c5-3(1-2-6)4(7)8/h3,6H,1-2,5H2,(H,7,8)	Homoserine	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+SML	17	null	CHEBI:25017	C6H13NO2	CC(C)CC(N)C(O)=O	InChI=1S/C6H13NO2/c1-4(2)3-5(7)6(8)9/h4-5H,3,7H2,1-2H3,(H,8,9)	Leucine	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+SML	18	null	CHEBI:15713	C9H15N2O15P3	O[C@@H]1[C@@H](COP(O)(=O)OP(O)(=O)OP(O)(O)=O)O[C@H]([C@@H]1O)n1ccc(=O)[nH]c1=O	InChI=1S/C9H15N2O15P3/c12-5-1-2-11(9(15)10-5)8-7(14)6(13)4(24-8)3-23-28(19,20)26-29(21,22)25-27(16,17)18/h1-2,4,6-8,13-14H,3H2,(H,19,20)(H,21,22)(H,10,12,15)(H2,16,17,18)/t4-,6-,7-,8-/m1/s1	UTP	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+SML	19	null	CHEBI:30832	C6H10O4	OC(=O)CCCCC(O)=O	InChI=1S/C6H10O4/c7-5(8)3-1-2-4-6(9)10/h1-4H2,(H,7,8)(H,9,10)	Adipic acid	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+SML	20	null	CHEBI:18211	C6H13N3O3	NC(CCCNC(N)=O)C(O)=O	InChI=1S/C6H13N3O3/c7-4(5(10)11)2-1-3-9-6(8)12/h4H,1-3,7H2,(H,10,11)(H3,8,9,12)	Citrulline	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+SML	21	null	CHEBI:15676	C4H6N4O3	NC(=O)NC1NC(=O)NC1=O	InChI=1S/C4H6N4O3/c5-3(10)6-1-2(9)8-4(11)7-1/h1H,(H3,5,6,10)(H2,7,8,9,11)	Allantoin	null	null	null	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+

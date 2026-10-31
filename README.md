@@ -26,13 +26,22 @@ mtbls_to_mztabm("MTBLS103")
 
 ## a GC-TOF-MS study deposited as raw netCDF files works the same way
 mtbls_to_mztabm("MTBLS40")
+
+## a study with several metabolite assignment files gets one mzTab-M file for
+## each of them, for example MTBLS1066_NEG_RP_LCMS.mztab
+mtbls_to_mztabm("MTBLS1066")
 ```
+
+A MAF shared by several assays gets a single file, which describes the runs of
+the first of these assays. A MAF that no assay refers to has no runs to describe
+and gets no file, with a warning. `assayName` writes the file of one assay only.
 
 All ISA-TAB files are retrieved from the MetaboLights FTP server with the
 [MsBackendMetaboLights](https://bioconductor.org/packages/MsBackendMetaboLights)
 package. Every function also accepts a local directory of ISA-TAB files
 through `path`; the files of MTBLS103 and MTBLS40 are shipped in
-`inst/extdata`.
+`inst/extdata`. mzTab-M files generated from other studies are in
+`inst/extdata/mztabm`.
 
 ## Step by step
 

@@ -24,12 +24,12 @@ e.g. \code{"MTBLS103"}.}
 
 \item{file}{\code{character(1)} with the path of the mzTab-M file to write.
 Default: \code{"<mtblsId>.mztab"} in the working directory. An extension
-other than \code{.mztab}/\code{.mzTab} gets \code{.mztab} appended.}
+other than \code{.mztab}/\code{.mzTab} gets \code{.mztab} appended. See the details for
+a study with several MAFs.}
 
-\item{assayName}{optional \code{character(1)} with the assay file (\code{"a_*.txt"})
-to describe. With a single assay it is used as is; with several and no
-\code{assayName} the first mass spectrometry assay is chosen and a message
-names it.}
+\item{assayName}{optional \code{character(1)} with an assay file (\code{"a_*.txt"}) to
+write a single mzTab-M file for its MAF, at the path \code{file}. By default
+a file is written for each MAF of the study.}
 
 \item{factor}{optional \code{character()} with the names of the study factors
 that become study variable groups. By default the first factor that is
@@ -67,13 +67,15 @@ provide (messages). With \code{FALSE} no message is shown.}
 \value{
 Invisibly, the path of the mzTab-M file, with the attributes
 \code{"toml"} and \code{"parquet"} (the paths of the intermediate files) and
-\code{"mztabm"} (the \code{MzTabM} object).
+\code{"mztabm"} (the \code{MzTabM} object). With several MAFs, the paths of the
+files written, named by their MAF, with the same attributes in the same
+order: \code{"mztabm"} is then a \code{list} of \code{MzTabM} objects.
 }
 \description{
 The main function of the package: given a MetaboLights study identifier
-it creates the mzTab-M 2.1 file of one of the study's mass spectrometry
-assays in the following steps, each of which is also available as a
-function of its own:
+it creates one mzTab-M 2.1 file for each metabolite assignment file (MAF)
+of the study's mass spectrometry assays in the following steps, each of
+which is also available as a function of its own:
 \enumerate{
 \item the study factors (sample groups), the samples, runs and study metadata
 are saved to a TOML file with \code{\link[=mtbls_factors_to_toml]{mtbls_factors_to_toml()}};
@@ -96,6 +98,21 @@ the file regenerated from them.
 After writing, the file is read back to count its \code{MTD} and \code{SML} rows,
 and a message reports these together with any metadata still at a
 placeholder value (no instrument, no compound database, no contact).
+
+A study with several MAFs gets one set of files per MAF, with the part of
+the MAF name that tells them apart added to the paths: the MAF
+\code{m_MTBLS1066_NEG_RP_LCMS_v2_maf.tsv} is written to
+\code{MTBLS1066_NEG_RP_LCMS.mztab}. A MAF that fails gives a warning and the
+others are still written; it is an error only if all of them fail. Some
+MAFs need attention:
+\itemize{
+\item a MAF shared by several assays gets a single file, which describes the
+runs of the first of these assays (a message names them);
+\item a MAF that no assay refers to has no runs to describe and gets no file (a
+warning names it);
+\item the MAFs of assays of another technology, such as NMR, get no file unless
+the study has no mass spectrometry assay, which is then an error.
+}
 }
 \examples{
 ## From the ISA-TAB files of MTBLS103 shipped with the package
@@ -120,8 +137,8 @@ lns[grepl("^MTD\\\\s(ms_run\\\\[1\\\\]|instrument|study_variable\\\\[[1-4]\\\\]\
           lns)]
 
 ## The complete study from the MetaboLights FTP server (needs internet
-## access); with several assays the first MS assay is used unless
-## 'assayName' is given. The file is checked with the mzTab-M validator:
+## access), with one file per MAF of its MS assays unless 'assayName' is
+## given. The files are checked with the mzTab-M validator:
 ## mtbls_to_mztabm("MTBLS103")
 ## mtbls_to_mztabm("MTBLS103", file = "MTBLS103_hilic.mztab",
 ##     assayName = "a_MTBLS103_ibanez_02_HILIC_mass_spectrometry.txt")

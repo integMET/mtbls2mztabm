@@ -2,6 +2,14 @@
 
 ## SIGNIFICANT USER-VISIBLE CHANGES
 
+- `mtbls_to_mztabm()` writes one mzTab-M file for each metabolite assignment
+  file (MAF) of a study instead of only one for its first mass spectrometry
+  assay. With several MAFs, the file names get the part of the MAF name that
+  tells them apart (`MTBLS1066_NEG_RP_LCMS.mztab`) and the value holds the paths
+  of all files. A MAF that fails gives a warning and the others are still
+  written. A MAF shared by several assays gets one file from the first of them;
+  a MAF no assay refers to and the MAFs of assays of another technology get
+  none. `assayName` still writes the single file of one assay.
 - `mtbls_to_mztabm()` no longer goes through a `SummarizedExperiment`. It runs
   the workflow study identifier -> study description (TOML) and metabolite
   assignment file (Parquet) -> `MTD` section (from the TOML file) and `SML`

@@ -106,6 +106,70 @@
     sel
 }
 
+## The assay files in the order to export them: those of the investigation
+## first, without the assays of another technology such as NMR (all assays if
+## none is left, so that the export reports what is wrong with them).
+.mtbls_export_assays <- function(mtblsId, afiles, path = NULL) {
+    inv <- tryCatch(mtbls_investigation(mtblsId, path),
+                    error = function(e) NULL)
+    fn <- .inv_field(inv, "Study Assay File Name")
+    tt <- .inv_field(inv, "Study Assay Technology Type")
+    if (!length(fn) || length(fn) != length(tt))
+        return(afiles)
+    other <- fn[!is.na(tt) & nzchar(tt) &
+                !grepl("mass spectrometry", tt, ignore.case = TRUE)]
+    ms <- setdiff(afiles, other)
+    if (!length(ms))
+        return(afiles)
+    c(intersect(fn, ms), setdiff(ms, fn))
+}
+
+## The metabolite assignment files (MAFs) of a study to export: the assay of
+## each MAF, named by the MAF. A MAF shared by several assays gets the first of
+## them. A MAF without assay can not be exported, as there are no runs to
+## describe in the metadata section.
+.mtbls_maf_assays <- function(mtblsId, path = NULL) {
+    .check_path(path)
+    afiles <- .mtbls_files(mtblsId, path, pattern = "^a_.*\\.txt$")
+    mafs <- lapply(setNames(afiles, afiles), function(a) {
+        m <- .col_or_na(.mtbls_read_table(mtblsId, a, path),
+                        "Metabolite Assignment File")
+        unique(m[!is.na(m) & nzchar(m)])
+    })
+    noassay <- setdiff(.mtbls_files(mtblsId, path, pattern = "^m_.*\\.tsv$"),
+                       unlist(mafs))
+    if (length(noassay))
+        warning("No mzTab-M file for the metabolite assignment file(s) ",
+                paste0("\"", noassay, "\"", collapse = ", "), " of ", mtblsId,
+                ": no assay refers to them.", call. = FALSE)
+    use <- .mtbls_export_assays(mtblsId, afiles, path)
+    skip <- setdiff(names(mafs)[lengths(mafs) > 0L], use)
+    if (length(skip))
+        message("Not exporting the assay(s) of another technology: ",
+                paste(skip, collapse = ", "))
+    nomaf <- use[!lengths(mafs[use])]
+    if (length(nomaf))
+        message("Not exporting the assay(s) without metabolite assignment ",
+                "file: ", paste(nomaf, collapse = ", "))
+    mafs <- mafs[use]
+    assay <- rep(names(mafs), lengths(mafs))
+    maf <- unlist(mafs, use.names = FALSE)
+    first <- !duplicated(maf)
+    for (m in unique(maf[!first]))
+        message("Metabolite assignment file \"", m, "\" is shared by the ",
+                "assays ", paste(assay[maf == m], collapse = ", "),
+                ": its mzTab-M file describes the runs of the first. Use ",
+                "'assayName' to select another one.")
+    setNames(assay[first], maf[first])
+}
+
+## The part of the name of a MAF that tells it from the others of its study.
+.maf_stems <- function(maf, mtblsId) {
+    s <- sub("(_v[0-9]+)?_maf\\.tsv$", "", sub("^m_", "", maf))
+    s <- sub(paste0("^", mtblsId, "_+"), "", s)
+    make.unique(gsub("[^[:alnum:]._-]+", "_", s), sep = "_")
+}
+
 ## Everything needed to describe one assay: its name, the joined assay and
 ## sample table, and the metabolite assignment file the assay refers to
 ## (name and content).

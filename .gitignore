@@ -28,6 +28,7 @@ inst/doc/
 # mzTab-M output and its intermediate files written by examples run in the
 # package directory
 *.mztab
+!/inst/extdata/mztabm/*.mztab
 /MTBLS*.toml
 /MTBLS*.parquet
 

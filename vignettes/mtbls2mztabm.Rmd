@@ -289,8 +289,8 @@ RmzTabM::readMzTabM(f, validate = FALSE)
 `mtbls_to_mztabm()` does all of the above in one call: it writes the TOML
 and Parquet files next to the mzTab-M file (the arguments `toml` and
 `parquet` put them elsewhere), builds both sections from them and writes the
-mzTab-M file. With several assays and no `assayName` the first mass
-spectrometry assay is chosen and named in the message.
+mzTab-M file. A study with several MAFs gets one set of files for each of
+them, named after the MAF, unless `assayName` selects the assay of one MAF.
 
 ```{r export}
 out <- mtbls_to_mztabm(
