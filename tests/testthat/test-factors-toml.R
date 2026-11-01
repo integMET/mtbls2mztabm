@@ -155,7 +155,7 @@ test_that("runs are named after the data file, the MS assay or the sample", {
         `MS Assay Name` = c("M1", "M2", NA, NA),
         `Derived Spectral Data File` = c("f1.mzML", NA, NA, NA),
         check.names = FALSE, stringsAsFactors = FALSE)
-    r <- .toml_runs(isa, c("S1", "S2", "S3"))
+    expect_warning(r <- .toml_runs(isa, c("S1", "S2", "S3")), "share 1")
     expect_identical(vapply(r, `[[`, "", "assay"),
                      c("f1.mzML", "M2", "S3", "S3.1"))
     expect_identical(vapply(r, `[[`, "", "sample"), c("S1", "S2", "S3", "S3"))
