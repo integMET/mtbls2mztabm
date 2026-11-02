@@ -311,7 +311,9 @@ mtbls_toml_to_mtd <- function(toml, factor = character(), id = NULL) {
 #'   identifier has none): those that are not, are reported as `null` and
 #'   kept in an optional column named after the MAF column, e.g.
 #'   `opt_global_metabolite_identification` for the name of a peak that
-#'   was not identified;
+#'   was not identified. An empty entry of such a list is reported as `null`
+#'   (`|CHEBI:33828` becomes `null|CHEBI:33828`) and a value of only
+#'   separators as missing;
 #' - `reliability` is mandatory in mzTab-M. The value of the MAF is used if
 #'   it is an identification level of the Metabolomics Standards Initiative
 #'   (`0` to `4`), which is the scheme declared in the metadata section;
@@ -417,30 +419,42 @@ mtbls_parquet_to_sml <- function(parquet, toml, mtd = NULL,
 ## Identifiers that mean "no identification".
 .id_placeholders <- c("unknown", "na", "n/a", "nan", "null", "none", "-", "?")
 
+## Number of entries of "|"-separated lists. An empty last entry counts, which
+## `strsplit()` alone would drop.
+.n_list_entries <- function(v)
+    lengths(strsplit(paste0(v, "|"), "|", fixed = TRUE))
+
+## "|"-separated lists with "null" for their empty entries, which keeps every
+## annotation at the position of its identifier.
+.null_empty_entries <- function(v)
+    gsub("(?<![^|])(?![^|])", "null", v, perl = TRUE)
+
 ## Annotation arguments of `smlCreate()` from the MAF `maf`.
 .sml_annotations <- function(maf, reliability = "4") {
     n <- nrow(maf)
     col <- function(nm) {
         v <- if (nm %in% names(maf)) trimws(as.character(maf[[nm]]))
              else rep(NA_character_, n)
-        v[!is.na(v) & !nzchar(v)] <- NA_character_
+        ## nothing but separators: a list without any value
+        v[!is.na(v) & !grepl("[^|[:space:]]", v)] <- NA_character_
         v
     }
     ids <- col("database_identifier")
     ids[tolower(ids) %in% .id_placeholders] <- NA_character_
-    n_id <- ifelse(is.na(ids), 1L, lengths(strsplit(ids, "|", fixed = TRUE)))
+    ids <- .null_empty_entries(ids)
+    n_id <- ifelse(is.na(ids), 1L, .n_list_entries(ids))
     ## The annotations are lists with one entry per identifier: a single value
     ## is repeated for each identifier of a molecule, a value with another
     ## number of entries cannot be reported.
     align <- function(v, name = FALSE) {
-        k <- ifelse(is.na(v), NA_integer_,
-                    lengths(strsplit(v, "|", fixed = TRUE)))
+        k <- ifelse(is.na(v), NA_integer_, .n_list_entries(v))
         if (name) {
             ## a name is free text: a "|" in it is not a separator
             fix <- !is.na(k) & k != 1L & k != n_id
             v[fix] <- gsub("|", "/", v[fix], fixed = TRUE)
             k[fix] <- 1L
         }
+        v <- .null_empty_entries(v)
         one <- !is.na(k) & k == 1L & n_id > 1L
         v[one] <- vapply(which(one), function(i)
             paste(rep(v[i], n_id[i]), collapse = "|"), character(1))

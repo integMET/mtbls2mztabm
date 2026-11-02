@@ -104,6 +104,70 @@ test_that(".sml_annotations repeats single values and rejects mismatches", {
     expect_false("opt_global_inchi" %in% names(a))
 })
 
+test_that(".sml_annotations keeps the position of empty list entries", {
+    maf <- data.frame(
+        database_identifier = c("CHEBI:1|CHEBI:2", "|CHEBI:3", "CHEBI:4|",
+                                "|", "CHEBI:5", "CHEBI:6|CHEBI:7"),
+        chemical_formula = c("C1|C2", "|", "C4|", "C9", "|", "C6|C7|"),
+        smiles = c("|CC", "|", "|", "|", "", "||"),
+        metabolite_identification = c("a/b", "c/d", "e", "f", "g", "h"),
+        reliability = "1", stringsAsFactors = FALSE)
+    expect_message(a <- .sml_annotations(maf), "kept in optional columns")
+    ## an empty identifier stays an entry of the list, only separators are none
+    expect_identical(a$database_identifier,
+                     c("CHEBI:1|CHEBI:2", "null|CHEBI:3", "CHEBI:4|null", NA,
+                       "CHEBI:5", "CHEBI:6|CHEBI:7"))
+    expect_identical(a$chemical_formula,
+                     c("C1|C2", NA, "C4|null", NA, NA, NA))
+    expect_identical(a$smiles, c("null|CC", NA, NA, NA, NA, NA))
+    expect_identical(a$chemical_name,
+                     c("a/b|a/b", "c/d|c/d", "e|e", NA, "g", "h|h"))
+    ## a list without values is no mismatch, one with another number of
+    ## entries is
+    expect_identical(a$opt_global_chemical_formula,
+                     c(NA, NA, NA, "C9", NA, "C6|C7|"))
+    expect_false("opt_global_smiles" %in% names(a))
+})
+
+test_that("empty entries of annotation lists give a valid small molecule section", {
+    files <- study_files("MTBLS103")
+    maf <- mtbls_maf("MTBLS103", path = ext)
+    ## as the two rows with several identifiers in the serum MAFs of MTBLS135
+    maf$database_identifier[1:2] <- c("CHEBI:22605|CHEBI:17151", "|CHEBI:33828")
+    maf$chemical_formula[1:2] <- c("C5H12O5|C5H12O5", "|")
+    maf$smiles[1:2] <- c("|OCC(O)C(O)C(O)CO", "|")
+    maf$inchi[1:2] <- c("|InChI=1S/C5H12O5", "|")
+    maf$metabolite_identification[1:2] <- c("arabitol/xylitol",
+                                            "arabonate/xylonate")
+    pq <- tempfile(fileext = ".parquet")
+    .write_maf_parquet(maf, pq, "MTBLS103", "x")
+    sml <- suppressMessages(mtbls_parquet_to_sml(pq, files$toml))
+    expect_identical(nrow(sml), nrow(maf))
+    expect_identical(sml$database_identifier[1:2],
+                     c("CHEBI:22605|CHEBI:17151", "null|CHEBI:33828"))
+    expect_identical(sml$chemical_formula[1:2],
+                     c("C5H12O5|C5H12O5", "null|null"))
+    expect_identical(sml$smiles[1:2], c("null|OCC(O)C(O)C(O)CO", "null|null"))
+    expect_identical(sml$inchi[1:2], c("null|InChI=1S/C5H12O5", "null|null"))
+    expect_identical(sml$chemical_name[2L],
+                     "arabonate/xylonate|arabonate/xylonate")
+    expect_false(any(c("opt_global_chemical_formula", "opt_global_smiles",
+                       "opt_global_inchi") %in% colnames(sml)))
+    expect_equal(sml[["abundance_assay[1]"]], maf$CON_BASA_567795)
+    ## the file is written and "null" is not taken for a compound database
+    mtd <- mtbls_toml_to_mtd(files$toml)
+    f <- tempfile(fileext = ".mztab")
+    mtd_sml_to_mztabm(mtd, sml, file = f, validate = FALSE)
+    lns <- readLines(f)
+    expect_identical(sum(startsWith(lns, "SML\t")), nrow(maf))
+    expect_identical(sub("^.*\t", "", grep("database\\[[0-9]+\\]-prefix", lns,
+                                           value = TRUE)), "CHEBI")
+    skip_if_no_validator()
+    expect_no_error(
+        mtd_sml_to_mztabm(mtd, sml, file = tempfile(fileext = ".mztab"),
+                          validate = TRUE))
+})
+
 test_that(".sml_annotations handles reliability and optional columns", {
     maf <- data.frame(
         database_identifier = "CHEBI:1",

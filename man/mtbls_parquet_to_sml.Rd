@@ -59,7 +59,9 @@ annotations must be as many as the identifiers (a molecule without
 identifier has none): those that are not, are reported as \code{null} and
 kept in an optional column named after the MAF column, e.g.
 \code{opt_global_metabolite_identification} for the name of a peak that
-was not identified;
+was not identified. An empty entry of such a list is reported as \code{null}
+(\verb{|CHEBI:33828} becomes \code{null|CHEBI:33828}) and a value of only
+separators as missing;
 \item \code{reliability} is mandatory in mzTab-M. The value of the MAF is used if
 it is an identification level of the Metabolomics Standards Initiative
 (\code{0} to \code{4}), which is the scheme declared in the metadata section;

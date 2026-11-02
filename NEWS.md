@@ -79,6 +79,11 @@
 - Abundances written with thousands separators (`1,157,497`), as in MTBLS135,
   are read as numbers instead of being reported as `null`. A comma that may be
   a decimal comma is not interpreted and gives a warning.
+- Empty entries in the `|`-separated annotations of a molecule no longer stop
+  the export of a MAF with the error `Input does not provide the expected
+  number of elements`, as they did for the three serum MAFs of MTBLS135
+  (identifier `|CHEBI:33828`, formula `|`). An empty entry is written as `null`
+  (`null|CHEBI:33828`) and a value of only separators as missing.
 - A warning reports MAF columns that are used by several runs, which gives them
   more weight in the abundance of their study variables and understates the
   variation, and a message reports abundance column names that the MAF repeats,
