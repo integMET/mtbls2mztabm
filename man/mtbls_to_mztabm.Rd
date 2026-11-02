@@ -71,7 +71,9 @@ Invisibly, the path of the mzTab-M file, with the attributes
 \code{"toml"} and \code{"parquet"} (the paths of the intermediate files) and
 \code{"mztabm"} (the \code{MzTabM} object). With several MAFs, the paths of the
 files written, named by their MAF, with the same attributes in the same
-order: \code{"mztabm"} is then a \code{list} of \code{MzTabM} objects.
+order: \code{"mztabm"} is then a \code{list} of \code{MzTabM} objects. A MAF without
+abundance values is left out of these; with a single MAF the path is
+\code{character()} and the attributes are kept.
 }
 \description{
 The main function of the package: given a MetaboLights study identifier
@@ -103,15 +105,19 @@ placeholder value (no instrument, no compound database, no contact).
 
 A study with several MAFs gets one set of files per MAF, with the part of
 the MAF name that tells them apart added to the paths: the MAF
-\code{m_MTBLS1066_NEG_RP_LCMS_v2_maf.tsv} is written to
-\code{MTBLS1066_NEG_RP_LCMS.mztab}. A MAF that fails gives a warning and the
-others are still written; it is an error only if all of them fail. Some
+\code{m_MTBLS135__POS_1_TISSUE_metabolite_profiling_mass_spectrometry_v2_maf.tsv}
+is written to
+\code{MTBLS135_POS_1_TISSUE_metabolite_profiling_mass_spectrometry.mztab}. A MAF
+that fails gives a warning and the others are still written; it is an error only if all of them fail. Some
 MAFs need attention:
 \itemize{
 \item a MAF shared by several assays gets a single file, which describes the
 runs of the first of these assays (a message names them);
 \item a MAF that no assay refers to has no runs to describe and gets no file (a
 warning names it);
+\item a MAF without any abundance value for the runs of its assay gets no
+mzTab-M file (a message names it), also if it is the only one of the study.
+Its intermediate files are still written;
 \item the MAFs of assays of another technology, such as NMR, get no file unless
 the study has no mass spectrometry assay, which is then an error.
 }

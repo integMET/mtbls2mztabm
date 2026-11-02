@@ -190,6 +190,102 @@ test_that("a study of only another technology still gives the export's error", {
         "No scan polarity")
 })
 
+## Remove the abundances of the MAF `maf` of a study copy, except of `keep`
+## cells of its first abundance column.
+blank_abundances <- function(d, maf, keep = 0L) {
+    x <- mtbls_maf("MTBLS103", maf, path = d)
+    ab <- which(!names(x) %in% .maf_annotation_columns)
+    first <- x[[ab[1L]]]
+    x[ab] <- NA
+    x[seq_len(keep), ab[1L]] <- first[seq_len(keep)]
+    write.table(x, file.path(d, maf), sep = "\t", quote = FALSE, na = "",
+                row.names = FALSE)
+    invisible(d)
+}
+
+test_that("a MAF without abundance values gets a message and no mzTab-M file", {
+    d <- blank_abundances(study_copy(), hilic_maf)
+    o <- tempfile()
+    dir.create(o)
+    f <- file.path(o, "S.mztab")
+    msgs <- capture_messages(suppressWarnings(
+        out <- mtbls_to_mztabm("MTBLS103", file = f, path = d,
+                               validate = FALSE)))
+    expect_true(any(grepl("No abundance values.*not writing.*S\\.mztab", msgs)))
+    expect_false(any(grepl("^Wrote", msgs)))
+    expect_false(file.exists(f))
+    expect_identical(as.character(out), character())
+    ## the intermediate files show what the study has
+    expect_true(file.exists(attr(out, "toml")))
+    expect_true(file.exists(attr(out, "parquet")))
+    expect_s4_class(attr(out, "mztabm"), "MzTabM")
+})
+
+test_that("verbose = FALSE silences the message about missing abundance values", {
+    d <- blank_abundances(study_copy(), hilic_maf)
+    f <- tempfile(fileext = ".mztab")
+    msgs <- capture_messages(suppressWarnings(
+        mtbls_to_mztabm("MTBLS103", file = f, path = d, validate = FALSE,
+                        verbose = FALSE)))
+    expect_length(msgs, 0L)
+    expect_false(file.exists(f))
+})
+
+test_that("a single abundance value is enough for an mzTab-M file", {
+    d <- blank_abundances(study_copy(), hilic_maf, keep = 1L)
+    f <- tempfile(fileext = ".mztab")
+    out <- mtbls_to_mztabm("MTBLS103", file = f, path = d, validate = FALSE,
+                           verbose = FALSE)
+    expect_identical(as.character(out), f)
+    expect_true(file.exists(f))
+})
+
+test_that("only the MAFs with abundance values of a study get a file", {
+    d <- blank_abundances(add_assay(study_copy(), rp, rp_maf), rp_maf)
+    o <- tempfile()
+    dir.create(o)
+    f <- file.path(o, "S.mztab")
+    msgs <- capture_messages(suppressWarnings(
+        out <- mtbls_to_mztabm("MTBLS103", file = f, path = d,
+                               validate = FALSE)))
+    expect_true(any(grepl("No abundance values.*RP_LC", msgs)))
+    expect_identical(names(out), hilic_maf)
+    expect_true(file.exists(out))
+    expect_false(file.exists(
+        file.path(o, "S_ibanez_02_RP_LC_mass_spectrometry.mztab")))
+    expect_length(attr(out, "toml"), 1L)
+    expect_length(attr(out, "parquet"), 1L)
+    expect_identical(names(attr(out, "mztabm")), hilic_maf)
+})
+
+test_that("a study without any abundance value is not an error", {
+    d <- blank_abundances(add_assay(study_copy(), rp, rp_maf), rp_maf)
+    blank_abundances(d, hilic_maf)
+    o <- tempfile()
+    dir.create(o)
+    out <- suppressWarnings(
+        mtbls_to_mztabm("MTBLS103", file = file.path(o, "S.mztab"), path = d,
+                        validate = FALSE, verbose = FALSE))
+    expect_length(out, 0L)
+    expect_length(attr(out, "toml"), 0L)
+    expect_length(attr(out, "mztabm"), 0L)
+    expect_length(list.files(o, "\\.mztab$"), 0L)
+})
+
+test_that("mtd_sml_to_mztabm writes no file without abundance values", {
+    fls <- study_files("MTBLS103")
+    mtd <- mtbls_toml_to_mtd(fls$toml)
+    sml <- suppressMessages(mtbls_parquet_to_sml(fls$parquet, fls$toml, mtd))
+    expect_true(.sml_has_abundance(sml))
+    sml[grepl("^abundance_assay", colnames(sml))] <- NA_real_
+    expect_false(.sml_has_abundance(sml))
+    f <- tempfile(fileext = ".mztab")
+    expect_message(m <- mtd_sml_to_mztabm(mtd, sml, file = f, validate = FALSE),
+                   "No abundance values")
+    expect_false(file.exists(f))
+    expect_s4_class(m, "MzTabM")
+})
+
 test_that(".maf_stems gives file name parts that tell the MAFs apart", {
     expect_identical(
         .maf_stems(c("m_MTBLS1_a b_v2_maf.tsv", "m_MTBLS1__c_maf.tsv",
