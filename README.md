@@ -28,13 +28,16 @@ mtbls_to_mztabm("MTBLS103")
 mtbls_to_mztabm("MTBLS40")
 
 ## a study with several metabolite assignment files gets one mzTab-M file for
-## each of them, for example MTBLS1066_NEG_RP_LCMS.mztab
-mtbls_to_mztabm("MTBLS1066")
+## each of them, for example
+## MTBLS135_POS_1_TISSUE_metabolite_profiling_mass_spectrometry.mztab
+mtbls_to_mztabm("MTBLS135")
 ```
 
 A MAF shared by several assays gets a single file, which describes the runs of
 the first of these assays. A MAF that no assay refers to has no runs to describe
-and gets no file, with a warning. `assayName` writes the file of one assay only.
+and gets no file, with a warning. A MAF without any abundance value gets no
+mzTab-M file either, with a message, but its TOML and Parquet files are written.
+`assayName` writes the file of one assay only.
 
 All ISA-TAB files are retrieved from the MetaboLights FTP server with the
 [MsBackendMetaboLights](https://bioconductor.org/packages/MsBackendMetaboLights)

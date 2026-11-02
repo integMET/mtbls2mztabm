@@ -511,13 +511,14 @@ mtbls_parquet_to_sml <- function(parquet, toml, mtd = NULL,
 #'
 #' @param file optional `character(1)` with the path of an mzTab-M file to
 #'     write. An extension other than `.mztab`/`.mzTab` gets `.mztab`
-#'     appended. By default no file is written.
+#'     appended. By default no file is written. If no assay of the `SML` section
+#'     has an abundance value, a message says so and no file is written.
 #'
 #' @param validate `logical(1)` whether to validate the written file with the
 #'     official mzTab-M validator, see [RmzTabM::writeMzTabM()]. Only used if
 #'     `file` is given.
 #'
-#' @return An `RmzTabM::MzTabM` object, invisibly if it was written to `file`.
+#' @return An `RmzTabM::MzTabM` object, invisibly if `file` is given.
 #'
 #' @author Kozo Nishida
 #'
@@ -570,8 +571,18 @@ mtd_sml_to_mztabm <- function(mtd, sml, file = NULL, validate = TRUE) {
         return(m)
     if (!grepl("\\.mz[tT]ab$", file))
         file <- paste0(file, ".mztab")
-    writeMzTabM(m, file, validate = validate)
+    if (.sml_has_abundance(sml))
+        writeMzTabM(m, file, validate = validate)
+    else
+        message("No abundance values in the small molecule section: ",
+                "not writing the mzTab-M file ", file)
     invisible(m)
+}
+
+## Does any assay of the SML section have an abundance value?
+.sml_has_abundance <- function(sml) {
+    assay <- grepl("^abundance_assay\\[[0-9]+\\]$", colnames(sml))
+    any(!is.na(as.matrix(sml[, assay, drop = FALSE])))
 }
 
 ## Compound databases from the prefixes of the identifiers in the SML
@@ -633,15 +644,19 @@ mtd_sml_to_mztabm <- function(mtd, sml, file = NULL, validate = TRUE) {
 #'
 #' A study with several MAFs gets one set of files per MAF, with the part of
 #' the MAF name that tells them apart added to the paths: the MAF
-#' `m_MTBLS1066_NEG_RP_LCMS_v2_maf.tsv` is written to
-#' `MTBLS1066_NEG_RP_LCMS.mztab`. A MAF that fails gives a warning and the
-#' others are still written; it is an error only if all of them fail. Some
+#' `m_MTBLS135__POS_1_TISSUE_metabolite_profiling_mass_spectrometry_v2_maf.tsv`
+#' is written to
+#' `MTBLS135_POS_1_TISSUE_metabolite_profiling_mass_spectrometry.mztab`. A MAF
+#' that fails gives a warning and the others are still written; it is an error only if all of them fail. Some
 #' MAFs need attention:
 #'
 #' - a MAF shared by several assays gets a single file, which describes the
 #'   runs of the first of these assays (a message names them);
 #' - a MAF that no assay refers to has no runs to describe and gets no file (a
 #'   warning names it);
+#' - a MAF without any abundance value for the runs of its assay gets no
+#'   mzTab-M file (a message names it), also if it is the only one of the study.
+#'   Its intermediate files are still written;
 #' - the MAFs of assays of another technology, such as NMR, get no file unless
 #'   the study has no mass spectrometry assay, which is then an error.
 #'
@@ -675,7 +690,9 @@ mtd_sml_to_mztabm <- function(mtd, sml, file = NULL, validate = TRUE) {
 #'     `"toml"` and `"parquet"` (the paths of the intermediate files) and
 #'     `"mztabm"` (the `MzTabM` object). With several MAFs, the paths of the
 #'     files written, named by their MAF, with the same attributes in the same
-#'     order: `"mztabm"` is then a `list` of `MzTabM` objects.
+#'     order: `"mztabm"` is then a `list` of `MzTabM` objects. A MAF without
+#'     abundance values is left out of these; with a single MAF the path is
+#'     `character()` and the attributes are kept.
 #'
 #' @author Kozo Nishida
 #'
@@ -762,7 +779,8 @@ mtbls_to_mztabm <- function(mtblsId, file = paste0(mtblsId, ".mztab"),
     for (w in why)
         warning("No mzTab-M file for the metabolite assignment file ", w,
                 call. = FALSE)
-    res <- res[!failed]
+    ## a MAF without abundance values has no file
+    res <- res[!failed & lengths(res) > 0L]
     out <- vapply(res, as.character, character(1))
     attr(out, "toml") <- unname(vapply(res, attr, character(1), "toml"))
     attr(out, "parquet") <- unname(vapply(res, attr, character(1), "parquet"))
@@ -771,7 +789,8 @@ mtbls_to_mztabm <- function(mtblsId, file = paste0(mtblsId, ".mztab"),
 }
 
 ## The steps of `mtbls_to_mztabm()`; returns the path of the mzTab-M file
-## with the intermediate files and the MzTabM object as attributes.
+## (`character()` if there are no abundance values to write) with the
+## intermediate files and the MzTabM object as attributes.
 .export_mztabm <- function(mtblsId, file, toml, parquet, assayName, factor,
                            polarity, path, reliability, validate) {
     dat <- .mtbls_fetch(mtblsId, assayName, path)
@@ -781,24 +800,30 @@ mtbls_to_mztabm <- function(mtblsId, file = paste0(mtblsId, ".mztab"),
     sml <- mtbls_parquet_to_sml(parquet, toml, mtd = mtd,
                                 reliability = reliability)
     m <- mtd_sml_to_mztabm(mtd, sml, file = file, validate = validate)
-    if (!file.exists(file))
-        stop("writing ", file, " failed")
-    lns <- readLines(file, warn = FALSE)
-    mt <- RmzTabM::mtd(m)
-    placeholders <- c(
-        if (!any(grepl("^instrument\\[", mt[, 1L]))) "instrument",
-        if (any(grepl("no database", mt[mt[, 1L] == "database[1]", 2L])))
-            "compound database",
-        if (!any(grepl("^contact\\[", mt[, 1L]))) "contact (no ORCID)")
-    message("Wrote ", file, "\n  assay: ", dat$assayName,
-            "\n  MAF: ", dat$mafName, "\n  intermediate files: ", toml,
-            ", ", parquet,
-            "\n  MTD ", sum(startsWith(lns, "MTD\t")), " rows, SML ",
-            sum(startsWith(lns, "SML\t")), " rows (", nrow(sml),
-            " small molecules x ", nrow(.mtd_assays(m)), " assays)",
-            if (length(placeholders))
-                paste0("\n  not available from the ISA-TAB files: ",
-                       paste(placeholders, collapse = ", ")))
+    if (.sml_has_abundance(sml)) {
+        if (!file.exists(file))
+            stop("writing ", file, " failed")
+        lns <- readLines(file, warn = FALSE)
+        mt <- RmzTabM::mtd(m)
+        placeholders <- c(
+            if (!any(grepl("^instrument\\[", mt[, 1L]))) "instrument",
+            if (any(grepl("no database", mt[mt[, 1L] == "database[1]", 2L])))
+                "compound database",
+            if (!any(grepl("^contact\\[", mt[, 1L]))) "contact (no ORCID)")
+        message("Wrote ", file, "\n  assay: ", dat$assayName,
+                "\n  MAF: ", dat$mafName, "\n  intermediate files: ", toml,
+                ", ", parquet,
+                "\n  MTD ", sum(startsWith(lns, "MTD\t")), " rows, SML ",
+                sum(startsWith(lns, "SML\t")), " rows (", nrow(sml),
+                " small molecules x ", nrow(.mtd_assays(m)), " assays)",
+                if (length(placeholders))
+                    paste0("\n  not available from the ISA-TAB files: ",
+                           paste(placeholders, collapse = ", ")))
+    } else {
+        message("  assay: ", dat$assayName, "\n  MAF: ", dat$mafName,
+                "\n  intermediate files: ", toml, ", ", parquet)
+        file <- character()
+    }
     attr(file, "toml") <- toml
     attr(file, "parquet") <- parquet
     attr(file, "mztabm") <- m

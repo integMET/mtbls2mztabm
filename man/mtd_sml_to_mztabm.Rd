@@ -15,14 +15,15 @@ mtd_sml_to_mztabm(mtd, sml, file = NULL, validate = TRUE)
 
 \item{file}{optional \code{character(1)} with the path of an mzTab-M file to
 write. An extension other than \code{.mztab}/\code{.mzTab} gets \code{.mztab}
-appended. By default no file is written.}
+appended. By default no file is written. If no assay of the \code{SML} section
+has an abundance value, a message says so and no file is written.}
 
 \item{validate}{\code{logical(1)} whether to validate the written file with the
 official mzTab-M validator, see \code{\link[RmzTabM:writeMzTabM]{RmzTabM::writeMzTabM()}}. Only used if
 \code{file} is given.}
 }
 \value{
-An \code{RmzTabM::MzTabM} object, invisibly if it was written to \code{file}.
+An \code{RmzTabM::MzTabM} object, invisibly if \code{file} is given.
 }
 \description{
 \code{mtd_sml_to_mztabm()} merges the \code{MTD} section built by
